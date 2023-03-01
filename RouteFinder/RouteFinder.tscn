@@ -1,0 +1,104 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://RouteFinder/RouteFinder.gd" type="Script" id=1]
+
+[node name="RouteFinder" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.067
+anchor_right = 0.877
+margin_left = 0.199999
+margin_top = 25.0
+margin_right = 0.199982
+margin_bottom = 198.0
+custom_constants/separation = 15
+
+[node name="VBoxContainer_A" type="VBoxContainer" parent="VBoxContainer"]
+margin_right = 323.0
+margin_bottom = 74.0
+custom_constants/separation = 10
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer_A"]
+margin_right = 323.0
+margin_bottom = 14.0
+text = "Point A"
+
+[node name="Option_World1" type="OptionButton" parent="VBoxContainer/VBoxContainer_A"]
+margin_top = 24.0
+margin_right = 323.0
+margin_bottom = 44.0
+text = "Tallon Overworld"
+items = [ "Tallon Overworld", null, false, 0, null, "Chozo Ruins", null, false, 1, null, "Magmoor Caverns", null, false, 2, null, "Phendrana Drifts", null, false, 3, null, "Phazon Mines", null, false, 4, null ]
+selected = 0
+
+[node name="Option_Room1" type="OptionButton" parent="VBoxContainer/VBoxContainer_A"]
+margin_top = 54.0
+margin_right = 323.0
+margin_bottom = 74.0
+
+[node name="VBoxContainer_B" type="VBoxContainer" parent="VBoxContainer"]
+margin_top = 89.0
+margin_right = 323.0
+margin_bottom = 163.0
+custom_constants/separation = 10
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer_B"]
+margin_right = 323.0
+margin_bottom = 14.0
+text = "Point B"
+
+[node name="Option_World2" type="OptionButton" parent="VBoxContainer/VBoxContainer_B"]
+margin_top = 24.0
+margin_right = 323.0
+margin_bottom = 44.0
+text = "Tallon Overworld"
+items = [ "Tallon Overworld", null, false, 0, null, "Chozo Ruins", null, false, 1, null, "Magmoor Caverns", null, false, 2, null, "Phendrana Drifts", null, false, 3, null, "Phazon Mines", null, false, 4, null ]
+selected = 0
+
+[node name="Option_Room2" type="OptionButton" parent="VBoxContainer/VBoxContainer_B"]
+margin_top = 54.0
+margin_right = 323.0
+margin_bottom = 74.0
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_top = 178.0
+margin_right = 323.0
+margin_bottom = 192.0
+
+[node name="Button_GetRooms" type="Button" parent="VBoxContainer"]
+margin_top = 207.0
+margin_right = 323.0
+margin_bottom = 227.0
+text = "Get Rooms"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 242.0
+margin_right = 323.0
+margin_bottom = 262.0
+
+[node name="Button_CopyText" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_right = 159.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "Copy"
+
+[node name="Button_Clear" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_left = 163.0
+margin_right = 323.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+text = "Clear"
+
+[node name="Label_Result" type="Label" parent="VBoxContainer"]
+margin_top = 277.0
+margin_right = 323.0
+margin_bottom = 291.0
+
+[connection signal="item_selected" from="VBoxContainer/VBoxContainer_A/Option_World1" to="." method="_on_Option_World1_item_selected"]
+[connection signal="item_selected" from="VBoxContainer/VBoxContainer_B/Option_World2" to="." method="_on_Option_World2_item_selected"]
+[connection signal="pressed" from="VBoxContainer/Button_GetRooms" to="." method="_on_Button_GetRooms_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Button_CopyText" to="." method="_on_Button_CopyText_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Button_Clear" to="." method="_on_Button_Clear_pressed"]

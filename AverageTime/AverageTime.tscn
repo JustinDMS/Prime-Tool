@@ -1,0 +1,102 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://AverageTime/AverageTime.gd" type="Script" id=1]
+
+[node name="AverageTime" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.067
+anchor_right = 0.877
+margin_left = 0.199999
+margin_top = 25.0
+margin_right = 0.199982
+margin_bottom = 198.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_right = 323.0
+margin_bottom = 44.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+margin_right = 20.0
+margin_bottom = 44.0
+
+[node name="Button_Increment" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_right = 20.0
+margin_bottom = 20.0
+text = "+"
+
+[node name="Button_Decrement" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_top = 24.0
+margin_right = 20.0
+margin_bottom = 44.0
+text = "-"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
+margin_left = 24.0
+margin_right = 82.0
+margin_bottom = 44.0
+text = "1"
+align = 1
+max_length = 2
+placeholder_text = "5"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+margin_left = 115.0
+margin_right = 215.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 100, 0 )
+size_flags_horizontal = 6
+
+[node name="Button_Calculate" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+margin_right = 100.0
+margin_bottom = 20.0
+text = "Calculate"
+
+[node name="Button_Clear" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+margin_top = 24.0
+margin_right = 100.0
+margin_bottom = 44.0
+text = "Clear"
+
+[node name="LineEdit_Average" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
+margin_left = 248.0
+margin_right = 323.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 75, 0 )
+editable = false
+
+[node name="Button_Copy" type="Button" parent="VBoxContainer/HBoxContainer/LineEdit_Average"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+hint_tooltip = "Click to copy"
+flat = true
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+margin_top = 48.0
+margin_right = 323.0
+margin_bottom = 78.0
+custom_constants/separation = 30
+
+[node name="VBox_Times" type="VBoxContainer" parent="VBoxContainer"]
+margin_top = 82.0
+margin_right = 323.0
+margin_bottom = 173.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 10
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/VBox_Times"]
+margin_right = 323.0
+margin_bottom = 24.0
+placeholder_text = "Time 1"
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/Button_Increment" to="." method="_on_Button_Increment_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/Button_Decrement" to="." method="_on_Button_Decrement_pressed"]
+[connection signal="text_changed" from="VBoxContainer/HBoxContainer/LineEdit" to="." method="_on_LineEdit_text_changed"]
+[connection signal="text_entered" from="VBoxContainer/HBoxContainer/LineEdit" to="." method="_on_LineEdit_text_entered"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer2/Button_Calculate" to="." method="_on_Button_Calculate_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer2/Button_Clear" to="." method="_on_Button_Clear_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/LineEdit_Average/Button_Copy" to="." method="_on_Button_Copy_pressed"]
