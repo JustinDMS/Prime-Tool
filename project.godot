@@ -29,7 +29,6 @@ config/icon="res://icon.png"
 
 window/size/width=400
 window/size/height=220
-window/size/resizable=false
 window/stretch/aspect="keep"
 
 [editor]
