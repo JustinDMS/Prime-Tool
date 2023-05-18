@@ -192,6 +192,10 @@
         "Gathering Hall Access": "Chozo Ruins",
         "Sunchamber Lobby": "Chozo Ruins"
       },
+      "Arboretum Access": {
+	      "Ruined Fountain" : "Chozo Ruins",
+	      "Arboretum" : "Chozo Ruins"
+      },
       "Burn Dome": {
         "Burn Dome Access": "Chozo Ruins"
       },
