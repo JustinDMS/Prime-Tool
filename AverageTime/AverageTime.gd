@@ -1,9 +1,9 @@
 extends Control
 
-onready var averages_node = $VBoxContainer/HBoxContainer/LineEdit
-onready var times_container = $VBoxContainer/VBox_Times
-onready var averages_result = $VBoxContainer/HBoxContainer/LineEdit_Average
-onready var times = {
+@onready var averages_node = $VBoxContainer/HBoxContainer/LineEdit
+@onready var times_container = $VBoxContainer/VBox_Times
+@onready var averages_result = $VBoxContainer/HBoxContainer/LineEdit_Average
+@onready var times = {
 	1 : $VBoxContainer/VBox_Times/LineEdit
 }
 
@@ -17,14 +17,14 @@ func _ready():
 
 func validateInput(text, node):
 	for i in text:
-		if not i.is_valid_integer():
-			node.delete_char_at_cursor()
+		if not i.is_valid_int():
+			node.delete_char_at_caret()
 
 
 func validateInputFloat(text, node):
 	for i in text:
 		if not i.is_valid_float():
-			node.delete_char_at_cursor()
+			node.delete_char_at_caret()
 
 
 func updateNumTimes():
@@ -34,7 +34,7 @@ func updateNumTimes():
 
 func updateWindowSize():
 	window_size.y = 146 + 34 * num_times
-	OS.set_window_size(window_size)
+	get_window().set_size(window_size)
 
 
 func addLineEdit():
@@ -59,7 +59,7 @@ func updateAverage():
 		var time = float(times[i].get_text())
 		total += time
 	
-	total = stepify(total / times.size(), 0.001)
+	total = snapped(total / times.size(), 0.001)
 	
 	averages_result.set_text(str(total))
 
@@ -108,4 +108,4 @@ func _on_Button_Clear_pressed():
 
 
 func _on_Button_Copy_pressed():
-	OS.set_clipboard(averages_result.get_text())
+	DisplayServer.clipboard_set(averages_result.get_text())

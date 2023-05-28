@@ -1,12 +1,15 @@
+class_name RouteFinder
 extends Control
 
-onready var option_room_1 = $VBoxContainer/VBoxContainer_A/Option_Room1
-onready var option_room_2 = $VBoxContainer/VBoxContainer_B/Option_Room2
-onready var option_world_1 = $VBoxContainer/VBoxContainer_A/Option_World1
-onready var option_world_2 = $VBoxContainer/VBoxContainer_B/Option_World2
-onready var result_label = $VBoxContainer/Label_Result
-onready var copy_button = $VBoxContainer/HBoxContainer/Button_CopyText
+# UI Elements
+@onready var option_room_1 = $MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer_A/Option_Room1
+@onready var option_room_2 = $MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer_B/Option_Room2
+@onready var option_world_1 = $MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer_A/Option_World1
+@onready var option_world_2 = $MarginContainer/HBoxContainer/VBoxContainer/VBoxContainer_B/Option_World2
+@onready var result_label = $MarginContainer/HBoxContainer/VBoxContainer/Label_Result
+@onready var copy_button = $MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer/Button_CopyText
 
+# Pathfinding
 enum point {POINT_A, POINT_B}
 var room_path = []
 var room_queue = []
@@ -14,6 +17,7 @@ var rooms_visited = {}
 var distance = {}
 var parent_rooms = {}
 var room_data
+var room_found := false
 var worlds = {
 	0 : "Tallon Overworld",
 	1 : "Chozo Ruins",
@@ -21,6 +25,17 @@ var worlds = {
 	3 : "Phendrana Drifts",
 	4 : "Phazon Mines",
 }
+
+# Player Inventory
+var inventory = {
+	"Power" : true,
+	"Wave" : true,
+	"Ice" : true,
+	"Plasma" : true,
+}
+
+# Etc
+var window_size : Vector2 = Vector2(600, 375)
 
 
 func _ready():
@@ -30,16 +45,17 @@ func _ready():
 
 
 func readJSON():
-	var file = File.new()
-	file.open("res://RoomData.json", file.READ)
+	var file = FileAccess.open("res://RoomData.json", FileAccess.READ)
 	var file_as_text = file.get_as_text()
-	room_data = parse_json(file_as_text)
+	var test_json_conv = JSON.new()
+	test_json_conv.parse(file_as_text)
+	room_data = test_json_conv.get_data()
 
 
 func adjustWindowSize():
-	var window_size = Vector2(400, 340)
-	window_size.y += room_path.size() * 17.5
-	OS.set_window_size(window_size)
+	var temp_window = window_size
+	temp_window.y += room_path.size() * 25
+	get_window().set_size(temp_window)
 
 
 func displayResults(end):
@@ -47,17 +63,23 @@ func displayResults(end):
 	var text = ""
 	var count = 0
 	
+	if not room_found:
+		text = "Unable to find " + end
+		result_label.set_text(text)
+		return
+	
 	for i in room_path:
 		text += room_path[count]
 		count += 1
 		if count < room_path.size():
-			 text += "\n"
+			text += "\n"
 	
 	result_label.set_text(text)
-	copy_button.set_text("Copy " + str(distance[end]) + " rooms")
+	copy_button.set_text("Copy " + str(distance[end] + 1) + " rooms")
 
 
 func findWorldIndex(room):
+	
 	if room in room_data["World"]["Tallon Overworld"]:
 		return 0
 	elif room in room_data["World"]["Chozo Ruins"]:
@@ -72,13 +94,13 @@ func findWorldIndex(room):
 		return null
 
 
-func buildRoomList(world, point):
+func buildRoomList(world, end_point):
 	
 	var options_node
 	
-	if point == 0: # Point A
+	if end_point == 0: # Point A
 		options_node = option_room_1
-	elif point == 1: # Point B
+	elif end_point == 1: # Point B
 		options_node = option_room_2
 	
 	options_node.clear()
@@ -94,13 +116,17 @@ func findPath(start : String, end : String):
 	room_queue.append(start)
 	distance[start] = 0
 	parent_rooms[start] = null
+	room_found = false
 	
 	while room_queue.size() > 0:
 		
 		if findWorldIndex(room_queue[0]) == null:
+			print("Invalid world for room: ", room_queue[0])
 			room_queue.pop_front()
 		else:
-			var connecting = searchConnectingRooms(worlds[findWorldIndex(room_queue[0])], room_queue[0], end)
+			var current_room = room_queue[0]
+			var current_world = worlds[findWorldIndex(current_room)]
+			var connecting = searchConnectingRooms(current_world, current_room, end)
 			room_queue.pop_front()
 			
 			for i in connecting:
@@ -108,7 +134,10 @@ func findPath(start : String, end : String):
 					rooms_visited[i] = true
 					room_queue.append(i)
 	
-	constructRoomPath(start, end)
+	if room_found:
+		constructRoomPath(start, end)
+	else:
+		displayResults(end)
 
 
 func searchConnectingRooms(world, room, end):
@@ -122,13 +151,22 @@ func searchConnectingRooms(world, room, end):
 		if not parent_rooms.has(i):
 			parent_rooms[i] = room
 		
-		if not i == end:
+		if not i == end and inventory[getDoorType(world, room, i)]:
 			temp_room_array.append(i)
 		else:
-			room_queue.clear()
-			return []
+			if inventory[getDoorType(world, room, i)]:
+				room_found = true
+				room_queue.clear()
+				return []
+			else:
+				print("Found destination but lack correct beam")
+				print("Unable to enter " + i + " without ", getDoorType(world, room, i))
 	
 	return temp_room_array
+
+
+func getDoorType(world, room_from, room_to) -> String:
+	return room_data["World"][world][room_from][room_to]["Door"]
 
 
 func constructRoomPath(start, end):
@@ -185,8 +223,20 @@ func _on_Button_GetRooms_pressed():
 
 
 func _on_Button_CopyText_pressed():
-	OS.set_clipboard(result_label.get_text())
+	DisplayServer.clipboard_set(result_label.get_text())
 
 
 func _on_Button_Clear_pressed():
 	resetContainers()
+
+
+func _on_check_box_wave_toggled(button_pressed):
+	inventory["Wave"] = button_pressed
+
+
+func _on_check_box_ice_toggled(button_pressed):
+	inventory["Ice"] = button_pressed
+
+
+func _on_check_box_plasma_toggled(button_pressed):
+	inventory["Plasma"] = button_pressed

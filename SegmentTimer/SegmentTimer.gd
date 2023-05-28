@@ -1,17 +1,17 @@
 extends Control
 
-onready var t1_hh = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_HH
-onready var t1_mm = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MM
-onready var t1_ss = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_SS
-onready var t1_mil = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MIL
+@onready var t1_hh = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_HH
+@onready var t1_mm = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MM
+@onready var t1_ss = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_SS
+@onready var t1_mil = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MIL
 
-onready var t2_hh = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_HH
-onready var t2_mm = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MM
-onready var t2_ss = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_SS
-onready var t2_mil = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MIL
+@onready var t2_hh = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_HH
+@onready var t2_mm = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MM
+@onready var t2_ss = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_SS
+@onready var t2_mil = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MIL
 
-onready var result = $VBoxContainer/HBoxContainer3/LineEdit_Result
-onready var result_formatted = $VBoxContainer/HBoxContainer3/LineEdit_ResultFormatted
+@onready var result = $VBoxContainer/HBoxContainer3/LineEdit_Result
+@onready var result_formatted = $VBoxContainer/HBoxContainer3/LineEdit_ResultFormatted
 
 var current_operation := 0
 
@@ -22,12 +22,12 @@ func _ready():
 
 func validateInput(text, node):
 	for i in text:
-		if not i.is_valid_integer():
-			node.delete_char_at_cursor()
+		if not i.is_valid_int():
+			node.delete_char_at_caret()
 	
 	if node == t1_mm or node == t1_ss or node == t2_mm or node == t2_ss:
 		if int(text) >= 60:
-			node.delete_char_at_cursor()
+			node.delete_char_at_caret()
 	
 	if node != t1_mil and node != t2_mil:
 		if len(text) == 2:
@@ -227,8 +227,25 @@ func _on_T2_MIL_text_entered(_new_text):
 
 
 func _on_Button_CopySeconds_pressed():
-	OS.set_clipboard(result.get_text())
+	DisplayServer.clipboard_set(result.get_text())
 
 
 func _on_Button_CopyFormatted_pressed():
-	OS.set_clipboard(result_formatted.get_text())
+	DisplayServer.clipboard_set(result_formatted.get_text())
+
+
+func _on_button_swap_times_pressed():
+	var temp_t1_hh = t1_hh.get_text()
+	var temp_t1_mm = t1_mm.get_text()
+	var temp_t1_ss = t1_ss.get_text()
+	var temp_t1_mil = t1_mil.get_text()
+	
+	t1_hh.set_text(t2_hh.get_text())
+	t1_mm.set_text(t2_mm.get_text())
+	t1_ss.set_text(t2_ss.get_text())
+	t1_mil.set_text(t2_mil.get_text())
+	
+	t2_hh.set_text(temp_t1_hh)
+	t2_mm.set_text(temp_t1_mm)
+	t2_ss.set_text(temp_t1_ss)
+	t2_mil.set_text(temp_t1_mil)
