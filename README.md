@@ -1,4 +1,4 @@
-# Prime-Tool
+# Prime Tool
 
 Prime Tool is a multi-use tool for Metroid Prime. It has many functions:
 
@@ -21,5 +21,3 @@ Route Finder:
 - Some rooms have an additional world identifier (ie Tallon, Mines, etc). This is because some worlds have rooms with the same names and it was throwing off the pathfinding.
 - Used for fast iteration of mock-up routes.
 - Easily copy rooms and paste into a spreadsheet
-
-Currently, the downloadable version is Windows-only. Mac users can instead use the in-browser version here: https://justindms.github.io/Prime-Tool/
