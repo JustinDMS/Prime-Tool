@@ -1,0 +1,2496 @@
+{
+  "World": {
+    "Tallon Overworld": {
+      "Alcove": {
+        "Landing Site": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Arbor Chamber": {
+        "Root Cave": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Artifact Temple": {
+        "Temple Lobby": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Biohazard Containment": {
+        "Deck Beta Transit Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Deck Beta Security Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Biotech Research Area 1": {
+        "Deck Beta Security Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Deck Beta Conduit Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Canyon Cavern": {
+        "Landing Site": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Tallon Canyon": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Cargo Freight Lift to Deck Gamma": {
+        "Reactor Access": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Deck Beta Transit Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Connection Elevator to Deck Beta": {
+        "Deck Beta Conduit Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Hydro Access Tunnel": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Deck Beta Conduit Hall": {
+        "Biotech Research Area 1": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Connection Elevator to Deck Beta": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Deck Beta Security Hall": {
+        "Biohazard Containment": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Biotech Research Area 1": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Deck Beta Transit Hall": {
+        "Cargo Freight Lift to Deck Gamma": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Biohazard Containment": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Frigate Access Tunnel": {
+        "Frigate Crash Site": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Main Ventilation Shaft Section C": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Frigate Crash Site": {
+        "Waterfall Cavern": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Overgrown Cavern": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Frigate Access Tunnel": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        }
+      },
+      "Great Tree Chamber": {
+        "Great Tree Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Great Tree Hall": {
+        "Transport Tunnel D": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Great Tree Chamber": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Life Grove Tunnel": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Transport Tunnel E": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Hydro Access Tunnel": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Gully": {
+        "Landing Site": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Tallon Canyon": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Hydro Access Tunnel": {
+        "Connection Elevator to Deck Beta": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Great Tree Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Landing Site": {
+        "Alcove": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Canyon Cavern": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Gully": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Temple Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Waterfall Cavern": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Life Grove": {
+        "Life Grove Tunnel": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Life Grove Tunnel": {
+        "Great Tree Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Life Grove": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Main Ventilation Shaft Section A": {
+        "Main Ventilation Shaft Section B": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Reactor Core": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Main Ventilation Shaft Section B": {
+        "Main Ventilation Shaft Section A": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Main Ventilation Shaft Section C": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Main Ventilation Shaft Section C": {
+        "Frigate Access Tunnel": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Main Ventilation Shaft Section B": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Overgrown Cavern": {
+        "Frigate Crash Site": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Transport Tunnel C (Tallon)": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        }
+      },
+      "Reactor Access": {
+        "Reactor Core": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Cargo Freight Lift to Deck Gamma": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Savestation": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Reactor Core": {
+        "Main Ventilation Shaft Section A": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Reactor Access": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Root Cave": {
+        "Arbor Chamber": {
+          "World": "Tallon Overworld",
+          "Door": "Plasma"
+        },
+        "Root Tunnel": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Transport Tunnel B (Tallon)": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Root Tunnel": {
+        "Tallon Canyon": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Root Cave": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Savestation": {
+        "Reactor Access": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Tallon Canyon": {
+        "Canyon Cavern": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Gully": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Root Tunnel": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Transport Tunnel A (Tallon)": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Temple Hall": {
+        "Landing Site": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Temple Security Station": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Temple Lobby": {
+        "Artifact Temple": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Temple Security Station": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Temple Security Station": {
+        "Temple Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Temple Lobby": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Transport to Chozo Ruins East": {
+        "Transport Tunnel C (Tallon)": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Transport to Tallon Overworld East": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Transport to Chozo Ruins South": {
+        "Transport Tunnel D": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Transport to Tallon Overworld South (Chozo)": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Transport to Chozo Ruins West": {
+        "Transport Tunnel A (Tallon)": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Transport to Tallon Overworld North": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Transport to Magmoor Caverns East": {
+        "Transport Tunnel B (Tallon)": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Transport to Tallon Overworld West": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Transport to Phazon Mines East": {
+        "Transport Tunnel E": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Transport to Tallon Overworld South (Mines)": {
+          "World": "Phazon Mines",
+          "Door": "Power"
+        }
+      },
+      "Transport Tunnel A (Tallon)": {
+        "Tallon Canyon": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Transport to Chozo Ruins West": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Transport Tunnel B (Tallon)": {
+        "Root Cave": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Transport to Magmoor Caverns East": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Transport Tunnel C (Tallon)": {
+        "Overgrown Cavern": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Transport to Chozo Ruins East": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        }
+      },
+      "Transport Tunnel D": {
+        "Great Tree Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Transport to Chozo Ruins South": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        }
+      },
+      "Transport Tunnel E": {
+        "Great Tree Hall": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        },
+        "Transport to Phazon Mines East": {
+          "World": "Tallon Overworld",
+          "Door": "Ice"
+        }
+      },
+      "Waterfall Cavern": {
+        "Landing Site": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        },
+        "Frigate Crash Site": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      }
+    },
+    "Chozo Ruins": {
+      "Antechamber": {
+        "Reflecting Pool": {
+          "World": "Chozo Ruins",
+          "Door": "Ice"
+        }
+      },
+      "Arboretum": {
+        "Arboretum Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Gathering Hall Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Sunchamber Lobby": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Arboretum Access": {
+        "Ruined Fountain": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Arboretum": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Burn Dome": {
+        "Burn Dome Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Burn Dome Access": {
+        "Burn Dome": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Energy Core": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Crossway": {
+        "Crossway Access West": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Crossway Access South": {
+          "World": "Chozo Ruins",
+          "Door": "Ice"
+        },
+        "Elder Hall Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Crossway Access South": {
+        "Crossway": {
+          "World": "Chozo Ruins",
+          "Door": "Ice"
+        },
+        "Hall of the Elders": {
+          "World": "Chozo Ruins",
+          "Door": "Ice"
+        }
+      },
+      "Crossway Access West": {
+        "Furnace": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Crossway": {
+          "World": "Chozo Ruins",
+          "Door": "Wave"
+        }
+      },
+      "Dynamo": {
+        "Dynamo Access (Chozo)": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Dynamo Access (Chozo)": {
+        "Dynamo": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Watery Hall": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "East Atrium": {
+        "Gathering Hall": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Energy Core Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "East Furnace Access": {
+        "Furnace": {
+          "World": "Chozo Ruins",
+          "Door": "Ice"
+        },
+        "Hall of the Elders": {
+          "World": "Chozo Ruins",
+          "Door": "Ice"
+        }
+      },
+      "Elder Chamber": {
+        "Hall of the Elders": {
+          "World": "Chozo Ruins",
+          "Door": "Ice"
+        }
+      },
+      "Elder Hall Access": {
+        "Crossway": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Hall of the Elders": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Energy Core": {
+        "Burn Dome Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Energy Core Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "West Furnace Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Energy Core Access": {
+        "East Atrium": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Energy Core": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Eyon Tunnel": {
+        "Nursery Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Ruined Nursery": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Furnace": {
+        "West Furnace Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Crossway Access West": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "East Furnace Access": {
+          "World": "Chozo Ruins",
+          "Door": "Ice"
+        }
+      },
+      "Gathering Hall": {
+        "Gathering Hall Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Watery Hall Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "East Atrium": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Save Station 2": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Gathering Hall Access": {
+        "Arboretum": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Gathering Hall": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Hall of the Elders": {
+        "East Furnace Access": {
+          "World": "Chozo Ruins",
+          "Door": "Ice"
+        },
+        "Crossway Access South": {
+          "World": "Chozo Ruins",
+          "Door": "Ice"
+        },
+        "Elder Hall Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Elder Chamber": {
+          "World": "Chozo Ruins",
+          "Door": "Ice"
+        },
+        "Reflecting Pool Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Hive Totem": {
+        "Totem Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Transport Access North": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Magma Pool": {
+        "Meditation Fountain": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Training Chamber Access": {
+          "World": "Chozo Ruins",
+          "Door": "Wave"
+        }
+      },
+      "Main Plaza": {
+        "Ruins Entrance": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Ruined Shrine Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Piston Tunnel": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Ruined Fountain Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Nursery Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Plaza Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Map Station (Chozo)": {
+        "Ruined Gallery": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Meditation Fountain": {
+        "Ruined Fountain": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Magma Pool": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "North Atrium": {
+        "Ruined Nursery": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Ruined Gallery": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Nursery Access": {
+        "Main Plaza": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Eyon Tunnel": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Piston Tunnel": {
+        "Main Plaza": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Training Chamber": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Plaza Access": {
+        "Main Plaza": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Vault": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Reflecting Pool": {
+        "Reflecting Pool Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Antechamber": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Save Station 3": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Transport Access South": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Reflecting Pool Access": {
+        "Hall of the Elders": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Reflecting Pool": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Ruined Fountain": {
+        "Ruined Fountain Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Arboretum Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Meditation Fountain": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Ruined Fountain Access": {
+        "Main Plaza": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Ruined Fountain": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Ruined Gallery": {
+        "North Atrium": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Totem Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Map Station (Chozo)": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Ruined Nursery": {
+        "Eyon Tunnel": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "North Atrium": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Save Station 1": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Ruined Shrine": {
+        "Ruined Shrine Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Tower of Light Access": {
+          "World": "Chozo Ruins",
+          "Door": "Wave"
+        }
+      },
+      "Ruined Shrine Access": {
+        "Main Plaza": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Ruined Shrine": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Ruins Entrance": {
+        "Main Plaza": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Transport to Tallon Overworld North": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Save Station 1": {
+        "Ruined Nursery": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Save Station 2": {
+        "Gathering Hall": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Save Station 3": {
+        "Reflecting Pool": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Transport to Tallon Overworld East": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Sun Tower": {
+        "Sun Tower Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Transport to Magmoor Caverns North": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Sun Tower Access": {
+        "Sunchamber": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Sun Tower": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Sunchamber": {
+        "Sunchamber Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Sun Tower Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Sunchamber Access": {
+        "Sunchamber": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Sunchamber Lobby": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Sunchamber Lobby": {
+        "Sunchamber Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Arboretum": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Totem Access": {
+        "Ruined Gallery": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Hive Totem": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Tower Chamber": {
+        "Tower of Light": {
+          "World": "Chozo Ruins",
+          "Door": "Wave"
+        }
+      },
+      "Tower of Light": {
+        "Tower Chamber": {
+          "World": "Chozo Ruins",
+          "Door": "Wave"
+        },
+        "Tower of Light Access": {
+          "World": "Chozo Ruins",
+          "Door": "Wave"
+        }
+      },
+      "Tower of Light Access": {
+        "Ruined Shrine": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Tower of Light": {
+          "World": "Chozo Ruins",
+          "Door": "Wave"
+        }
+      },
+      "Training Chamber": {
+        "Training Chamber Access": {
+          "World": "Chozo Ruins",
+          "Door": "Wave"
+        },
+        "Piston Tunnel": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Training Chamber Access": {
+        "Training Chamber": {
+          "World": "Chozo Ruins",
+          "Door": "Wave"
+        },
+        "Piston Tunnel": {
+          "World": "Chozo Ruins",
+          "Door": "Wave"
+        }
+      },
+      "Transport Access North": {
+        "Hive Totem": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Transport to Magmoor Caverns North": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Transport Access South": {
+        "Reflecting Pool": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Transport to Tallon Overworld South (Chozo)": {
+          "World": "Chozo Ruins",
+          "Door": "Ice"
+        }
+      },
+      "Transport to Magmoor Caverns North": {
+        "Transport Access North": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Sun Tower": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Vault Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Transport to Chozo Ruins North": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Transport to Tallon Overworld East": {
+        "Save Station 3": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Transport to Chozo Ruins East": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Transport to Tallon Overworld North": {
+        "Ruins Entrance": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Transport to Chozo Ruins West": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Transport to Tallon Overworld South (Chozo)": {
+        "Transport Access South": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Transport to Chozo Ruins South": {
+          "World": "Tallon Overworld",
+          "Door": "Power"
+        }
+      },
+      "Vault": {
+        "Plaza Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Vault Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Vault Access": {
+        "Vault": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Transport to Magmoor Caverns North": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Watery Hall": {
+        "Watery Hall Access": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Dynamo Access (Chozo)": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Watery Hall Access": {
+        "Gathering Hall": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Watery Hall": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "West Furnace Access": {
+        "Energy Core": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        },
+        "Furnace": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      }
+    },
+    "Magmoor Caverns": {
+      "Burning Trail": {
+        "Save Station Magmoor A": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Lake Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Transport to Chozo Ruins North": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Fiery Shores": {
+        "Transport Tunnel B (Magmoor)": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Shore Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Geothermal Core": {
+        "North Core Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "South Core Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Plasma Processing": {
+          "World": "Magmoor Caverns",
+          "Door": "Ice"
+        }
+      },
+      "Lake Tunnel": {
+        "Burning Trail": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Lava Lake": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Lava Lake": {
+        "Lake Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Pit Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Magmoor Workstation": {
+        "South Core Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Transport Tunnel C (Magmoor)": {
+          "World": "Magmoor Caverns",
+          "Door": "Wave"
+        },
+        "Workstation Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Monitor Station": {
+        "Monitor Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Shore Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Warrior Shrine": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Transport Tunnel A (Magmoor)": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Monitor Tunnel": {
+        "Triclops Pit": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Monitor Station": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "North Core Tunnel": {
+        "Twin Fires": {
+          "World": "Magmoor Caverns",
+          "Door": "Wave"
+        },
+        "Geothermal Core": {
+          "World": "Magmoor Caverns",
+          "Door": "Wave"
+        }
+      },
+      "Pit Tunnel": {
+        "Lava Lake": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Triclops Pit": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Plasma Processing": {
+        "Geothermal Core": {
+          "World": "Magmoor Caverns",
+          "Door": "Plasma"
+        }
+      },
+      "Save Station Magmoor A": {
+        "Burning Trail": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Save Station Magmoor B": {
+        "Transport to Phendrana Drifts South": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Shore Tunnel": {
+        "Monitor Station": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Fiery Shores": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "South Core Tunnel": {
+        "Geothermal Core": {
+          "World": "Magmoor Caverns",
+          "Door": "Wave"
+        },
+        "Magmoor Workstation": {
+          "World": "Magmoor Caverns",
+          "Door": "Wave"
+        }
+      },
+      "Storage Cavern": {
+        "Triclops Pit": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Transport to Chozo Ruins North": {
+        "Burning Trail": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Transport to Magmoor Caverns North": {
+          "World": "Chozo Ruins",
+          "Door": "Power"
+        }
+      },
+      "Transport to Phazon Mines West": {
+        "Workstation Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Ice"
+        },
+        "Transport to Magmoor Caverns South (Mines)": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Transport to Phendrana Drifts North": {
+        "Transport Tunnel A (Magmoor)": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Transport to Magmoor Caverns West": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Transport to Phendrana Drifts South": {
+        "Transport Tunnel C (Magmoor)": {
+          "World": "Magmoor Caverns",
+          "Door": "Wave"
+        },
+        "Save Station Magmoor B": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Transport to Magmoor Caverns South (Phendrana)": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Transport to Tallon Overworld West": {
+        "Transport Tunnel B (Magmoor)": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Twin Fires Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Transport to Magmoor Caverns East": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Transport Tunnel A (Magmoor)": {
+        "Monitor Station": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Transport to Phendrana Drifts North": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Transport Tunnel B (Magmoor)": {
+        "Fiery Shores": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Transport to Tallon Overworld West": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Transport Tunnel C (Magmoor)": {
+        "Magmoor Workstation": {
+          "World": "Magmoor Caverns",
+          "Door": "Wave"
+        },
+        "Transport to Phendrana Drifts South": {
+          "World": "Magmoor Caverns",
+          "Door": "Wave"
+        }
+      },
+      "Triclops Pit": {
+        "Pit Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Storage Cavern": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Monitor Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Twin Fires": {
+        "Twin Fires Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "North Core Tunnel": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Twin Fires Tunnel": {
+        "Transport to Tallon Overworld West": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Twin Fires": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Warrior Shrine": {
+        "Monitor Station": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Fiery Shores": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        }
+      },
+      "Workstation Tunnel": {
+        "Magmoor Workstation": {
+          "World": "Magmoor Caverns",
+          "Door": "Power"
+        },
+        "Transport to Phazon Mines West": {
+          "World": "Magmoor Caverns",
+          "Door": "Ice"
+        }
+      }
+    },
+    "Phendrana Drifts": {
+      "Aether Lab Entryway": {
+        "Research Lab Aether": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "East Tower": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Canyon Entryway": {
+        "Ice Ruins West": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Phendrana Canyon": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Chamber Access": {
+        "Hunter Cave": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Gravity Chamber": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Chapel of the Elders": {
+        "Chapel Tunnel": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Chapel Tunnel": {
+        "Chapel of the Elders": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Chozo Ice Temple": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Chozo Ice Temple": {
+        "Chapel Tunnel": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Temple Entryway": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Control Tower": {
+        "East Tower": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "West Tower": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Courtyard Entryway": {
+        "Ice Ruins West": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Ruined Courtyard": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "East Tower": {
+        "Control Tower": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Aether Lab Entryway": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Frost Cave": {
+        "Frost Cave Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Upper Edge Tunnel": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Save Station C": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Frost Cave Access": {
+        "Frozen Pike": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Frost Cave": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Frozen Pike": {
+        "Hunter Cave Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Frost Cave Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Pike Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Transport Access (Phendrana)": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Gravity Chamber": {
+        "Chamber Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Lake Tunnel": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Hunter Cave": {
+        "Hunter Cave Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Chamber Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Lake Tunnel": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Lower Edge Tunnel": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Hunter Cave Access": {
+        "Frozen Pike": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Hunter Cave": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Hydra Lab Entryway": {
+        "Research Entrance": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Research Lab Hydra": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Ice Ruins Access": {
+        "Ice Ruins East": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Phendrana Shorelines": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Ice Ruins East": {
+        "Ice Ruins Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Plaza Walkway": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Ice Ruins West": {
+        "Ruins Entryway": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Canyon Entryway": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Courtyard Entryway": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Lake Tunnel": {
+        "Hunter Cave": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Gravity Chamber": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Lower Edge Tunnel": {
+        "Hunter Cave": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Phendrana's Edge": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Map Station (Phendrana)": {
+        "Research Entrance": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "North Quarantine Tunnel": {
+        "Quarantine Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Quarantine Cave": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Observatory": {
+        "Observatory Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "West Tower Entrance": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Save Station D": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Observatory Access": {
+        "Research Lab Hydra": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Observatory": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Phendrana Canyon": {
+        "Canyon Entryway": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Phendrana Shorelines": {
+        "Shoreline Entrance": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Ice Ruins Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Plaza Walkway": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Save Station B": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Ruins Entryway": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Temple Entryway": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Phendrana's Edge": {
+        "Storage Cave": {
+          "World": "Phendrana Drifts",
+          "Door": "Plasma"
+        },
+        "Security Cave": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Upper Edge Tunnel": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Lower Edge Tunnel": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Pike Access": {
+        "Frozen Pike": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Research Core": {
+          "World": "Phendrana Drifts",
+          "Door": "Ice"
+        }
+      },
+      "Plaza Walkway": {
+        "Ice Ruins East": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Phendrana Shorelines": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Quarantine Access": {
+        "Ruined Courtyard": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "North Quarantine Tunnel": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Quarantine Cave": {
+        "North Quarantine Tunnel": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "South Quarantine Tunnel": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Quarantine Monitor": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Quarantine Monitor": {
+        "Quarantine Cave": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Research Core": {
+        "Pike Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Ice"
+        },
+        "Research Core Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Research Core Access": {
+        "Research Core": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Research Lab Aether": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Research Entrance": {
+        "Speciman Storage": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Hydra Lab Entryway": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Map Station (Phendrana)": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Research Lab Aether": {
+        "Research Core Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Aether Lab Entryway": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Research Lab Hydra": {
+        "Hydra Lab Entryway": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Observatory Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Ruined Courtyard": {
+        "Courtyard Entryway": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Save Station A": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Speciman Storage": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Quarantine Access": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Ruins Entryway": {
+        "Phendrana Shorelines": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Ice Ruins West": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Save Station A": {
+        "Ruined Courtyard": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Save Station B": {
+        "Phendrana Shorelines": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Save Station C": {
+        "Frost Cave": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Save Station D": {
+        "Observatory": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Security Cave": {
+        "Phendrana's Edge": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Shoreline Entrance": {
+        "Transport to Magmoor Caverns West": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Phendrana Shorelines": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "South Quarantine Tunnel": {
+        "Transport to Magmoor Caverns South (Phendrana)": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Quarantine Cave": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Speciman Storage": {
+        "Ruined Courtyard": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Research Entrance": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Storage Cave": {
+        "Phendrana's Edge": {
+          "World": "Phendrana Drifts",
+          "Door": "Plasma"
+        }
+      },
+      "Temple Entryway": {
+        "Phendrana Shorelines": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Chozo Ice Temple": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Transport Access (Phendrana)": {
+        "Transport to Magmoor Caverns South (Phendrana)": {
+          "World": "Phendrana Drifts",
+          "Door": "Ice"
+        },
+        "Frozen Pike": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "Transport to Magmoor Caverns South (Phendrana)": {
+        "South Quarantine Tunnel": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Transport Access (Phendrana)": {
+          "World": "Phendrana Drifts",
+          "Door": "Ice"
+        },
+        "Transport to Phendrana Drifts South": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Transport to Magmoor Caverns West": {
+        "Shoreline Entrance": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Transport to Phendrana Drifts North": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "Upper Edge Tunnel": {
+        "Frost Cave": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "Phendrana's Edge": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      },
+      "West Tower": {
+        "Control Tower": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        },
+        "West Tower Entrance": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        }
+      },
+      "West Tower Entrance": {
+        "West Tower": {
+          "World": "Phendrana Drifts",
+          "Door": "Power"
+        },
+        "Observatory": {
+          "World": "Phendrana Drifts",
+          "Door": "Wave"
+        }
+      }
+    },
+    "Phazon Mines": {
+      "Central Dynamo": {
+        "Dynamo Access (Mines)": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Quarantine Access A": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Save Station Mines B": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Dynamo Access (Mines)": {
+        "Central Dynamo": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Omega Research": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Elevator A": {
+        "Elevator Access A": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Elite Control Access": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Elevator Access A": {
+        "Elevator A": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Ore Processing": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Elevator Access B": {
+        "Metroid Quarantine A": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Elevator B": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Elevator B": {
+        "Elevator Access B": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        },
+        "Fungal Hall Access": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Elite Control": {
+        "Elite Control Access": {
+          "World": "Phazon Mines",
+          "Door": "Wave"
+        },
+        "Maintenance Tunnel": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Ventilation Shaft": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Elite Control Access": {
+        "Elevator A": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Elite Control": {
+          "World": "Phazon Mines",
+          "Door": "Wave"
+        }
+      },
+      "Elite Quarters": {
+        "Elite Quarters Access": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        },
+        "Processing Center Access": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Elite Quarters Access": {
+        "Elite Quarters": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        },
+        "Metroid Quarantine B": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Elite Research": {
+        "Research Access (Mines)": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Security Access B": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Fungal Hall A": {
+        "Fungal Hall Access": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Phazon Mining Tunnel": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Fungal Hall Access": {
+        "Elevator B": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        },
+        "Fungal Hall A": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Fungal Hall B": {
+        "Phazon Mining Tunnel": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        },
+        "Missile Station Mines": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        },
+        "Quarantine Access B": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Main Quarry": {
+        "Quarry Access": {
+          "World": "Phazon Mines",
+          "Door": "Wave"
+        },
+        "Save Station Mines A": {
+          "World": "Phazon Mines",
+          "Door": "Wave"
+        },
+        "Security Access A": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Waste Disposal": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Maintenance Tunnel": {
+        "Elite Control": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Phazon Processing Center": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Map Station Mines": {
+        "Omega Research": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Metroid Quarantine A": {
+        "Elevator Access B": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Quarantine Access A": {
+          "World": "Phazon Mines",
+          "Door": "Wave"
+        }
+      },
+      "Metroid Quarantine B": {
+        "Quarantine Access B": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        },
+        "Save Station Mines C": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        },
+        "Elite Quarters Access": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Mine Security Station": {
+        "Security Access A": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Security Access B": {
+          "World": "Phazon Mines",
+          "Door": "Wave"
+        },
+        "Storage Depot A": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Missile Station Mines": {
+        "Fungal Hall B": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Omega Research": {
+        "Dynamo Access (Mines)": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Map Station Mines": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Ventilation Shaft": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Ore Processing": {
+        "Storage Depot B": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Elevator Access A": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Research Access (Mines)": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Waste Disposal": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Phazon Mining Tunnel": {
+        "Fungal Hall A": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        },
+        "Fungal Hall B": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Phazon Processing Center": {
+        "Maintenance Tunnel": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Processing Center Access": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        },
+        "Transport Access (Mines)": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Processing Center Access": {
+        "Phazon Processing Center": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        },
+        "Elite Quarters": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Quarantine Access A": {
+        "Central Dynamo": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Metroid Quarantine A": {
+          "World": "Phazon Mines",
+          "Door": "Wave"
+        }
+      },
+      "Quarantine Access B": {
+        "Fungal Hall B": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        },
+        "Metroid Quarantine B": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Quarry Access": {
+        "Transport to Tallon Overworld South (Mines)": {
+          "World": "Phazon Mines",
+          "Door": "Wave"
+        },
+        "Main Quarry": {
+          "World": "Phazon Mines",
+          "Door": "Wave"
+        }
+      },
+      "Research Access (Mines)": {
+        "Ore Processing": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Elite Research": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Save Station Mines A": {
+        "Main Quarry": {
+          "World": "Phazon Mines",
+          "Door": "Wave"
+        }
+      },
+      "Save Station Mines B": {
+        "Central Dynamo": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Save Station Mines C": {
+        "Metroid Quarantine B": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Security Access A": {
+        "Main Quarry": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Mine Security Station": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Security Access B": {
+        "Elite Research": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Mine Security Station": {
+          "World": "Phazon Mines",
+          "Door": "Wave"
+        }
+      },
+      "Storage Depot A": {
+        "Mine Security Station": {
+          "World": "Phazon Mines",
+          "Door": "Plasma"
+        }
+      },
+      "Storage Depot B": {
+        "Ore Processing": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Transport Access (Mines)": {
+        "Phazon Processing Center": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Transport to Magmoor Caverns South (Mines)": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Transport to Magmoor Caverns South (Mines)": {
+        "Transport Access (Mines)": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Transport to Phazon Mines West": {
+          "World": "Phazon Mines",
+          "Door": "Power"
+        }
+      },
+      "Transport to Tallon Overworld South (Mines)": {
+        "Quarry Access": {
+          "World": "Phazon Mines",
+          "Door": "Wave"
+        },
+        "Transport to Phazon Mines East": {
+          "World": "Phazon Mines",
+          "Door": "Power"
+        }
+      },
+      "Ventilation Shaft": {
+        "Elite Control": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Omega Research": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      },
+      "Waste Disposal": {
+        "Main Quarry": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        },
+        "Ore Processing": {
+          "World": "Phazon Mines",
+          "Door": "Ice"
+        }
+      }
+    }
+  }
+}
