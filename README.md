@@ -16,8 +16,33 @@ Average Time:
 
 Route Finder:
 
-- Real-time pathfinding between two rooms done using an implementation of Dijkstra's algorithm where each room is weighted equally
-- Does not have logic, so you may run in to cases where the shortest path is not possible (ie Phazon Processing Center -> Elite Quarters going through Processing Center Access)
+- Real-time pathfinding between two rooms done using an implementation of Dijkstra's algorithm where each room is weighted equally (ie number of rooms)
+- Does not have logic, so you may run in to cases where the shortest path is not possible (e.g. Phazon Processing Center -> Elite Quarters going through Processing Center Access)
 - Some rooms have an additional world identifier (ie Tallon, Mines, etc). This is because some worlds have rooms with the same names and it was throwing off the pathfinding.
 - Used for fast iteration of mock-up routes.
 - Easily copy rooms and paste into a spreadsheet
+- Includes a Map Viewer which shows the route on a model of the game's worlds.
+
+Auto Timer:
+- REQUIRES PYTHON 3.7-3.11 TO BE INSTALLED AND PRACTICE MOD V2.6.1
+- Automatically takes the previous room time from the game's memory at runtime
+- Input a max number of times to be displayed
+- Shows a delta comparison to the inputted goal time
+
+Auto Timer Usage:
+- Open Dolphin and Prime Practice Mod v2.6.1
+- Press "Hook Dolphin"
+- Press "Start Scanning"
+- Input the previous room time of your savestate into the Start Time box (This prevents that time from being added as a new room time every time your reload the savestate)
+- Optionally input a goal time
+
+Short how-to video: https://youtu.be/TZm8kNvdIIc
+
+Credits:
+- Pwootage, for Practice Mod and finding the addresses needed
+- DarkZero, for the Dolphin Memory Engine python module
+
+Links:
+- Python - https://www.python.org/downloads/
+- DME Module - https://github.com/henriquegemignani/py-dolphin-memory-engine
+- Prime Practice Mod - https://github.com/MetroidPrimeModding/prime-practice-native
