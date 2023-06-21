@@ -1,0 +1,771 @@
+[gd_resource type="Resource" script_class="World" load_steps=95 format=3 uid="uid://eyqu10hs0vb1"]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/World.gd" id="1_4jamn"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_nme65"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_gg2sf"]
+
+[sub_resource type="Resource" id="Resource_3bwa7"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Save Station Magmoor A"
+room_name = "Burning Trail"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_orpnx"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Lake Tunnel (Magmoor)"
+room_name = "Burning Trail"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_oh88i"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport to Chozo Ruins North"
+room_name = "Burning Trail"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_u1bf2"]
+script = ExtResource("2_gg2sf")
+room_name = "Burning Trail"
+points = [SubResource("Resource_3bwa7"), SubResource("Resource_orpnx"), SubResource("Resource_oh88i")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hmvxm"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport Tunnel B (Magmoor)"
+room_name = "Fiery Shores"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_runc1"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Shore Tunnel"
+room_name = "Fiery Shores"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5qk5w"]
+script = ExtResource("2_gg2sf")
+room_name = "Fiery Shores"
+points = [SubResource("Resource_hmvxm"), SubResource("Resource_runc1")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7dtqo"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "North Core Tunnel"
+room_name = "Geothermal Core"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_b4ejm"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "South Core Tunnel"
+room_name = "Geothermal Core"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_benst"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Plasma Processing"
+room_name = "Geothermal Core"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kflpe"]
+script = ExtResource("2_gg2sf")
+room_name = "Geothermal Core"
+points = [SubResource("Resource_7dtqo"), SubResource("Resource_b4ejm"), SubResource("Resource_benst")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_oo7up"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Burning Trail"
+room_name = "Lake Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fiht5"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Lava Lake"
+room_name = "Lake Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6wtga"]
+script = ExtResource("2_gg2sf")
+room_name = "Lake Tunnel (Magmoor)"
+points = [SubResource("Resource_oo7up"), SubResource("Resource_fiht5")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_58rod"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Lake Tunnel (Magmoor)"
+room_name = "Lava Lake"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_deyml"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Pit Tunnel"
+room_name = "Lava Lake"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_h5pvx"]
+script = ExtResource("2_gg2sf")
+room_name = "Lava Lake"
+points = [SubResource("Resource_58rod"), SubResource("Resource_deyml")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3hs0a"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "South Core Tunnel"
+room_name = "Magmoor Workstation"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ngrq4"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport Tunnel C (Magmoor)"
+room_name = "Magmoor Workstation"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rmvwo"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Workstation Tunnel"
+room_name = "Magmoor Workstation"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rmj0s"]
+script = ExtResource("2_gg2sf")
+room_name = "Magmoor Workstation"
+points = [SubResource("Resource_3hs0a"), SubResource("Resource_ngrq4"), SubResource("Resource_rmvwo")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_r85wo"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Monitor Tunnel"
+room_name = "Monitor Station"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_r7mjf"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Shore Tunnel"
+room_name = "Monitor Station"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xxtvn"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Warrior Shrine"
+room_name = "Monitor Station"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_x1mbg"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport Tunnel A (Magmoor)"
+room_name = "Monitor Station"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3whm1"]
+script = ExtResource("2_gg2sf")
+room_name = "Monitor Station"
+points = [SubResource("Resource_r85wo"), SubResource("Resource_r7mjf"), SubResource("Resource_xxtvn"), SubResource("Resource_x1mbg")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_oukws"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Triclops Pit"
+room_name = "Monitor Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_c80pg"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Monitor Station"
+room_name = "Monitor Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_h4wvn"]
+script = ExtResource("2_gg2sf")
+room_name = "Monitor Tunnel"
+points = [SubResource("Resource_oukws"), SubResource("Resource_c80pg")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_oisnj"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Twin Fires"
+room_name = "North Core Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_x0qcd"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Geothermal Core"
+room_name = "North Core Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3hjry"]
+script = ExtResource("2_gg2sf")
+room_name = "North Core Tunnel"
+points = [SubResource("Resource_oisnj"), SubResource("Resource_x0qcd")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7obtf"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Lava Lake"
+room_name = "Pit Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2sbt7"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Triclops Pit"
+room_name = "Pit Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_iyd0c"]
+script = ExtResource("2_gg2sf")
+room_name = "Pit Tunnel"
+points = [SubResource("Resource_7obtf"), SubResource("Resource_2sbt7")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nhu5n"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Geothermal Core"
+room_name = "Plasma Processing"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3lqq3"]
+script = ExtResource("2_gg2sf")
+room_name = "Plasma Processing"
+points = [SubResource("Resource_nhu5n")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_p60lu"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Burning Trail"
+room_name = "Save Station Magmoor A"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_q1f88"]
+script = ExtResource("2_gg2sf")
+room_name = "Save Station Magmoor A"
+points = [SubResource("Resource_p60lu")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_e2d80"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport to Phendrana Drifts South"
+room_name = "Save Station Magmoor B"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_q4u5p"]
+script = ExtResource("2_gg2sf")
+room_name = "Save Station Magmoor B"
+points = [SubResource("Resource_e2d80")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0ytr0"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Monitor Station"
+room_name = "Shore Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_h2qp5"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Fiery Shores"
+room_name = "Shore Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_is763"]
+script = ExtResource("2_gg2sf")
+room_name = "Shore Tunnel"
+points = [SubResource("Resource_0ytr0"), SubResource("Resource_h2qp5")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ya36m"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Geothermal Core"
+room_name = "South Core Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_qkhg2"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Magmoor Workstation"
+room_name = "South Core Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_euj0v"]
+script = ExtResource("2_gg2sf")
+room_name = "South Core Tunnel"
+points = [SubResource("Resource_ya36m"), SubResource("Resource_qkhg2")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_shju4"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Triclops Pit"
+room_name = "Storage Cavern"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1iig4"]
+script = ExtResource("2_gg2sf")
+room_name = "Storage Cavern"
+points = [SubResource("Resource_shju4")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ygb5f"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Burning Trail"
+room_name = "Transport to Chozo Ruins North"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sorol"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns North"
+room_name = "Transport to Chozo Ruins North"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tyy7t"]
+script = ExtResource("2_gg2sf")
+room_name = "Transport to Chozo Ruins North"
+points = [SubResource("Resource_ygb5f"), SubResource("Resource_sorol")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_arfs4"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Workstation Tunnel"
+room_name = "Transport to Phazon Mines West"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gvvv7"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns South (Mines)"
+room_name = "Transport to Phazon Mines West"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_aja7d"]
+script = ExtResource("2_gg2sf")
+room_name = "Transport to Phazon Mines West"
+points = [SubResource("Resource_arfs4"), SubResource("Resource_gvvv7")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_uxj7h"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport Tunnel A (Magmoor)"
+room_name = "Transport to Phendrana Drifts North"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ukeuy"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns West"
+room_name = "Transport to Phendrana Drifts North"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_063ry"]
+script = ExtResource("2_gg2sf")
+room_name = "Transport to Phendrana Drifts North"
+points = [SubResource("Resource_uxj7h"), SubResource("Resource_ukeuy")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tuwx6"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport Tunnel C (Magmoor)"
+room_name = "Transport to Phendrana Drifts South"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dhb1h"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Save Station Magmoor B"
+room_name = "Transport to Phendrana Drifts South"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hxntt"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns South (Phendrana)"
+room_name = "Transport to Phendrana Drifts South"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ti1nk"]
+script = ExtResource("2_gg2sf")
+room_name = "Transport to Phendrana Drifts South"
+points = [SubResource("Resource_tuwx6"), SubResource("Resource_dhb1h"), SubResource("Resource_hxntt")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_278j8"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport Tunnel B (Magmoor)"
+room_name = "Transport to Tallon Overworld West"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_d52op"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Twin Fires Tunnel"
+room_name = "Transport to Tallon Overworld West"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rn10c"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns East"
+room_name = "Transport to Tallon Overworld West"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_liy7p"]
+script = ExtResource("2_gg2sf")
+room_name = "Transport to Tallon Overworld West"
+points = [SubResource("Resource_278j8"), SubResource("Resource_d52op"), SubResource("Resource_rn10c")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ida3o"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Monitor Station"
+room_name = "Transport Tunnel A (Magmoor)"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nh3vk"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport to Phendrana Drifts North"
+room_name = "Transport Tunnel A (Magmoor)"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_54cwk"]
+script = ExtResource("2_gg2sf")
+room_name = "Transport Tunnel A (Magmoor)"
+points = [SubResource("Resource_ida3o"), SubResource("Resource_nh3vk")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cg85j"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Fiery Shores"
+room_name = "Transport Tunnel B (Magmoor)"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xqg1k"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld West"
+room_name = "Transport Tunnel B (Magmoor)"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hbnsv"]
+script = ExtResource("2_gg2sf")
+room_name = "Transport Tunnel B (Magmoor)"
+points = [SubResource("Resource_cg85j"), SubResource("Resource_xqg1k")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cqpfq"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Magmoor Workstation"
+room_name = "Transport Tunnel C (Magmoor)"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_c8hb4"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport to Phendrana Drifts South"
+room_name = "Transport Tunnel C (Magmoor)"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_a6h1j"]
+script = ExtResource("2_gg2sf")
+room_name = "Transport Tunnel C (Magmoor)"
+points = [SubResource("Resource_cqpfq"), SubResource("Resource_c8hb4")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ceth2"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Pit Tunnel"
+room_name = "Triclops Pit"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_80khh"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Storage Cavern"
+room_name = "Triclops Pit"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fcx8x"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Monitor Tunnel"
+room_name = "Triclops Pit"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4wrx8"]
+script = ExtResource("2_gg2sf")
+room_name = "Triclops Pit"
+points = [SubResource("Resource_ceth2"), SubResource("Resource_80khh"), SubResource("Resource_fcx8x")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_os66n"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Twin Fires Tunnel"
+room_name = "Twin Fires"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nqi83"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "North Core Tunnel"
+room_name = "Twin Fires"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4qmv5"]
+script = ExtResource("2_gg2sf")
+room_name = "Twin Fires"
+points = [SubResource("Resource_os66n"), SubResource("Resource_nqi83")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ftnut"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld West"
+room_name = "Twin Fires Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6yncf"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Twin Fires"
+room_name = "Twin Fires Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_411s4"]
+script = ExtResource("2_gg2sf")
+room_name = "Twin Fires Tunnel"
+points = [SubResource("Resource_ftnut"), SubResource("Resource_6yncf")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dxj1a"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Monitor Station"
+room_name = "Warrior Shrine"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xvjyh"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Fiery Shores"
+room_name = "Warrior Shrine"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fdtkc"]
+script = ExtResource("2_gg2sf")
+room_name = "Warrior Shrine"
+points = [SubResource("Resource_dxj1a"), SubResource("Resource_xvjyh")]
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cbnb0"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Magmoor Workstation"
+room_name = "Workstation Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1gw51"]
+script = ExtResource("1_nme65")
+point_type = "Dock"
+point_connection = "Transport to Phazon Mines West"
+room_name = "Workstation Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xwr6x"]
+script = ExtResource("2_gg2sf")
+room_name = "Workstation Tunnel"
+points = [SubResource("Resource_cbnb0"), SubResource("Resource_1gw51")]
+name = "Magmoor Caverns"
+rooms = []
+
+[resource]
+script = ExtResource("1_4jamn")
+name = "Magmoor Caverns"
+rooms = [SubResource("Resource_u1bf2"), SubResource("Resource_5qk5w"), SubResource("Resource_kflpe"), SubResource("Resource_6wtga"), SubResource("Resource_h5pvx"), SubResource("Resource_rmj0s"), SubResource("Resource_3whm1"), SubResource("Resource_h4wvn"), SubResource("Resource_3hjry"), SubResource("Resource_iyd0c"), SubResource("Resource_3lqq3"), SubResource("Resource_q1f88"), SubResource("Resource_q4u5p"), SubResource("Resource_is763"), SubResource("Resource_euj0v"), SubResource("Resource_1iig4"), SubResource("Resource_tyy7t"), SubResource("Resource_aja7d"), SubResource("Resource_063ry"), SubResource("Resource_ti1nk"), SubResource("Resource_liy7p"), SubResource("Resource_54cwk"), SubResource("Resource_hbnsv"), SubResource("Resource_a6h1j"), SubResource("Resource_4wrx8"), SubResource("Resource_4qmv5"), SubResource("Resource_411s4"), SubResource("Resource_fdtkc"), SubResource("Resource_xwr6x")]

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_v474g"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_6igd3"]
+
+[sub_resource type="Resource" id="Resource_lliu5"]
+script = ExtResource("1_v474g")
+point_type = "Dock"
+point_connection = "Deck Beta Transit Hall"
+room_name = "Biohazard Containment"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3vq6x"]
+script = ExtResource("1_v474g")
+point_type = "Dock"
+point_connection = "Deck Beta Security Hall"
+room_name = "Biohazard Containment"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_6igd3")
+room_name = "Biohazard Containment"
+points = [SubResource("Resource_lliu5"), SubResource("Resource_3vq6x")]
+name = "Tallon Overworld"
+rooms = []

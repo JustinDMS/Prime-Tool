@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="Room" load_steps=8 format=3 uid="uid://c75ns61g0xce2"]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_cb8gd"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_earkm"]
+
+[sub_resource type="Resource" id="Resource_7wqa4"]
+script = ExtResource("1_cb8gd")
+point_type = "Dock"
+point_connection = "Alcove"
+room_name = "Landing Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_l1jmn"]
+script = ExtResource("1_cb8gd")
+point_type = "Dock"
+point_connection = "Canyon Cavern"
+room_name = "Landing Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0hfn7"]
+script = ExtResource("1_cb8gd")
+point_type = "Dock"
+point_connection = "Gully"
+room_name = "Landing Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pvpur"]
+script = ExtResource("1_cb8gd")
+point_type = "Dock"
+point_connection = "Temple Hall"
+room_name = "Landing Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_82kxl"]
+script = ExtResource("1_cb8gd")
+point_type = "Dock"
+point_connection = "Waterfall Cavern"
+room_name = "Landing Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_earkm")
+room_name = "Landing Site"
+points = [SubResource("Resource_7wqa4"), SubResource("Resource_l1jmn"), SubResource("Resource_0hfn7"), SubResource("Resource_pvpur"), SubResource("Resource_82kxl")]
+name = "Tallon Overworld"
+rooms = []

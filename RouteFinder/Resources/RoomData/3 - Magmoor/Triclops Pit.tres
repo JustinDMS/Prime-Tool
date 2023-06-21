@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="Room" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_s6vy4"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_sv3fe"]
+
+[sub_resource type="Resource" id="Resource_ceth2"]
+script = ExtResource("1_s6vy4")
+point_type = "Dock"
+point_connection = "Pit Tunnel"
+room_name = "Triclops Pit"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_80khh"]
+script = ExtResource("1_s6vy4")
+point_type = "Dock"
+point_connection = "Storage Cavern"
+room_name = "Triclops Pit"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fcx8x"]
+script = ExtResource("1_s6vy4")
+point_type = "Dock"
+point_connection = "Monitor Tunnel"
+room_name = "Triclops Pit"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[resource]
+script = ExtResource("2_sv3fe")
+room_name = "Triclops Pit"
+points = [SubResource("Resource_ceth2"), SubResource("Resource_80khh"), SubResource("Resource_fcx8x")]
+name = "Magmoor Caverns"
+rooms = []

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_t0x3a"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_gpafn"]
+
+[sub_resource type="Resource" id="Resource_20tkx"]
+script = ExtResource("1_t0x3a")
+point_type = "Dock"
+point_connection = "Furnace"
+room_name = "East Furnace Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gdnud"]
+script = ExtResource("1_t0x3a")
+point_type = "Dock"
+point_connection = "Hall of the Elders"
+room_name = "East Furnace Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_gpafn")
+room_name = "East Furnace Access"
+points = [SubResource("Resource_20tkx"), SubResource("Resource_gdnud")]
+name = "Chozo Ruins"
+rooms = []

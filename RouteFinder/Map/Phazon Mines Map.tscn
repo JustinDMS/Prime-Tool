@@ -1,0 +1,130 @@
+[gd_scene load_steps=43 format=3 uid="uid://cemu6cclnm156"]
+
+[ext_resource type="PackedScene" uid="uid://d4d3emoml6xkr" path="res://RouteFinder/Map/Phazon Mines/Central Dynamo.glb" id="1_eh6p1"]
+[ext_resource type="PackedScene" uid="uid://ckjm12ghdmpf6" path="res://RouteFinder/Map/Phazon Mines/Dynamo Access.glb" id="2_im753"]
+[ext_resource type="PackedScene" uid="uid://ceo7l0x8wqaew" path="res://RouteFinder/Map/Phazon Mines/Elevator A.glb" id="3_2hgjs"]
+[ext_resource type="PackedScene" uid="uid://bnqvyhst3d140" path="res://RouteFinder/Map/Phazon Mines/Elevator Access A.glb" id="4_y7u34"]
+[ext_resource type="PackedScene" uid="uid://c24qk55y4dg0o" path="res://RouteFinder/Map/Phazon Mines/Elevator Access B.glb" id="5_026wj"]
+[ext_resource type="PackedScene" uid="uid://dwt3ujjg53xn2" path="res://RouteFinder/Map/Phazon Mines/Elevator B.glb" id="6_pwub7"]
+[ext_resource type="PackedScene" uid="uid://cuabyyh81cwpl" path="res://RouteFinder/Map/Phazon Mines/Elite Control Access.glb" id="7_7odtx"]
+[ext_resource type="PackedScene" uid="uid://b27uc8syuumt2" path="res://RouteFinder/Map/Phazon Mines/Elite Control.glb" id="8_omi1b"]
+[ext_resource type="PackedScene" uid="uid://c37cukv7812a0" path="res://RouteFinder/Map/Phazon Mines/Elite Quarters Access.glb" id="9_7rdwk"]
+[ext_resource type="PackedScene" uid="uid://r40bu6o0sew5" path="res://RouteFinder/Map/Phazon Mines/Elite Quarters.glb" id="10_twh0q"]
+[ext_resource type="PackedScene" uid="uid://rpteqv0jxkj" path="res://RouteFinder/Map/Phazon Mines/Elite Research.glb" id="11_oqsyu"]
+[ext_resource type="PackedScene" uid="uid://iryvy1eilcsj" path="res://RouteFinder/Map/Phazon Mines/Fungal Hall A.glb" id="12_5cxht"]
+[ext_resource type="PackedScene" uid="uid://bj0cxy55yywim" path="res://RouteFinder/Map/Phazon Mines/Fungal Hall Access.glb" id="13_r5w83"]
+[ext_resource type="PackedScene" uid="uid://c81tmy6scoaur" path="res://RouteFinder/Map/Phazon Mines/Fungal Hall B.glb" id="14_5106q"]
+[ext_resource type="PackedScene" uid="uid://qn863mlaxqlg" path="res://RouteFinder/Map/Phazon Mines/Main Quarry.glb" id="15_avrqh"]
+[ext_resource type="PackedScene" uid="uid://22wkgdkuf6vk" path="res://RouteFinder/Map/Phazon Mines/Maintenance Tunnel.glb" id="16_ggfmv"]
+[ext_resource type="PackedScene" uid="uid://ctiqyrsohm1s1" path="res://RouteFinder/Map/Phazon Mines/Map Station Mines.glb" id="17_56bx4"]
+[ext_resource type="PackedScene" uid="uid://d2dwjd3s64x3l" path="res://RouteFinder/Map/Phazon Mines/Metroid Quarantine A.glb" id="18_a04hr"]
+[ext_resource type="PackedScene" uid="uid://b7ajt6ympxcoo" path="res://RouteFinder/Map/Phazon Mines/Metroid Quarantine B.glb" id="19_8ipgo"]
+[ext_resource type="PackedScene" uid="uid://domr1s6xcessf" path="res://RouteFinder/Map/Phazon Mines/Mine Security Station.glb" id="20_6i6mn"]
+[ext_resource type="PackedScene" uid="uid://b37ly3l034hqy" path="res://RouteFinder/Map/Phazon Mines/Missile Station Mines.glb" id="21_iwmb6"]
+[ext_resource type="PackedScene" uid="uid://bcelair2xkidr" path="res://RouteFinder/Map/Phazon Mines/Omega Research.glb" id="22_glcct"]
+[ext_resource type="PackedScene" uid="uid://c5slqc32xrtq8" path="res://RouteFinder/Map/Phazon Mines/Ore Processing.glb" id="23_cykjw"]
+[ext_resource type="PackedScene" uid="uid://hm773oiiddn4" path="res://RouteFinder/Map/Phazon Mines/Phazon Mining Tunnel.glb" id="24_ichf4"]
+[ext_resource type="PackedScene" uid="uid://b3njtiaf2bb7p" path="res://RouteFinder/Map/Phazon Mines/Phazon Processing Center.glb" id="25_iv1ru"]
+[ext_resource type="PackedScene" uid="uid://cpty4mkh5nlee" path="res://RouteFinder/Map/Phazon Mines/Processing Center Access.glb" id="26_yvybr"]
+[ext_resource type="PackedScene" uid="uid://c674gbx5lbst3" path="res://RouteFinder/Map/Phazon Mines/Quarantine Access A.glb" id="27_glmts"]
+[ext_resource type="PackedScene" uid="uid://dj54rx807img2" path="res://RouteFinder/Map/Phazon Mines/Quarantine Access B.glb" id="28_sc4yn"]
+[ext_resource type="PackedScene" uid="uid://b58ifdoyoq1rw" path="res://RouteFinder/Map/Phazon Mines/Quarry Access.glb" id="29_je3yg"]
+[ext_resource type="PackedScene" uid="uid://bcwla6uekcj2q" path="res://RouteFinder/Map/Phazon Mines/Research Access.glb" id="30_h0ygr"]
+[ext_resource type="PackedScene" uid="uid://c36p2aidoa5bh" path="res://RouteFinder/Map/Phazon Mines/Save Station Mines A.glb" id="31_c18fg"]
+[ext_resource type="PackedScene" uid="uid://c3dofwq4akq2d" path="res://RouteFinder/Map/Phazon Mines/Save Station Mines B.glb" id="32_xn684"]
+[ext_resource type="PackedScene" uid="uid://dwjikkvwss4tn" path="res://RouteFinder/Map/Phazon Mines/Save Station Mines C.glb" id="33_b71u2"]
+[ext_resource type="PackedScene" uid="uid://cf2uf7g8n67mv" path="res://RouteFinder/Map/Phazon Mines/Security Access A.glb" id="34_knbrl"]
+[ext_resource type="PackedScene" uid="uid://dmpvxjxvains2" path="res://RouteFinder/Map/Phazon Mines/Security Access B.glb" id="35_y3avu"]
+[ext_resource type="PackedScene" uid="uid://crxx71xvwk1lu" path="res://RouteFinder/Map/Phazon Mines/Storage Depot A.glb" id="36_ldqw8"]
+[ext_resource type="PackedScene" uid="uid://chsyvw4kmt4po" path="res://RouteFinder/Map/Phazon Mines/Storage Depot B.glb" id="37_05mj8"]
+[ext_resource type="PackedScene" uid="uid://db6ce48emrmdn" path="res://RouteFinder/Map/Phazon Mines/Transport Access.glb" id="38_njni0"]
+[ext_resource type="PackedScene" uid="uid://bkmq526bxwptx" path="res://RouteFinder/Map/Phazon Mines/Transport to Magmoor Caverns South.glb" id="39_sjs7u"]
+[ext_resource type="PackedScene" uid="uid://1lyjkoevnr56" path="res://RouteFinder/Map/Phazon Mines/Transport to Tallon Overworld South.glb" id="40_23wgh"]
+[ext_resource type="PackedScene" uid="uid://eicw2tu6efva" path="res://RouteFinder/Map/Phazon Mines/Ventilation Shaft.glb" id="41_uvqe5"]
+[ext_resource type="PackedScene" uid="uid://cha2alg2cb2pa" path="res://RouteFinder/Map/Phazon Mines/Waste Disposal.glb" id="42_3rfbg"]
+
+[node name="Phazon Mines" type="Node3D"]
+
+[node name="Central Dynamo" parent="." instance=ExtResource("1_eh6p1")]
+
+[node name="Dynamo Access (Mines)" parent="." instance=ExtResource("2_im753")]
+
+[node name="Elevator A" parent="." instance=ExtResource("3_2hgjs")]
+
+[node name="Elevator Access A" parent="." instance=ExtResource("4_y7u34")]
+
+[node name="Elevator Access B" parent="." instance=ExtResource("5_026wj")]
+
+[node name="Elevator B" parent="." instance=ExtResource("6_pwub7")]
+
+[node name="Elite Control Access" parent="." instance=ExtResource("7_7odtx")]
+
+[node name="Elite Control" parent="." instance=ExtResource("8_omi1b")]
+
+[node name="Elite Quarters Access" parent="." instance=ExtResource("9_7rdwk")]
+
+[node name="Elite Quarters" parent="." instance=ExtResource("10_twh0q")]
+
+[node name="Elite Research" parent="." instance=ExtResource("11_oqsyu")]
+
+[node name="Fungal Hall A" parent="." instance=ExtResource("12_5cxht")]
+
+[node name="Fungal Hall Access" parent="." instance=ExtResource("13_r5w83")]
+
+[node name="Fungal Hall B" parent="." instance=ExtResource("14_5106q")]
+
+[node name="Main Quarry" parent="." instance=ExtResource("15_avrqh")]
+
+[node name="Maintenance Tunnel" parent="." instance=ExtResource("16_ggfmv")]
+
+[node name="Map Station Mines" parent="." instance=ExtResource("17_56bx4")]
+
+[node name="Metroid Quarantine A" parent="." instance=ExtResource("18_a04hr")]
+
+[node name="Metroid Quarantine B" parent="." instance=ExtResource("19_8ipgo")]
+
+[node name="Mine Security Station" parent="." instance=ExtResource("20_6i6mn")]
+
+[node name="Missile Station Mines" parent="." instance=ExtResource("21_iwmb6")]
+
+[node name="Omega Research" parent="." instance=ExtResource("22_glcct")]
+
+[node name="Ore Processing" parent="." instance=ExtResource("23_cykjw")]
+
+[node name="Phazon Mining Tunnel" parent="." instance=ExtResource("24_ichf4")]
+
+[node name="Phazon Processing Center" parent="." instance=ExtResource("25_iv1ru")]
+
+[node name="Processing Center Access" parent="." instance=ExtResource("26_yvybr")]
+
+[node name="Quarantine Access A" parent="." instance=ExtResource("27_glmts")]
+
+[node name="Quarantine Access B" parent="." instance=ExtResource("28_sc4yn")]
+
+[node name="Quarry Access" parent="." instance=ExtResource("29_je3yg")]
+
+[node name="Research Access (Mines)" parent="." instance=ExtResource("30_h0ygr")]
+
+[node name="Save Station Mines A" parent="." instance=ExtResource("31_c18fg")]
+
+[node name="Save Station Mines B" parent="." instance=ExtResource("32_xn684")]
+
+[node name="Save Station Mines C" parent="." instance=ExtResource("33_b71u2")]
+
+[node name="Security Access A" parent="." instance=ExtResource("34_knbrl")]
+
+[node name="Security Access B" parent="." instance=ExtResource("35_y3avu")]
+
+[node name="Storage Depot A" parent="." instance=ExtResource("36_ldqw8")]
+
+[node name="Storage Depot B" parent="." instance=ExtResource("37_05mj8")]
+
+[node name="Transport Access (Mines)" parent="." instance=ExtResource("38_njni0")]
+
+[node name="Transport to Magmoor Caverns South (Mines)" parent="." instance=ExtResource("39_sjs7u")]
+
+[node name="Transport to Tallon Overworld South (Mines)" parent="." instance=ExtResource("40_23wgh")]
+
+[node name="Ventilation Shaft" parent="." instance=ExtResource("41_uvqe5")]
+
+[node name="Waste Disposal" parent="." instance=ExtResource("42_3rfbg")]

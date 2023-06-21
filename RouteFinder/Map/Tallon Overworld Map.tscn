@@ -1,0 +1,136 @@
+[gd_scene load_steps=45 format=3 uid="uid://ceriumwvjf8jg"]
+
+[ext_resource type="PackedScene" uid="uid://tc2xs81jdar" path="res://RouteFinder/Map/Tallon Overworld/Alcove.glb" id="1_3uvk8"]
+[ext_resource type="PackedScene" uid="uid://bgyacdcwm4ww5" path="res://RouteFinder/Map/Tallon Overworld/Arbor Chamber.glb" id="2_j672v"]
+[ext_resource type="PackedScene" uid="uid://r4sv07ibq3x8" path="res://RouteFinder/Map/Tallon Overworld/Artifact Temple.glb" id="3_kla6y"]
+[ext_resource type="PackedScene" uid="uid://dsa7hj6uxvb8h" path="res://RouteFinder/Map/Tallon Overworld/Biohazard Containment.glb" id="4_0he3q"]
+[ext_resource type="PackedScene" uid="uid://hrhqeda8ughy" path="res://RouteFinder/Map/Tallon Overworld/Biotech Research Area 1.glb" id="5_06jb6"]
+[ext_resource type="PackedScene" uid="uid://b355l1mmqelrl" path="res://RouteFinder/Map/Tallon Overworld/Canyon Cavern.glb" id="6_0c3ry"]
+[ext_resource type="PackedScene" uid="uid://8hekklkx06yl" path="res://RouteFinder/Map/Tallon Overworld/Cargo Freight Lift to Deck Gamma.glb" id="7_1omah"]
+[ext_resource type="PackedScene" uid="uid://dhcoowkpsegkg" path="res://RouteFinder/Map/Tallon Overworld/Connection Elevator to Deck Beta.glb" id="8_d8y56"]
+[ext_resource type="PackedScene" uid="uid://50qqp0v1ops7" path="res://RouteFinder/Map/Tallon Overworld/Deck Beta Conduit Hall.glb" id="9_aujuc"]
+[ext_resource type="PackedScene" uid="uid://dwn4v2grutp65" path="res://RouteFinder/Map/Tallon Overworld/Deck Beta Security Hall.glb" id="10_jefan"]
+[ext_resource type="PackedScene" uid="uid://0klj43r27hdb" path="res://RouteFinder/Map/Tallon Overworld/Deck Beta Transit Hall.glb" id="11_epfoe"]
+[ext_resource type="PackedScene" uid="uid://bb6bwrjxdqvf3" path="res://RouteFinder/Map/Tallon Overworld/Frigate Access Tunnel.glb" id="12_ytfx7"]
+[ext_resource type="PackedScene" uid="uid://by30itx7s05ea" path="res://RouteFinder/Map/Tallon Overworld/Frigate Crash Site.glb" id="13_tvsih"]
+[ext_resource type="PackedScene" uid="uid://oanfn3njaiig" path="res://RouteFinder/Map/Tallon Overworld/Great Tree Chamber.glb" id="14_rgu1h"]
+[ext_resource type="PackedScene" uid="uid://cjfej6260fk4g" path="res://RouteFinder/Map/Tallon Overworld/Great Tree Hall.glb" id="15_pol5c"]
+[ext_resource type="PackedScene" uid="uid://codqnft68e7kf" path="res://RouteFinder/Map/Tallon Overworld/Gully.glb" id="16_bae38"]
+[ext_resource type="PackedScene" uid="uid://c8nc7b37ht84t" path="res://RouteFinder/Map/Tallon Overworld/Hydro Access Tunnel.glb" id="17_c80k0"]
+[ext_resource type="PackedScene" uid="uid://bkfqy53b5u2gi" path="res://RouteFinder/Map/Tallon Overworld/Landing Site.glb" id="18_li3cl"]
+[ext_resource type="PackedScene" uid="uid://b57guuc8j83ps" path="res://RouteFinder/Map/Tallon Overworld/Life Grove Tunnel.glb" id="19_qe4hi"]
+[ext_resource type="PackedScene" uid="uid://coctc3yurn22s" path="res://RouteFinder/Map/Tallon Overworld/Life Grove.glb" id="20_f4mrg"]
+[ext_resource type="PackedScene" uid="uid://rgiyw6m1m0cr" path="res://RouteFinder/Map/Tallon Overworld/Main Ventilation Shaft Section A.glb" id="21_fgqob"]
+[ext_resource type="PackedScene" uid="uid://b1jncnocdc82o" path="res://RouteFinder/Map/Tallon Overworld/Main Ventilation Shaft Section B.glb" id="22_4i85b"]
+[ext_resource type="PackedScene" uid="uid://3axh1hm6ldlv" path="res://RouteFinder/Map/Tallon Overworld/Main Ventilation Shaft Section C.glb" id="23_l8e3g"]
+[ext_resource type="PackedScene" uid="uid://c657onho1fl2o" path="res://RouteFinder/Map/Tallon Overworld/Overgrown Cavern.glb" id="24_qim3g"]
+[ext_resource type="PackedScene" uid="uid://n2o8f6o546b2" path="res://RouteFinder/Map/Tallon Overworld/Reactor Access.glb" id="25_t0n38"]
+[ext_resource type="PackedScene" uid="uid://dr6gaonlhgvx" path="res://RouteFinder/Map/Tallon Overworld/Reactor Core.glb" id="26_glbbl"]
+[ext_resource type="PackedScene" uid="uid://c78380pyq1rag" path="res://RouteFinder/Map/Tallon Overworld/Root Cave.glb" id="27_rvoev"]
+[ext_resource type="PackedScene" uid="uid://d0akesiwvultp" path="res://RouteFinder/Map/Tallon Overworld/Root Tunnel.glb" id="28_idv6i"]
+[ext_resource type="PackedScene" uid="uid://ciu7ncafux85p" path="res://RouteFinder/Map/Tallon Overworld/Savestation.glb" id="29_s6yb0"]
+[ext_resource type="PackedScene" uid="uid://clb3trv7vpre" path="res://RouteFinder/Map/Tallon Overworld/Tallon Canyon.glb" id="30_nxqbf"]
+[ext_resource type="PackedScene" uid="uid://cb05kc2q17tcj" path="res://RouteFinder/Map/Tallon Overworld/Temple Hall.glb" id="31_h7s45"]
+[ext_resource type="PackedScene" uid="uid://dyxqos1r6eb7b" path="res://RouteFinder/Map/Tallon Overworld/Temple Lobby.glb" id="32_uxcul"]
+[ext_resource type="PackedScene" uid="uid://qi2s6ufopf25" path="res://RouteFinder/Map/Tallon Overworld/Temple Security Station.glb" id="33_il6w3"]
+[ext_resource type="PackedScene" uid="uid://b8e1dy2j3kw2r" path="res://RouteFinder/Map/Tallon Overworld/Transport to Chozo Ruins East.glb" id="34_4ujsv"]
+[ext_resource type="PackedScene" uid="uid://bn3vdyv4d73av" path="res://RouteFinder/Map/Tallon Overworld/Transport to Chozo Ruins South.glb" id="35_jsaop"]
+[ext_resource type="PackedScene" uid="uid://8r254gf5ycq8" path="res://RouteFinder/Map/Tallon Overworld/Transport to Chozo Ruins West.glb" id="36_s7d3o"]
+[ext_resource type="PackedScene" uid="uid://df3umaa38hrj3" path="res://RouteFinder/Map/Tallon Overworld/Transport to Magmoor Caverns East.glb" id="37_wndda"]
+[ext_resource type="PackedScene" uid="uid://cm6b7csibk203" path="res://RouteFinder/Map/Tallon Overworld/Transport to Phazon Mines East.glb" id="38_njb4q"]
+[ext_resource type="PackedScene" uid="uid://cuhcjru4ayo7u" path="res://RouteFinder/Map/Tallon Overworld/Transport Tunnel A.glb" id="39_6tsck"]
+[ext_resource type="PackedScene" uid="uid://dfqgy1b04227u" path="res://RouteFinder/Map/Tallon Overworld/Transport Tunnel B.glb" id="40_p80lq"]
+[ext_resource type="PackedScene" uid="uid://sueaj2es2rlt" path="res://RouteFinder/Map/Tallon Overworld/Transport Tunnel C.glb" id="41_1nbxg"]
+[ext_resource type="PackedScene" uid="uid://c0q00iu55n0we" path="res://RouteFinder/Map/Tallon Overworld/Transport Tunnel D.glb" id="42_scsq8"]
+[ext_resource type="PackedScene" uid="uid://behbhajxirscg" path="res://RouteFinder/Map/Tallon Overworld/Transport Tunnel E.glb" id="43_r40gx"]
+[ext_resource type="PackedScene" uid="uid://dh0ctmx2iexx8" path="res://RouteFinder/Map/Tallon Overworld/Waterfall Cavern.glb" id="44_2br6i"]
+
+[node name="Tallon Overworld" type="Node3D"]
+
+[node name="Alcove" parent="." instance=ExtResource("1_3uvk8")]
+
+[node name="Arbor Chamber" parent="." instance=ExtResource("2_j672v")]
+
+[node name="Artifact Temple" parent="." instance=ExtResource("3_kla6y")]
+
+[node name="Biohazard Containment" parent="." instance=ExtResource("4_0he3q")]
+
+[node name="Biotech Research Area 1" parent="." instance=ExtResource("5_06jb6")]
+
+[node name="Canyon Cavern" parent="." instance=ExtResource("6_0c3ry")]
+
+[node name="Cargo Freight Lift to Deck Gamma" parent="." instance=ExtResource("7_1omah")]
+
+[node name="Connection Elevator to Deck Beta" parent="." instance=ExtResource("8_d8y56")]
+
+[node name="Deck Beta Conduit Hall" parent="." instance=ExtResource("9_aujuc")]
+
+[node name="Deck Beta Security Hall" parent="." instance=ExtResource("10_jefan")]
+
+[node name="Deck Beta Transit Hall" parent="." instance=ExtResource("11_epfoe")]
+
+[node name="Frigate Access Tunnel" parent="." instance=ExtResource("12_ytfx7")]
+
+[node name="Frigate Crash Site" parent="." instance=ExtResource("13_tvsih")]
+
+[node name="Great Tree Chamber" parent="." instance=ExtResource("14_rgu1h")]
+
+[node name="Great Tree Hall" parent="." instance=ExtResource("15_pol5c")]
+
+[node name="Gully" parent="." instance=ExtResource("16_bae38")]
+
+[node name="Hydro Access Tunnel" parent="." instance=ExtResource("17_c80k0")]
+
+[node name="Landing Site" parent="." instance=ExtResource("18_li3cl")]
+
+[node name="Life Grove Tunnel" parent="." instance=ExtResource("19_qe4hi")]
+
+[node name="Life Grove" parent="." instance=ExtResource("20_f4mrg")]
+
+[node name="Main Ventilation Shaft Section A" parent="." instance=ExtResource("21_fgqob")]
+
+[node name="Main Ventilation Shaft Section B" parent="." instance=ExtResource("22_4i85b")]
+
+[node name="Main Ventilation Shaft Section C" parent="." instance=ExtResource("23_l8e3g")]
+
+[node name="Overgrown Cavern" parent="." instance=ExtResource("24_qim3g")]
+
+[node name="Reactor Access" parent="." instance=ExtResource("25_t0n38")]
+
+[node name="Reactor Core" parent="." instance=ExtResource("26_glbbl")]
+
+[node name="Root Cave" parent="." instance=ExtResource("27_rvoev")]
+
+[node name="Root Tunnel" parent="." instance=ExtResource("28_idv6i")]
+
+[node name="Savestation" parent="." instance=ExtResource("29_s6yb0")]
+
+[node name="Tallon Canyon" parent="." instance=ExtResource("30_nxqbf")]
+
+[node name="Temple Hall" parent="." instance=ExtResource("31_h7s45")]
+
+[node name="Temple Lobby" parent="." instance=ExtResource("32_uxcul")]
+
+[node name="Temple Security Station" parent="." instance=ExtResource("33_il6w3")]
+
+[node name="Transport to Chozo Ruins East" parent="." instance=ExtResource("34_4ujsv")]
+
+[node name="Transport to Chozo Ruins South" parent="." instance=ExtResource("35_jsaop")]
+
+[node name="Transport to Chozo Ruins West" parent="." instance=ExtResource("36_s7d3o")]
+
+[node name="Transport to Magmoor Caverns East" parent="." instance=ExtResource("37_wndda")]
+
+[node name="Transport to Phazon Mines East" parent="." instance=ExtResource("38_njb4q")]
+
+[node name="Transport Tunnel A (Tallon)" parent="." instance=ExtResource("39_6tsck")]
+
+[node name="Transport Tunnel B (Tallon)" parent="." instance=ExtResource("40_p80lq")]
+
+[node name="Transport Tunnel C (Tallon)" parent="." instance=ExtResource("41_1nbxg")]
+
+[node name="Transport Tunnel D" parent="." instance=ExtResource("42_scsq8")]
+
+[node name="Transport Tunnel E" parent="." instance=ExtResource("43_r40gx")]
+
+[node name="Waterfall Cavern" parent="." instance=ExtResource("44_2br6i")]

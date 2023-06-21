@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_36wib"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_mnp5d"]
+
+[sub_resource type="Resource" id="Resource_6pl44"]
+script = ExtResource("1_36wib")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns South (Phendrana)"
+room_name = "Transport Access (Phendrana)"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_oqcis"]
+script = ExtResource("1_36wib")
+point_type = "Dock"
+point_connection = "Frozen Pike"
+room_name = "Transport Access (Phendrana)"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[resource]
+script = ExtResource("2_mnp5d")
+room_name = "Transport Access (Phendrana)"
+points = [SubResource("Resource_6pl44"), SubResource("Resource_oqcis")]
+name = "Phendrana Drifts"
+rooms = []

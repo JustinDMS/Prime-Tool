@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="Room" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_ald8b"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_aprrm"]
+
+[sub_resource type="Resource" id="Resource_4f4yg"]
+script = ExtResource("1_ald8b")
+point_type = "Dock"
+point_connection = "Ruined Fountain Access"
+room_name = "Ruined Fountain"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7xyrl"]
+script = ExtResource("1_ald8b")
+point_type = "Dock"
+point_connection = "Arboretum Access"
+room_name = "Ruined Fountain"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_v2fyk"]
+script = ExtResource("1_ald8b")
+point_type = "Dock"
+point_connection = "Meditation Fountain"
+room_name = "Ruined Fountain"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_aprrm")
+room_name = "Ruined Fountain"
+points = [SubResource("Resource_4f4yg"), SubResource("Resource_7xyrl"), SubResource("Resource_v2fyk")]
+name = "Chozo Ruins"
+rooms = []

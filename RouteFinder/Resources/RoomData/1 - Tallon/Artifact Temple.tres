@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Room" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_bexyi"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_kcihm"]
+
+[sub_resource type="Resource" id="Resource_78rj0"]
+script = ExtResource("1_bexyi")
+point_type = "Dock"
+point_connection = "Temple Lobby"
+room_name = "Artifact Temple"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_kcihm")
+room_name = "Artifact Temple"
+points = [SubResource("Resource_78rj0")]
+name = "Tallon Overworld"
+rooms = []

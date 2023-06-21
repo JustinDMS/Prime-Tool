@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_ermlp"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_iwam1"]
+
+[sub_resource type="Resource" id="Resource_nk5xl"]
+script = ExtResource("1_ermlp")
+point_type = "Dock"
+point_connection = "Ruined Shrine Access"
+room_name = "Ruined Shrine"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pvp5f"]
+script = ExtResource("1_ermlp")
+point_type = "Dock"
+point_connection = "Tower of Light Access"
+room_name = "Ruined Shrine"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_iwam1")
+room_name = "Ruined Shrine"
+points = [SubResource("Resource_nk5xl"), SubResource("Resource_pvp5f")]
+name = "Chozo Ruins"
+rooms = []

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_2emid"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_ot45r"]
+
+[sub_resource type="Resource" id="Resource_ub5gm"]
+script = ExtResource("1_2emid")
+point_type = "Dock"
+point_connection = "Phazon Processing Center"
+room_name = "Transport Access (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5yit4"]
+script = ExtResource("1_2emid")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns South (Mines)"
+room_name = "Transport Access (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[resource]
+script = ExtResource("2_ot45r")
+room_name = "Transport Access (Mines)"
+points = [SubResource("Resource_ub5gm"), SubResource("Resource_5yit4")]
+name = "Phazon Mines"
+rooms = []

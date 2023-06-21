@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="Room" load_steps=9 format=3 uid="uid://bfgwql0ivwk64"]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_nad7v"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_mekmj"]
+
+[sub_resource type="Resource" id="Resource_vkmib"]
+script = ExtResource("1_nad7v")
+point_type = "Dock"
+point_connection = "Ruins Entrance"
+room_name = "Main Plaza"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_flngn"]
+script = ExtResource("1_nad7v")
+point_type = "Dock"
+point_connection = "Ruined Shrine Access"
+room_name = "Main Plaza"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jwoxc"]
+script = ExtResource("1_nad7v")
+point_type = "Dock"
+point_connection = "Piston Tunnel"
+room_name = "Main Plaza"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_x4m2p"]
+script = ExtResource("1_nad7v")
+point_type = "Dock"
+point_connection = "Ruined Fountain Access"
+room_name = "Main Plaza"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2ae5l"]
+script = ExtResource("1_nad7v")
+point_type = "Dock"
+point_connection = "Nursery Access"
+room_name = "Main Plaza"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_b50e8"]
+script = ExtResource("1_nad7v")
+point_type = "Dock"
+point_connection = "Plaza Access"
+room_name = "Main Plaza"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_mekmj")
+room_name = "Main Plaza"
+points = [SubResource("Resource_vkmib"), SubResource("Resource_flngn"), SubResource("Resource_jwoxc"), SubResource("Resource_x4m2p"), SubResource("Resource_2ae5l"), SubResource("Resource_b50e8")]
+name = "Chozo Ruins"
+rooms = []

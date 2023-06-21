@@ -1,0 +1,196 @@
+[gd_scene load_steps=65 format=3 uid="uid://cvsvpaqpjdwtl"]
+
+[ext_resource type="PackedScene" uid="uid://b2js47rxx18ci" path="res://RouteFinder/Map/Chozo Ruins/Antechamber.glb" id="1_8pbv4"]
+[ext_resource type="PackedScene" uid="uid://cmweq3erug2xu" path="res://RouteFinder/Map/Chozo Ruins/Arboretum Access.glb" id="2_qkax0"]
+[ext_resource type="PackedScene" uid="uid://6v5x1pmjfjn3" path="res://RouteFinder/Map/Chozo Ruins/Arboretum.glb" id="3_ujl25"]
+[ext_resource type="PackedScene" uid="uid://dtacgprvvvi5w" path="res://RouteFinder/Map/Chozo Ruins/Burn Dome Access.glb" id="4_xml0j"]
+[ext_resource type="PackedScene" uid="uid://bqmt1g52iiw21" path="res://RouteFinder/Map/Chozo Ruins/Burn Dome.glb" id="5_dcaq0"]
+[ext_resource type="PackedScene" uid="uid://bugf5nwgdgbij" path="res://RouteFinder/Map/Chozo Ruins/Crossway Access South.glb" id="6_xcr4k"]
+[ext_resource type="PackedScene" uid="uid://nahq65wbq6mp" path="res://RouteFinder/Map/Chozo Ruins/Crossway Access West.glb" id="7_rjst8"]
+[ext_resource type="PackedScene" uid="uid://50fdp47ex25t" path="res://RouteFinder/Map/Chozo Ruins/Crossway.glb" id="8_0chne"]
+[ext_resource type="PackedScene" uid="uid://65cvgx5hli3i" path="res://RouteFinder/Map/Chozo Ruins/Dynamo Access.glb" id="9_qxwav"]
+[ext_resource type="PackedScene" uid="uid://cp0jchnvaspyi" path="res://RouteFinder/Map/Chozo Ruins/Dynamo.glb" id="10_yyfa5"]
+[ext_resource type="PackedScene" uid="uid://cowl5fpa0slju" path="res://RouteFinder/Map/Chozo Ruins/East Atrium.glb" id="11_p58wt"]
+[ext_resource type="PackedScene" uid="uid://bykn0knccj1tg" path="res://RouteFinder/Map/Chozo Ruins/East Furnace Access.glb" id="12_xaedx"]
+[ext_resource type="PackedScene" uid="uid://c8yi0ubfw38g" path="res://RouteFinder/Map/Chozo Ruins/Elder Chamber.glb" id="13_atppp"]
+[ext_resource type="PackedScene" uid="uid://cp8l3m0asewpw" path="res://RouteFinder/Map/Chozo Ruins/Elder Hall Access.glb" id="14_1x18a"]
+[ext_resource type="PackedScene" uid="uid://c8eid5n8kokwp" path="res://RouteFinder/Map/Chozo Ruins/Energy Core Access.glb" id="15_ttkyu"]
+[ext_resource type="PackedScene" uid="uid://khfabiw6rfig" path="res://RouteFinder/Map/Chozo Ruins/Energy Core.glb" id="16_lct6h"]
+[ext_resource type="PackedScene" uid="uid://bglhxc0jli15u" path="res://RouteFinder/Map/Chozo Ruins/Eyon Tunnel.glb" id="17_w6dnq"]
+[ext_resource type="PackedScene" uid="uid://dju2nmrvxjwq3" path="res://RouteFinder/Map/Chozo Ruins/Furnace.glb" id="18_pjiwm"]
+[ext_resource type="PackedScene" uid="uid://bpctqkpi4kr3v" path="res://RouteFinder/Map/Chozo Ruins/Gathering Hall Access.glb" id="19_ljl0d"]
+[ext_resource type="PackedScene" uid="uid://rew23g1bp5be" path="res://RouteFinder/Map/Chozo Ruins/Gathering Hall.glb" id="20_lr1xr"]
+[ext_resource type="PackedScene" uid="uid://dmpoo3r6e7lxc" path="res://RouteFinder/Map/Chozo Ruins/Hall of the Elders.glb" id="21_d5p4y"]
+[ext_resource type="PackedScene" uid="uid://rxf5n1arrq68" path="res://RouteFinder/Map/Chozo Ruins/Hive Totem.glb" id="22_dacgv"]
+[ext_resource type="PackedScene" uid="uid://pxj4pwv4phsu" path="res://RouteFinder/Map/Chozo Ruins/Magma Pool.glb" id="23_e30qi"]
+[ext_resource type="PackedScene" uid="uid://cliv57tw5meef" path="res://RouteFinder/Map/Chozo Ruins/Main Plaza.glb" id="24_vmd55"]
+[ext_resource type="PackedScene" uid="uid://bguy7so648l1g" path="res://RouteFinder/Map/Chozo Ruins/Map Station.glb" id="25_ql66c"]
+[ext_resource type="PackedScene" uid="uid://sb3dm0s4yb4w" path="res://RouteFinder/Map/Chozo Ruins/Meditation Fountain.glb" id="26_j6fcu"]
+[ext_resource type="PackedScene" uid="uid://dqk4x5wr2x2o7" path="res://RouteFinder/Map/Chozo Ruins/North Atrium.glb" id="27_5hw6w"]
+[ext_resource type="PackedScene" uid="uid://dd3cakf2ie2i" path="res://RouteFinder/Map/Chozo Ruins/Nursery Access.glb" id="28_unp3l"]
+[ext_resource type="PackedScene" uid="uid://dslxxsoti44vh" path="res://RouteFinder/Map/Chozo Ruins/Piston Tunnel.glb" id="29_hhyw1"]
+[ext_resource type="PackedScene" uid="uid://dp4y88yx5qpgd" path="res://RouteFinder/Map/Chozo Ruins/Plaza Access.glb" id="30_37tw4"]
+[ext_resource type="PackedScene" uid="uid://dfj8thft2ayrh" path="res://RouteFinder/Map/Chozo Ruins/Reflecting Pool Access.glb" id="31_grit3"]
+[ext_resource type="PackedScene" uid="uid://bxt4bpxnac6lu" path="res://RouteFinder/Map/Chozo Ruins/Reflecting Pool.glb" id="32_dnvnl"]
+[ext_resource type="PackedScene" uid="uid://brhwrv506tymm" path="res://RouteFinder/Map/Chozo Ruins/Ruined Fountain Access.glb" id="33_mugm4"]
+[ext_resource type="PackedScene" uid="uid://cyh2p344a7oub" path="res://RouteFinder/Map/Chozo Ruins/Ruined Fountain.glb" id="34_3gvvf"]
+[ext_resource type="PackedScene" uid="uid://cbfuh3qli815" path="res://RouteFinder/Map/Chozo Ruins/Ruined Gallery.glb" id="35_p5x3x"]
+[ext_resource type="PackedScene" uid="uid://cfq4c52hcoiej" path="res://RouteFinder/Map/Chozo Ruins/Ruined Nursery.glb" id="36_m6tv6"]
+[ext_resource type="PackedScene" uid="uid://e81ct5xf7s6g" path="res://RouteFinder/Map/Chozo Ruins/Ruined Shrine Access.glb" id="37_01ds2"]
+[ext_resource type="PackedScene" uid="uid://cnf18ty1g0lto" path="res://RouteFinder/Map/Chozo Ruins/Ruined Shrine.glb" id="38_jinw3"]
+[ext_resource type="PackedScene" uid="uid://dvjv2mymuhbkc" path="res://RouteFinder/Map/Chozo Ruins/Ruins Entrance.glb" id="39_3662d"]
+[ext_resource type="PackedScene" uid="uid://4ge8qk5i6lat" path="res://RouteFinder/Map/Chozo Ruins/Save Station 1.glb" id="40_ntvvx"]
+[ext_resource type="PackedScene" uid="uid://q5arf8c7cct3" path="res://RouteFinder/Map/Chozo Ruins/Save Station 2.glb" id="41_53l4h"]
+[ext_resource type="PackedScene" uid="uid://n78x0604q5qq" path="res://RouteFinder/Map/Chozo Ruins/Save Station 3.glb" id="42_rbmyj"]
+[ext_resource type="PackedScene" uid="uid://dhs5g4kw2rvmn" path="res://RouteFinder/Map/Chozo Ruins/Sun Tower Access.glb" id="43_ey7xf"]
+[ext_resource type="PackedScene" uid="uid://dvttvhrmo2njo" path="res://RouteFinder/Map/Chozo Ruins/Sun Tower.glb" id="44_wyr21"]
+[ext_resource type="PackedScene" uid="uid://mas4tjhcloql" path="res://RouteFinder/Map/Chozo Ruins/Sunchamber Access.glb" id="45_r70yg"]
+[ext_resource type="PackedScene" uid="uid://0ekk8hylf8f1" path="res://RouteFinder/Map/Chozo Ruins/Sunchamber Lobby.glb" id="46_ncqxa"]
+[ext_resource type="PackedScene" uid="uid://drqw558jwf3ba" path="res://RouteFinder/Map/Chozo Ruins/Sunchamber.glb" id="47_7rnoe"]
+[ext_resource type="PackedScene" uid="uid://b7705232qt7p7" path="res://RouteFinder/Map/Chozo Ruins/Totem Access.glb" id="48_c4rsp"]
+[ext_resource type="PackedScene" uid="uid://c5a8m0duhy16c" path="res://RouteFinder/Map/Chozo Ruins/Tower Chamber.glb" id="49_4enml"]
+[ext_resource type="PackedScene" uid="uid://bpve16c8li8y7" path="res://RouteFinder/Map/Chozo Ruins/Tower of Light Access.glb" id="50_lnuem"]
+[ext_resource type="PackedScene" uid="uid://ci6ho1ggnf1d2" path="res://RouteFinder/Map/Chozo Ruins/Tower of Light.glb" id="51_1l6vh"]
+[ext_resource type="PackedScene" uid="uid://b1m1umqm3xl1o" path="res://RouteFinder/Map/Chozo Ruins/Training Chamber Access.glb" id="52_8yo52"]
+[ext_resource type="PackedScene" uid="uid://oqvbntv158qi" path="res://RouteFinder/Map/Chozo Ruins/Training Chamber.glb" id="53_s7vxs"]
+[ext_resource type="PackedScene" uid="uid://v537r1a5gqd4" path="res://RouteFinder/Map/Chozo Ruins/Transport Access North.glb" id="54_loxin"]
+[ext_resource type="PackedScene" uid="uid://pos3xrnblthx" path="res://RouteFinder/Map/Chozo Ruins/Transport Access South.glb" id="55_wsc0h"]
+[ext_resource type="PackedScene" uid="uid://cpvg0jiyfr87a" path="res://RouteFinder/Map/Chozo Ruins/Transport to Magmoor Caverns North.glb" id="56_ynr4o"]
+[ext_resource type="PackedScene" uid="uid://but55d6yyqarq" path="res://RouteFinder/Map/Chozo Ruins/Transport to Tallon Overworld East.glb" id="57_g13qr"]
+[ext_resource type="PackedScene" uid="uid://b7cu0cbempfid" path="res://RouteFinder/Map/Chozo Ruins/Transport to Tallon Overworld North.glb" id="58_j1fg3"]
+[ext_resource type="PackedScene" uid="uid://d0nsmyphkrxuu" path="res://RouteFinder/Map/Chozo Ruins/Transport to Tallon Overworld South.glb" id="59_c0jnl"]
+[ext_resource type="PackedScene" uid="uid://cop1j5ymxqia8" path="res://RouteFinder/Map/Chozo Ruins/Vault Access.glb" id="60_q0264"]
+[ext_resource type="PackedScene" uid="uid://bhlo3g5l6erfb" path="res://RouteFinder/Map/Chozo Ruins/Vault.glb" id="61_1tb3c"]
+[ext_resource type="PackedScene" uid="uid://cm7048t5wcs5d" path="res://RouteFinder/Map/Chozo Ruins/Watery Hall Access.glb" id="62_tf0ge"]
+[ext_resource type="PackedScene" uid="uid://jgufv4m7v8gy" path="res://RouteFinder/Map/Chozo Ruins/Watery Hall.glb" id="63_a8dpt"]
+[ext_resource type="PackedScene" uid="uid://g5ynafa5xdd2" path="res://RouteFinder/Map/Chozo Ruins/West Furnace Access.glb" id="64_7egfp"]
+
+[node name="Chozo Ruins" type="Node3D"]
+
+[node name="Antechamber" parent="." instance=ExtResource("1_8pbv4")]
+
+[node name="Arboretum Access" parent="." instance=ExtResource("2_qkax0")]
+
+[node name="Arboretum" parent="." instance=ExtResource("3_ujl25")]
+
+[node name="Burn Dome Access" parent="." instance=ExtResource("4_xml0j")]
+
+[node name="Burn Dome" parent="." instance=ExtResource("5_dcaq0")]
+
+[node name="Crossway Access South" parent="." instance=ExtResource("6_xcr4k")]
+
+[node name="Crossway Access West" parent="." instance=ExtResource("7_rjst8")]
+
+[node name="Crossway" parent="." instance=ExtResource("8_0chne")]
+
+[node name="Dynamo Access (Chozo)" parent="." instance=ExtResource("9_qxwav")]
+
+[node name="Dynamo" parent="." instance=ExtResource("10_yyfa5")]
+
+[node name="East Atrium" parent="." instance=ExtResource("11_p58wt")]
+
+[node name="East Furnace Access" parent="." instance=ExtResource("12_xaedx")]
+
+[node name="Elder Chamber" parent="." instance=ExtResource("13_atppp")]
+
+[node name="Elder Hall Access" parent="." instance=ExtResource("14_1x18a")]
+
+[node name="Energy Core Access" parent="." instance=ExtResource("15_ttkyu")]
+
+[node name="Energy Core" parent="." instance=ExtResource("16_lct6h")]
+
+[node name="Eyon Tunnel" parent="." instance=ExtResource("17_w6dnq")]
+
+[node name="Furnace" parent="." instance=ExtResource("18_pjiwm")]
+
+[node name="Gathering Hall Access" parent="." instance=ExtResource("19_ljl0d")]
+
+[node name="Gathering Hall" parent="." instance=ExtResource("20_lr1xr")]
+
+[node name="Hall of the Elders" parent="." instance=ExtResource("21_d5p4y")]
+
+[node name="Hive Totem" parent="." instance=ExtResource("22_dacgv")]
+
+[node name="Magma Pool" parent="." instance=ExtResource("23_e30qi")]
+
+[node name="Main Plaza" parent="." instance=ExtResource("24_vmd55")]
+
+[node name="Map Station (Chozo)" parent="." instance=ExtResource("25_ql66c")]
+
+[node name="Meditation Fountain" parent="." instance=ExtResource("26_j6fcu")]
+
+[node name="North Atrium" parent="." instance=ExtResource("27_5hw6w")]
+
+[node name="Nursery Access" parent="." instance=ExtResource("28_unp3l")]
+
+[node name="Piston Tunnel" parent="." instance=ExtResource("29_hhyw1")]
+
+[node name="Plaza Access" parent="." instance=ExtResource("30_37tw4")]
+
+[node name="Reflecting Pool Access" parent="." instance=ExtResource("31_grit3")]
+
+[node name="Reflecting Pool" parent="." instance=ExtResource("32_dnvnl")]
+
+[node name="Ruined Fountain Access" parent="." instance=ExtResource("33_mugm4")]
+
+[node name="Ruined Fountain" parent="." instance=ExtResource("34_3gvvf")]
+
+[node name="Ruined Gallery" parent="." instance=ExtResource("35_p5x3x")]
+
+[node name="Ruined Nursery" parent="." instance=ExtResource("36_m6tv6")]
+
+[node name="Ruined Shrine Access" parent="." instance=ExtResource("37_01ds2")]
+
+[node name="Ruined Shrine" parent="." instance=ExtResource("38_jinw3")]
+
+[node name="Ruins Entrance" parent="." instance=ExtResource("39_3662d")]
+
+[node name="Save Station 1" parent="." instance=ExtResource("40_ntvvx")]
+
+[node name="Save Station 2" parent="." instance=ExtResource("41_53l4h")]
+
+[node name="Save Station 3" parent="." instance=ExtResource("42_rbmyj")]
+
+[node name="Sun Tower Access" parent="." instance=ExtResource("43_ey7xf")]
+
+[node name="Sun Tower" parent="." instance=ExtResource("44_wyr21")]
+
+[node name="Sunchamber Access" parent="." instance=ExtResource("45_r70yg")]
+
+[node name="Sunchamber Lobby" parent="." instance=ExtResource("46_ncqxa")]
+
+[node name="Sunchamber" parent="." instance=ExtResource("47_7rnoe")]
+
+[node name="Totem Access" parent="." instance=ExtResource("48_c4rsp")]
+
+[node name="Tower Chamber" parent="." instance=ExtResource("49_4enml")]
+
+[node name="Tower of Light Access" parent="." instance=ExtResource("50_lnuem")]
+
+[node name="Tower of Light" parent="." instance=ExtResource("51_1l6vh")]
+
+[node name="Training Chamber Access" parent="." instance=ExtResource("52_8yo52")]
+
+[node name="Training Chamber" parent="." instance=ExtResource("53_s7vxs")]
+
+[node name="Transport Access North" parent="." instance=ExtResource("54_loxin")]
+
+[node name="Transport Access South" parent="." instance=ExtResource("55_wsc0h")]
+
+[node name="Transport to Magmoor Caverns North" parent="." instance=ExtResource("56_ynr4o")]
+
+[node name="Transport to Tallon Overworld East" parent="." instance=ExtResource("57_g13qr")]
+
+[node name="Transport to Tallon Overworld North" parent="." instance=ExtResource("58_j1fg3")]
+
+[node name="Transport to Tallon Overworld South (Chozo)" parent="." instance=ExtResource("59_c0jnl")]
+
+[node name="Vault Access" parent="." instance=ExtResource("60_q0264")]
+
+[node name="Vault" parent="." instance=ExtResource("61_1tb3c")]
+
+[node name="Watery Hall Access" parent="." instance=ExtResource("62_tf0ge")]
+
+[node name="Watery Hall" parent="." instance=ExtResource("63_a8dpt")]
+
+[node name="West Furnace Access" parent="." instance=ExtResource("64_7egfp")]

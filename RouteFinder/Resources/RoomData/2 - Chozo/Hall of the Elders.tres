@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="Room" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_wpt07"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_w3rvt"]
+
+[sub_resource type="Resource" id="Resource_a880l"]
+script = ExtResource("1_wpt07")
+point_type = "Dock"
+point_connection = "East Furnace Access"
+room_name = "Hall of the Elders"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gbv5c"]
+script = ExtResource("1_wpt07")
+point_type = "Dock"
+point_connection = "Crossway Access South"
+room_name = "Hall of the Elders"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_48m1i"]
+script = ExtResource("1_wpt07")
+point_type = "Dock"
+point_connection = "Elder Hall Access"
+room_name = "Hall of the Elders"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_otah2"]
+script = ExtResource("1_wpt07")
+point_type = "Dock"
+point_connection = "Elder Chamber"
+room_name = "Hall of the Elders"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lu0w6"]
+script = ExtResource("1_wpt07")
+point_type = "Dock"
+point_connection = "Reflecting Pool Access"
+room_name = "Hall of the Elders"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_w3rvt")
+room_name = "Hall of the Elders"
+points = [SubResource("Resource_a880l"), SubResource("Resource_gbv5c"), SubResource("Resource_48m1i"), SubResource("Resource_otah2"), SubResource("Resource_lu0w6")]
+name = "Chozo Ruins"
+rooms = []

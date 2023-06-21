@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="Room" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_274cl"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_aiin4"]
+
+[sub_resource type="Resource" id="Resource_xit70"]
+script = ExtResource("1_274cl")
+point_type = "Dock"
+point_connection = "Shoreline Entrance"
+room_name = "Phendrana Shorelines"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_avvlb"]
+script = ExtResource("1_274cl")
+point_type = "Dock"
+point_connection = "Ice Ruins Access"
+room_name = "Phendrana Shorelines"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xwndr"]
+script = ExtResource("1_274cl")
+point_type = "Dock"
+point_connection = "Plaza Walkway"
+room_name = "Phendrana Shorelines"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1v13j"]
+script = ExtResource("1_274cl")
+point_type = "Dock"
+point_connection = "Save Station B"
+room_name = "Phendrana Shorelines"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_msa13"]
+script = ExtResource("1_274cl")
+point_type = "Dock"
+point_connection = "Ruins Entryway"
+room_name = "Phendrana Shorelines"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tnclf"]
+script = ExtResource("1_274cl")
+point_type = "Dock"
+point_connection = "Temple Entryway"
+room_name = "Phendrana Shorelines"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[resource]
+script = ExtResource("2_aiin4")
+room_name = "Phendrana Shorelines"
+points = [SubResource("Resource_xit70"), SubResource("Resource_avvlb"), SubResource("Resource_xwndr"), SubResource("Resource_1v13j"), SubResource("Resource_msa13"), SubResource("Resource_tnclf")]
+name = "Phendrana Drifts"
+rooms = []

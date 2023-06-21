@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_dmq6w"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_67pml"]
+
+[sub_resource type="Resource" id="Resource_hqboh"]
+script = ExtResource("1_dmq6w")
+point_type = "Dock"
+point_connection = "Elevator Access A"
+room_name = "Elevator A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hobr7"]
+script = ExtResource("1_dmq6w")
+point_type = "Dock"
+point_connection = "Elite Control Access"
+room_name = "Elevator A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[resource]
+script = ExtResource("2_67pml")
+room_name = "Elevator A"
+points = [SubResource("Resource_hqboh"), SubResource("Resource_hobr7")]
+name = "Phazon Mines"
+rooms = []

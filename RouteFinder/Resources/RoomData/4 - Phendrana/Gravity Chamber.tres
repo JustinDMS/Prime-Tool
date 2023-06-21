@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3 uid="uid://jvxccjl4fhaa"]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_ebiif"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_48ioo"]
+
+[sub_resource type="Resource" id="Resource_tt535"]
+script = ExtResource("1_ebiif")
+point_type = "Dock"
+point_connection = "Chamber Access"
+room_name = "Gravity Chamber"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5fllr"]
+script = ExtResource("1_ebiif")
+point_type = "Dock"
+point_connection = "Lake Tunnel (Phendrana)"
+room_name = "Gravity Chamber"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[resource]
+script = ExtResource("2_48ioo")
+room_name = "Gravity Chamber"
+points = [SubResource("Resource_tt535"), SubResource("Resource_5fllr")]
+name = "Phendrana Drifts"
+rooms = []

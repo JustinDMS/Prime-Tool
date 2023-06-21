@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_nnh80"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_x0hj3"]
+
+[sub_resource type="Resource" id="Resource_t371w"]
+script = ExtResource("1_nnh80")
+point_type = "Dock"
+point_connection = "Elevator B"
+room_name = "Fungal Hall Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ftbyk"]
+script = ExtResource("1_nnh80")
+point_type = "Dock"
+point_connection = "Fungal Hall A"
+room_name = "Fungal Hall Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[resource]
+script = ExtResource("2_x0hj3")
+room_name = "Fungal Hall Access"
+points = [SubResource("Resource_t371w"), SubResource("Resource_ftbyk")]
+name = "Phazon Mines"
+rooms = []

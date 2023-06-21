@@ -1,0 +1,172 @@
+[gd_scene load_steps=57 format=3 uid="uid://dv5vwefvdf2kh"]
+
+[ext_resource type="PackedScene" uid="uid://cqxalpxejkn36" path="res://RouteFinder/Map/Phendrana Drifts/Aether Lab Entryway.glb" id="1_5aauk"]
+[ext_resource type="PackedScene" uid="uid://cspqjsf11oepw" path="res://RouteFinder/Map/Phendrana Drifts/Canyon Entryway.glb" id="2_yu6sb"]
+[ext_resource type="PackedScene" uid="uid://b85joql8uv42t" path="res://RouteFinder/Map/Phendrana Drifts/Chamber Access.glb" id="3_q6alb"]
+[ext_resource type="PackedScene" uid="uid://0un3fxjtlo0r" path="res://RouteFinder/Map/Phendrana Drifts/Chapel of the Elders.glb" id="4_dib1q"]
+[ext_resource type="PackedScene" uid="uid://nvd05knwstvd" path="res://RouteFinder/Map/Phendrana Drifts/Chapel Tunnel.glb" id="5_6oqnv"]
+[ext_resource type="PackedScene" uid="uid://kytllnvrfvsn" path="res://RouteFinder/Map/Phendrana Drifts/Chozo Ice Temple.glb" id="6_xt5y4"]
+[ext_resource type="PackedScene" uid="uid://c11uuakrgddkj" path="res://RouteFinder/Map/Phendrana Drifts/Control Tower.glb" id="7_r6cen"]
+[ext_resource type="PackedScene" uid="uid://ca7y2m4os1wh8" path="res://RouteFinder/Map/Phendrana Drifts/Courtyard Entryway.glb" id="8_f1h6r"]
+[ext_resource type="PackedScene" uid="uid://ctnchfm1fhfrc" path="res://RouteFinder/Map/Phendrana Drifts/East Tower.glb" id="9_6g4mm"]
+[ext_resource type="PackedScene" uid="uid://cqv240mtratr4" path="res://RouteFinder/Map/Phendrana Drifts/Frost Cave Access.glb" id="10_3wy0f"]
+[ext_resource type="PackedScene" uid="uid://sw5gikrhi4a4" path="res://RouteFinder/Map/Phendrana Drifts/Frost Cave.glb" id="11_36ljy"]
+[ext_resource type="PackedScene" uid="uid://djvuce7nbgahi" path="res://RouteFinder/Map/Phendrana Drifts/Frozen Pike.glb" id="12_xgtis"]
+[ext_resource type="PackedScene" uid="uid://bmprphc1ymkrx" path="res://RouteFinder/Map/Phendrana Drifts/Gravity Chamber.glb" id="13_hisww"]
+[ext_resource type="PackedScene" uid="uid://bfqh1x45oxm83" path="res://RouteFinder/Map/Phendrana Drifts/Hunter Cave Access.glb" id="14_2c8bl"]
+[ext_resource type="PackedScene" uid="uid://ol37a5vhk8fn" path="res://RouteFinder/Map/Phendrana Drifts/Hunter Cave.glb" id="15_yt3ii"]
+[ext_resource type="PackedScene" uid="uid://ctpvbg57l5px" path="res://RouteFinder/Map/Phendrana Drifts/Hydra Lab Entryway.glb" id="16_xngy2"]
+[ext_resource type="PackedScene" uid="uid://c6ipvcnil85n0" path="res://RouteFinder/Map/Phendrana Drifts/Ice Ruins Access.glb" id="17_jaybh"]
+[ext_resource type="PackedScene" uid="uid://b2f6xwrmy0knw" path="res://RouteFinder/Map/Phendrana Drifts/Ice Ruins East.glb" id="18_7ksf7"]
+[ext_resource type="PackedScene" uid="uid://dfxts2an770vf" path="res://RouteFinder/Map/Phendrana Drifts/Ice Ruins West.glb" id="19_fovdm"]
+[ext_resource type="PackedScene" uid="uid://dk8m43821cyru" path="res://RouteFinder/Map/Phendrana Drifts/Lake Tunnel.glb" id="20_cmqwj"]
+[ext_resource type="PackedScene" uid="uid://dwpfjcrupai1h" path="res://RouteFinder/Map/Phendrana Drifts/Lower Edge Tunnel.glb" id="21_5log7"]
+[ext_resource type="PackedScene" uid="uid://b62jrt45xegsm" path="res://RouteFinder/Map/Phendrana Drifts/Map Station.glb" id="22_apre4"]
+[ext_resource type="PackedScene" uid="uid://kl4nl1qpwjwm" path="res://RouteFinder/Map/Phendrana Drifts/North Quarantine Tunnel.glb" id="23_umxpt"]
+[ext_resource type="PackedScene" uid="uid://djtkhytv8l1g8" path="res://RouteFinder/Map/Phendrana Drifts/Observatory Access.glb" id="24_p4wwq"]
+[ext_resource type="PackedScene" uid="uid://swi3qqgq0qd1" path="res://RouteFinder/Map/Phendrana Drifts/Observatory.glb" id="25_f6yaq"]
+[ext_resource type="PackedScene" uid="uid://dxdhjj4vv37e2" path="res://RouteFinder/Map/Phendrana Drifts/Phendrana Canyon.glb" id="26_2yjgm"]
+[ext_resource type="PackedScene" uid="uid://vsxmq4ey62dl" path="res://RouteFinder/Map/Phendrana Drifts/Phendrana Shorelines.glb" id="27_sn87k"]
+[ext_resource type="PackedScene" uid="uid://dhleynasshl5u" path="res://RouteFinder/Map/Phendrana Drifts/Phendrana's Edge.glb" id="28_0vigi"]
+[ext_resource type="PackedScene" uid="uid://b10y1mnwy801h" path="res://RouteFinder/Map/Phendrana Drifts/Pike Access.glb" id="29_06q6m"]
+[ext_resource type="PackedScene" uid="uid://bntjdhpk8elcr" path="res://RouteFinder/Map/Phendrana Drifts/Plaza Walkway.glb" id="30_lm6yb"]
+[ext_resource type="PackedScene" uid="uid://clxf7d1nllp7s" path="res://RouteFinder/Map/Phendrana Drifts/Quarantine Access.glb" id="31_mnuap"]
+[ext_resource type="PackedScene" uid="uid://dj5ggk6jkoiiw" path="res://RouteFinder/Map/Phendrana Drifts/Quarantine Cave.glb" id="32_8orut"]
+[ext_resource type="PackedScene" uid="uid://be7dx02mw1qns" path="res://RouteFinder/Map/Phendrana Drifts/Quarantine Monitor.glb" id="33_gutqr"]
+[ext_resource type="PackedScene" uid="uid://d0qelajy2rja8" path="res://RouteFinder/Map/Phendrana Drifts/Research Core Access.glb" id="34_kfv74"]
+[ext_resource type="PackedScene" uid="uid://clw1m04lxb0wy" path="res://RouteFinder/Map/Phendrana Drifts/Research Core.glb" id="35_ce0t3"]
+[ext_resource type="PackedScene" uid="uid://7ipiolmw0quh" path="res://RouteFinder/Map/Phendrana Drifts/Research Entrance.glb" id="36_akqt2"]
+[ext_resource type="PackedScene" uid="uid://c4o267w17k0bb" path="res://RouteFinder/Map/Phendrana Drifts/Research Lab Aether.glb" id="37_lscc5"]
+[ext_resource type="PackedScene" uid="uid://b2c7w4jhrcb7r" path="res://RouteFinder/Map/Phendrana Drifts/Research Lab Hydra.glb" id="38_k8ilv"]
+[ext_resource type="PackedScene" uid="uid://c2uxhonehmgrp" path="res://RouteFinder/Map/Phendrana Drifts/Ruined Courtyard.glb" id="39_aut7t"]
+[ext_resource type="PackedScene" uid="uid://bpd704l4anio8" path="res://RouteFinder/Map/Phendrana Drifts/Ruins Entryway.glb" id="40_atslp"]
+[ext_resource type="PackedScene" uid="uid://behrpjjg3llux" path="res://RouteFinder/Map/Phendrana Drifts/Save Station A.glb" id="41_uk71f"]
+[ext_resource type="PackedScene" uid="uid://ta4t7iuxgfon" path="res://RouteFinder/Map/Phendrana Drifts/Save Station B.glb" id="42_ovlyj"]
+[ext_resource type="PackedScene" uid="uid://cylcsexwkb6e0" path="res://RouteFinder/Map/Phendrana Drifts/Save Station C.glb" id="43_bqw33"]
+[ext_resource type="PackedScene" uid="uid://bna2twmpq0tu3" path="res://RouteFinder/Map/Phendrana Drifts/Save Station D.glb" id="44_k7cnb"]
+[ext_resource type="PackedScene" uid="uid://c4u8pa5fyaim6" path="res://RouteFinder/Map/Phendrana Drifts/Security Cave.glb" id="45_l5gj6"]
+[ext_resource type="PackedScene" uid="uid://dfhx8qlk30uhg" path="res://RouteFinder/Map/Phendrana Drifts/Shoreline Entrance.glb" id="46_ilbfg"]
+[ext_resource type="PackedScene" uid="uid://bc44jj0jj868f" path="res://RouteFinder/Map/Phendrana Drifts/South Quarantine Tunnel.glb" id="47_5ychr"]
+[ext_resource type="PackedScene" uid="uid://c71ggvkil68nn" path="res://RouteFinder/Map/Phendrana Drifts/Specimen Storage.glb" id="48_exp62"]
+[ext_resource type="PackedScene" uid="uid://6uuqt5hcdebo" path="res://RouteFinder/Map/Phendrana Drifts/Storage Cave.glb" id="49_th48f"]
+[ext_resource type="PackedScene" uid="uid://dj2on3n3maim" path="res://RouteFinder/Map/Phendrana Drifts/Temple Entryway.glb" id="50_4446t"]
+[ext_resource type="PackedScene" uid="uid://byp4c43k7taa0" path="res://RouteFinder/Map/Phendrana Drifts/Transport Access.glb" id="51_ygh27"]
+[ext_resource type="PackedScene" uid="uid://b26fjbsrhx8qq" path="res://RouteFinder/Map/Phendrana Drifts/Transport to Magmoor Caverns South.glb" id="52_3y5i2"]
+[ext_resource type="PackedScene" uid="uid://dldy0hg41lbr8" path="res://RouteFinder/Map/Phendrana Drifts/Transport to Magmoor Caverns West.glb" id="53_u5xei"]
+[ext_resource type="PackedScene" uid="uid://cpjjcvdcpovq2" path="res://RouteFinder/Map/Phendrana Drifts/Upper Edge Tunnel.glb" id="54_1b21r"]
+[ext_resource type="PackedScene" uid="uid://bx0urag6apxjc" path="res://RouteFinder/Map/Phendrana Drifts/West Tower Entrance.glb" id="55_8xjob"]
+[ext_resource type="PackedScene" uid="uid://cf8515engopgn" path="res://RouteFinder/Map/Phendrana Drifts/West Tower.glb" id="56_b3vrf"]
+
+[node name="Phendrana Drifts" type="Node3D"]
+
+[node name="Aether Lab Entryway" parent="." instance=ExtResource("1_5aauk")]
+
+[node name="Canyon Entryway" parent="." instance=ExtResource("2_yu6sb")]
+
+[node name="Chamber Access" parent="." instance=ExtResource("3_q6alb")]
+
+[node name="Chapel of the Elders" parent="." instance=ExtResource("4_dib1q")]
+
+[node name="Chapel Tunnel" parent="." instance=ExtResource("5_6oqnv")]
+
+[node name="Chozo Ice Temple" parent="." instance=ExtResource("6_xt5y4")]
+
+[node name="Control Tower" parent="." instance=ExtResource("7_r6cen")]
+
+[node name="Courtyard Entryway" parent="." instance=ExtResource("8_f1h6r")]
+
+[node name="East Tower" parent="." instance=ExtResource("9_6g4mm")]
+
+[node name="Frost Cave Access" parent="." instance=ExtResource("10_3wy0f")]
+
+[node name="Frost Cave" parent="." instance=ExtResource("11_36ljy")]
+
+[node name="Frozen Pike" parent="." instance=ExtResource("12_xgtis")]
+
+[node name="Gravity Chamber" parent="." instance=ExtResource("13_hisww")]
+
+[node name="Hunter Cave Access" parent="." instance=ExtResource("14_2c8bl")]
+
+[node name="Hunter Cave" parent="." instance=ExtResource("15_yt3ii")]
+
+[node name="Hydra Lab Entryway" parent="." instance=ExtResource("16_xngy2")]
+
+[node name="Ice Ruins Access" parent="." instance=ExtResource("17_jaybh")]
+
+[node name="Ice Ruins East" parent="." instance=ExtResource("18_7ksf7")]
+
+[node name="Ice Ruins West" parent="." instance=ExtResource("19_fovdm")]
+
+[node name="Lake Tunnel (Phendrana)" parent="." instance=ExtResource("20_cmqwj")]
+
+[node name="Lower Edge Tunnel" parent="." instance=ExtResource("21_5log7")]
+
+[node name="Map Station (Phendrana)" parent="." instance=ExtResource("22_apre4")]
+
+[node name="North Quarantine Tunnel" parent="." instance=ExtResource("23_umxpt")]
+
+[node name="Observatory Access" parent="." instance=ExtResource("24_p4wwq")]
+
+[node name="Observatory" parent="." instance=ExtResource("25_f6yaq")]
+
+[node name="Phendrana Canyon" parent="." instance=ExtResource("26_2yjgm")]
+
+[node name="Phendrana Shorelines" parent="." instance=ExtResource("27_sn87k")]
+
+[node name="Phendrana\'s Edge" parent="." instance=ExtResource("28_0vigi")]
+
+[node name="Pike Access" parent="." instance=ExtResource("29_06q6m")]
+
+[node name="Plaza Walkway" parent="." instance=ExtResource("30_lm6yb")]
+
+[node name="Quarantine Access" parent="." instance=ExtResource("31_mnuap")]
+
+[node name="Quarantine Cave" parent="." instance=ExtResource("32_8orut")]
+
+[node name="Quarantine Monitor" parent="." instance=ExtResource("33_gutqr")]
+
+[node name="Research Core Access" parent="." instance=ExtResource("34_kfv74")]
+
+[node name="Research Core" parent="." instance=ExtResource("35_ce0t3")]
+
+[node name="Research Entrance" parent="." instance=ExtResource("36_akqt2")]
+
+[node name="Research Lab Aether" parent="." instance=ExtResource("37_lscc5")]
+
+[node name="Research Lab Hydra" parent="." instance=ExtResource("38_k8ilv")]
+
+[node name="Ruined Courtyard" parent="." instance=ExtResource("39_aut7t")]
+
+[node name="Ruins Entryway" parent="." instance=ExtResource("40_atslp")]
+
+[node name="Save Station A" parent="." instance=ExtResource("41_uk71f")]
+
+[node name="Save Station B" parent="." instance=ExtResource("42_ovlyj")]
+
+[node name="Save Station C" parent="." instance=ExtResource("43_bqw33")]
+
+[node name="Save Station D" parent="." instance=ExtResource("44_k7cnb")]
+
+[node name="Security Cave" parent="." instance=ExtResource("45_l5gj6")]
+
+[node name="Shoreline Entrance" parent="." instance=ExtResource("46_ilbfg")]
+
+[node name="South Quarantine Tunnel" parent="." instance=ExtResource("47_5ychr")]
+
+[node name="Specimen Storage" parent="." instance=ExtResource("48_exp62")]
+
+[node name="Storage Cave" parent="." instance=ExtResource("49_th48f")]
+
+[node name="Temple Entryway" parent="." instance=ExtResource("50_4446t")]
+
+[node name="Transport Access (Phendrana)" parent="." instance=ExtResource("51_ygh27")]
+
+[node name="Transport to Magmoor Caverns South (Phendrana)" parent="." instance=ExtResource("52_3y5i2")]
+
+[node name="Transport to Magmoor Caverns West" parent="." instance=ExtResource("53_u5xei")]
+
+[node name="Upper Edge Tunnel" parent="." instance=ExtResource("54_1b21r")]
+
+[node name="West Tower Entrance" parent="." instance=ExtResource("55_8xjob")]
+
+[node name="West Tower" parent="." instance=ExtResource("56_b3vrf")]

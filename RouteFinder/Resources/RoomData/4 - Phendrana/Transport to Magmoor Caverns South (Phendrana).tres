@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="Room" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_7k1mh"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_q8nvs"]
+
+[sub_resource type="Resource" id="Resource_h7jrm"]
+script = ExtResource("1_7k1mh")
+point_type = "Dock"
+point_connection = "South Quarantine Tunnel"
+room_name = "Transport to Magmoor Caverns South (Phendrana)"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jd7rn"]
+script = ExtResource("1_7k1mh")
+point_type = "Dock"
+point_connection = "Transport Access (Phendrana)"
+room_name = "Transport to Magmoor Caverns South (Phendrana)"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xtdck"]
+script = ExtResource("1_7k1mh")
+point_type = "Dock"
+point_connection = "Transport to Phendrana Drifts South"
+room_name = "Transport to Magmoor Caverns South (Phendrana)"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[resource]
+script = ExtResource("2_q8nvs")
+room_name = "Transport to Magmoor Caverns South (Phendrana)"
+points = [SubResource("Resource_h7jrm"), SubResource("Resource_jd7rn"), SubResource("Resource_xtdck")]
+name = "Phendrana Drifts"
+rooms = []

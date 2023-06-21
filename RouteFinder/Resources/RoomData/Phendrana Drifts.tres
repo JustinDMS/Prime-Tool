@@ -1,0 +1,1482 @@
+[gd_resource type="Resource" script_class="World" load_steps=180 format=3 uid="uid://bg4plr0g0eeby"]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_1p527"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/World.gd" id="1_hesyp"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_7mp4x"]
+
+[sub_resource type="Resource" id="Resource_gy3mq"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Research Lab Aether"
+room_name = "Aether Lab Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ul3x2"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "East Tower"
+room_name = "Aether Lab Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xex0i"]
+script = ExtResource("2_7mp4x")
+room_name = "Aether Lab Entryway"
+points = [SubResource("Resource_gy3mq"), SubResource("Resource_ul3x2")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nflor"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ice Ruins West"
+room_name = "Canyon Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gwcid"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Phendrana Canyon"
+room_name = "Canyon Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_mnrur"]
+script = ExtResource("2_7mp4x")
+room_name = "Canyon Entryway"
+points = [SubResource("Resource_nflor"), SubResource("Resource_gwcid")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2gywa"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Hunter Cave"
+room_name = "Chamber Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_71hb0"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Gravity Chamber"
+room_name = "Chamber Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_eetat"]
+script = ExtResource("2_7mp4x")
+room_name = "Chamber Access"
+points = [SubResource("Resource_2gywa"), SubResource("Resource_71hb0")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_reftr"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Chapel Tunnel"
+room_name = "Chapel of the Elders"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kyd7t"]
+script = ExtResource("2_7mp4x")
+room_name = "Chapel of the Elders"
+points = [SubResource("Resource_reftr")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_a1535"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Chapel of the Elders"
+room_name = "Chapel Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_amk23"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Chozo Ice Temple"
+room_name = "Chapel Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7v3mx"]
+script = ExtResource("2_7mp4x")
+room_name = "Chapel Tunnel"
+points = [SubResource("Resource_a1535"), SubResource("Resource_amk23")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_b7i5t"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Chapel Tunnel"
+room_name = "Chozo Ice Temple"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_wwdp1"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Temple Entryway"
+room_name = "Chozo Ice Temple"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3as0o"]
+script = ExtResource("2_7mp4x")
+room_name = "Chozo Ice Temple"
+points = [SubResource("Resource_b7i5t"), SubResource("Resource_wwdp1")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7nhvx"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "East Tower"
+room_name = "Control Tower"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tbard"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "West Tower"
+room_name = "Control Tower"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rrv61"]
+script = ExtResource("2_7mp4x")
+room_name = "Control Tower"
+points = [SubResource("Resource_7nhvx"), SubResource("Resource_tbard")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_q8orq"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ice Ruins West"
+room_name = "Courtyard Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bijvl"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ruined Courtyard"
+room_name = "Courtyard Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_y8kxa"]
+script = ExtResource("2_7mp4x")
+room_name = "Courtyard Entryway"
+points = [SubResource("Resource_q8orq"), SubResource("Resource_bijvl")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5fo73"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Control Tower"
+room_name = "East Tower"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4lcuw"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Aether Lab Entryway"
+room_name = "East Tower"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_oi3qs"]
+script = ExtResource("2_7mp4x")
+room_name = "East Tower"
+points = [SubResource("Resource_5fo73"), SubResource("Resource_4lcuw")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1apuw"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Frost Cave Access"
+room_name = "Frost Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fbbfp"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Upper Edge Tunnel"
+room_name = "Frost Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5oao6"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Save Station C"
+room_name = "Frost Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8f0gv"]
+script = ExtResource("2_7mp4x")
+room_name = "Frost Cave"
+points = [SubResource("Resource_1apuw"), SubResource("Resource_fbbfp"), SubResource("Resource_5oao6")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4g802"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Frozen Pike"
+room_name = "Frost Cave Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tl5rl"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Frost Cave"
+room_name = "Frost Cave Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jjfps"]
+script = ExtResource("2_7mp4x")
+room_name = "Frost Cave Access"
+points = [SubResource("Resource_4g802"), SubResource("Resource_tl5rl")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hjdaj"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Hunter Cave Access"
+room_name = "Frozen Pike"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_q3xtu"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Frost Cave Access"
+room_name = "Frozen Pike"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6y48c"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Pike Access"
+room_name = "Frozen Pike"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5vdtf"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Transport Access (Phendrana)"
+room_name = "Frozen Pike"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_vvbpw"]
+script = ExtResource("2_7mp4x")
+room_name = "Frozen Pike"
+points = [SubResource("Resource_hjdaj"), SubResource("Resource_q3xtu"), SubResource("Resource_6y48c"), SubResource("Resource_5vdtf")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tt535"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Chamber Access"
+room_name = "Gravity Chamber"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5fllr"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Lake Tunnel (Phendrana)"
+room_name = "Gravity Chamber"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_d8ytu"]
+script = ExtResource("2_7mp4x")
+room_name = "Gravity Chamber"
+points = [SubResource("Resource_tt535"), SubResource("Resource_5fllr")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7n7v6"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Hunter Cave Access"
+room_name = "Hunter Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rdids"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Chamber Access"
+room_name = "Hunter Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1w78r"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Lake Tunnel (Phendrana)"
+room_name = "Hunter Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dcbsr"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Lower Edge Tunnel"
+room_name = "Hunter Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kr32x"]
+script = ExtResource("2_7mp4x")
+room_name = "Hunter Cave"
+points = [SubResource("Resource_7n7v6"), SubResource("Resource_rdids"), SubResource("Resource_1w78r"), SubResource("Resource_dcbsr")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pdlxa"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Frozen Pike"
+room_name = "Hunter Cave Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_e7d3f"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Hunter Cave"
+room_name = "Hunter Cave Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bmqt2"]
+script = ExtResource("2_7mp4x")
+room_name = "Hunter Cave Access"
+points = [SubResource("Resource_pdlxa"), SubResource("Resource_e7d3f")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_iqqtv"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Research Entrance"
+room_name = "Hydra Lab Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_u6ttt"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Research Lab Hydra"
+room_name = "Hydra Lab Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_om13w"]
+script = ExtResource("2_7mp4x")
+room_name = "Hydra Lab Entryway"
+points = [SubResource("Resource_iqqtv"), SubResource("Resource_u6ttt")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_j5yyb"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ice Ruins East"
+room_name = "Ice Ruins Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3prjc"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Phendrana Shorelines"
+room_name = "Ice Ruins Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_81nmi"]
+script = ExtResource("2_7mp4x")
+room_name = "Ice Ruins Access"
+points = [SubResource("Resource_j5yyb"), SubResource("Resource_3prjc")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bkqg6"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ice Ruins Access"
+room_name = "Ice Ruins East"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4cxum"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Plaza Walkway"
+room_name = "Ice Ruins East"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_iihu3"]
+script = ExtResource("2_7mp4x")
+room_name = "Ice Ruins East"
+points = [SubResource("Resource_bkqg6"), SubResource("Resource_4cxum")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_js586"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ruins Entryway"
+room_name = "Ice Ruins West"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8pi4r"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Canyon Entryway"
+room_name = "Ice Ruins West"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_221nu"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Courtyard Entryway"
+room_name = "Ice Ruins West"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ix8lb"]
+script = ExtResource("2_7mp4x")
+room_name = "Ice Ruins West"
+points = [SubResource("Resource_js586"), SubResource("Resource_8pi4r"), SubResource("Resource_221nu")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fwnob"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Hunter Cave"
+room_name = "Lake Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1rcec"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Gravity Chamber"
+room_name = "Lake Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kxdjm"]
+script = ExtResource("2_7mp4x")
+room_name = "Lake Tunnel (Phendrana)"
+points = [SubResource("Resource_fwnob"), SubResource("Resource_1rcec")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7vvbc"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Hunter Cave"
+room_name = "Lower Edge Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_f00ow"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Phendrana's Edge"
+room_name = "Lower Edge Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7xocx"]
+script = ExtResource("2_7mp4x")
+room_name = "Lower Edge Tunnel"
+points = [SubResource("Resource_7vvbc"), SubResource("Resource_f00ow")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_a7otq"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Research Entrance"
+room_name = "Map Station (Phendrana)"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_vrqyp"]
+script = ExtResource("2_7mp4x")
+room_name = "Map Station (Phendrana)"
+points = [SubResource("Resource_a7otq")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ba0rw"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Quarantine Access"
+room_name = "North Quarantine Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4n875"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Quarantine Cave"
+room_name = "North Quarantine Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_holis"]
+script = ExtResource("2_7mp4x")
+room_name = "North Quarantine Tunnel"
+points = [SubResource("Resource_ba0rw"), SubResource("Resource_4n875")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ablhx"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Observatory Access"
+room_name = "Observatory"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_uqt7p"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "West Tower Entrance"
+room_name = "Observatory"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lxlcy"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Save Station D"
+room_name = "Observatory"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ycrhr"]
+script = ExtResource("2_7mp4x")
+room_name = "Observatory"
+points = [SubResource("Resource_ablhx"), SubResource("Resource_uqt7p"), SubResource("Resource_lxlcy")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_p2j0p"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Research Lab Hydra"
+room_name = "Observatory Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_u14fw"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Observatory"
+room_name = "Observatory Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3tmlv"]
+script = ExtResource("2_7mp4x")
+room_name = "Observatory Access"
+points = [SubResource("Resource_p2j0p"), SubResource("Resource_u14fw")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_eoqla"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Canyon Entryway"
+room_name = "Phendrana Canyon"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hqk6q"]
+script = ExtResource("2_7mp4x")
+room_name = "Phendrana Canyon"
+points = [SubResource("Resource_eoqla")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xit70"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Shoreline Entrance"
+room_name = "Phendrana Shorelines"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_avvlb"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ice Ruins Access"
+room_name = "Phendrana Shorelines"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xwndr"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Plaza Walkway"
+room_name = "Phendrana Shorelines"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1v13j"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Save Station B"
+room_name = "Phendrana Shorelines"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_msa13"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ruins Entryway"
+room_name = "Phendrana Shorelines"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tnclf"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Temple Entryway"
+room_name = "Phendrana Shorelines"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hml00"]
+script = ExtResource("2_7mp4x")
+room_name = "Phendrana Shorelines"
+points = [SubResource("Resource_xit70"), SubResource("Resource_avvlb"), SubResource("Resource_xwndr"), SubResource("Resource_1v13j"), SubResource("Resource_msa13"), SubResource("Resource_tnclf")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pnbj0"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Storage Cave"
+room_name = "Phendrana's Edge"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1bmem"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Security Cave"
+room_name = "Phendrana's Edge"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jsn8g"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Upper Edge Tunnel"
+room_name = "Phendrana's Edge"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bkb6n"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Lower Edge Tunnel"
+room_name = "Phendrana's Edge"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gusnb"]
+script = ExtResource("2_7mp4x")
+room_name = "Phendrana's Edge"
+points = [SubResource("Resource_pnbj0"), SubResource("Resource_1bmem"), SubResource("Resource_jsn8g"), SubResource("Resource_bkb6n")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tshkp"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Frozen Pike"
+room_name = "Pike Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_vnqbo"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Research Core"
+room_name = "Pike Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_owiai"]
+script = ExtResource("2_7mp4x")
+room_name = "Pike Access"
+points = [SubResource("Resource_tshkp"), SubResource("Resource_vnqbo")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_k2bjs"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ice Ruins East"
+room_name = "Plaza Walkway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0jd6x"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Phendrana Shorelines"
+room_name = "Plaza Walkway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_w8kh3"]
+script = ExtResource("2_7mp4x")
+room_name = "Plaza Walkway"
+points = [SubResource("Resource_k2bjs"), SubResource("Resource_0jd6x")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hkydw"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ruined Courtyard"
+room_name = "Quarantine Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gy030"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "North Quarantine Tunnel"
+room_name = "Quarantine Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3o6nk"]
+script = ExtResource("2_7mp4x")
+room_name = "Quarantine Access"
+points = [SubResource("Resource_hkydw"), SubResource("Resource_gy030")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3fcs0"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "North Quarantine Tunnel"
+room_name = "Quarantine Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_aed2f"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "South Quarantine Tunnel"
+room_name = "Quarantine Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8ouqq"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Quarantine Monitor"
+room_name = "Quarantine Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_33nvy"]
+script = ExtResource("2_7mp4x")
+room_name = "Quarantine Cave"
+points = [SubResource("Resource_3fcs0"), SubResource("Resource_aed2f"), SubResource("Resource_8ouqq")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_w1d6r"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Quarantine Cave"
+room_name = "Quarantine Monitor"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nxvvy"]
+script = ExtResource("2_7mp4x")
+room_name = "Quarantine Monitor"
+points = [SubResource("Resource_w1d6r")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fc044"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Pike Access"
+room_name = "Research Core"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_wuqaa"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Research Core Access"
+room_name = "Research Core"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ei7ts"]
+script = ExtResource("2_7mp4x")
+room_name = "Research Core"
+points = [SubResource("Resource_fc044"), SubResource("Resource_wuqaa")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gc1n1"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Research Core"
+room_name = "Research Core Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0qkdh"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Research Lab Aether"
+room_name = "Research Core Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ov6et"]
+script = ExtResource("2_7mp4x")
+room_name = "Research Core Access"
+points = [SubResource("Resource_gc1n1"), SubResource("Resource_0qkdh")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jumis"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Speciman Storage"
+room_name = "Research Entrance"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1a6ic"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Hydra Lab Entryway"
+room_name = "Research Entrance"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tnyvo"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Map Station (Phendrana)"
+room_name = "Research Entrance"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_d82jg"]
+script = ExtResource("2_7mp4x")
+room_name = "Research Entrance"
+points = [SubResource("Resource_jumis"), SubResource("Resource_1a6ic"), SubResource("Resource_tnyvo")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ii0j4"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Research Core Access"
+room_name = "Research Lab Aether"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_qd1h6"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Aether Lab Entryway"
+room_name = "Research Lab Aether"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_a27r8"]
+script = ExtResource("2_7mp4x")
+room_name = "Research Lab Aether"
+points = [SubResource("Resource_ii0j4"), SubResource("Resource_qd1h6")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jlew7"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Hydra Lab Entryway"
+room_name = "Research Lab Hydra"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8icr8"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Observatory Access"
+room_name = "Research Lab Hydra"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7sh3s"]
+script = ExtResource("2_7mp4x")
+room_name = "Research Lab Hydra"
+points = [SubResource("Resource_jlew7"), SubResource("Resource_8icr8")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_g6rgm"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Courtyard Entryway"
+room_name = "Ruined Courtyard"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_m5swp"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Save Station A"
+room_name = "Ruined Courtyard"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_imx51"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Speciman Storage"
+room_name = "Ruined Courtyard"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_yl7nn"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Quarantine Access"
+room_name = "Ruined Courtyard"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ndp0d"]
+script = ExtResource("2_7mp4x")
+room_name = "Ruined Courtyard"
+points = [SubResource("Resource_g6rgm"), SubResource("Resource_m5swp"), SubResource("Resource_imx51"), SubResource("Resource_yl7nn")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0ueub"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Phendrana Shorelines"
+room_name = "Ruins Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_s284k"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ice Ruins West"
+room_name = "Ruins Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cc071"]
+script = ExtResource("2_7mp4x")
+room_name = "Ruins Entryway"
+points = [SubResource("Resource_0ueub"), SubResource("Resource_s284k")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_po23n"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ruined Courtyard"
+room_name = "Save Station A"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ryha4"]
+script = ExtResource("2_7mp4x")
+room_name = "Save Station A"
+points = [SubResource("Resource_po23n")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_q061q"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Phendrana Shorelines"
+room_name = "Save Station B"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_oc1c2"]
+script = ExtResource("2_7mp4x")
+room_name = "Save Station B"
+points = [SubResource("Resource_q061q")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_06nl6"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Frost Cave"
+room_name = "Save Station C"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kcu7l"]
+script = ExtResource("2_7mp4x")
+room_name = "Save Station C"
+points = [SubResource("Resource_06nl6")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5qyif"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Observatory"
+room_name = "Save Station D"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6v7d3"]
+script = ExtResource("2_7mp4x")
+room_name = "Save Station D"
+points = [SubResource("Resource_5qyif")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_su6i0"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Phendrana's Edge"
+room_name = "Security Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kj4su"]
+script = ExtResource("2_7mp4x")
+room_name = "Security Cave"
+points = [SubResource("Resource_su6i0")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4b6bk"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns West"
+room_name = "Shoreline Entrance"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gtpdm"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Phendrana Shorelines"
+room_name = "Shoreline Entrance"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_a2m5v"]
+script = ExtResource("2_7mp4x")
+room_name = "Shoreline Entrance"
+points = [SubResource("Resource_4b6bk"), SubResource("Resource_gtpdm")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_k6vrw"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns South (Phendrana)"
+room_name = "South Quarantine Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nxmrv"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Quarantine Cave"
+room_name = "South Quarantine Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_70es7"]
+script = ExtResource("2_7mp4x")
+room_name = "South Quarantine Tunnel"
+points = [SubResource("Resource_k6vrw"), SubResource("Resource_nxmrv")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fumhg"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Ruined Courtyard"
+room_name = "Speciman Storage"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rbgho"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Research Entrance"
+room_name = "Speciman Storage"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_wptlh"]
+script = ExtResource("2_7mp4x")
+room_name = "Speciman Storage"
+points = [SubResource("Resource_fumhg"), SubResource("Resource_rbgho")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_phd0b"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Phendrana's Edge"
+room_name = "Storage Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0f7f2"]
+script = ExtResource("2_7mp4x")
+room_name = "Storage Cave"
+points = [SubResource("Resource_phd0b")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_qm1ri"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Phendrana Shorelines"
+room_name = "Temple Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_j36ur"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Chozo Ice Temple"
+room_name = "Temple Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8ua45"]
+script = ExtResource("2_7mp4x")
+room_name = "Temple Entryway"
+points = [SubResource("Resource_qm1ri"), SubResource("Resource_j36ur")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6pl44"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns South (Phendrana)"
+room_name = "Transport Access (Phendrana)"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_oqcis"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Frozen Pike"
+room_name = "Transport Access (Phendrana)"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_onknc"]
+script = ExtResource("2_7mp4x")
+room_name = "Transport Access (Phendrana)"
+points = [SubResource("Resource_6pl44"), SubResource("Resource_oqcis")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_h7jrm"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "South Quarantine Tunnel"
+room_name = "Transport to Magmoor Caverns South (Phendrana)"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jd7rn"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Transport Access (Phendrana)"
+room_name = "Transport to Magmoor Caverns South (Phendrana)"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xtdck"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Transport to Phendrana Drifts South"
+room_name = "Transport to Magmoor Caverns South (Phendrana)"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_n5k3l"]
+script = ExtResource("2_7mp4x")
+room_name = "Transport to Magmoor Caverns South (Phendrana)"
+points = [SubResource("Resource_h7jrm"), SubResource("Resource_jd7rn"), SubResource("Resource_xtdck")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_wx5vq"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Shoreline Entrance"
+room_name = "Transport to Magmoor Caverns West"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jmt4d"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Transport to Phendrana Drifts North"
+room_name = "Transport to Magmoor Caverns West"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ooh11"]
+script = ExtResource("2_7mp4x")
+room_name = "Transport to Magmoor Caverns West"
+points = [SubResource("Resource_wx5vq"), SubResource("Resource_jmt4d")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_238ds"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Frost Cave"
+room_name = "Upper Edge Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8b337"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Phendrana's Edge"
+room_name = "Upper Edge Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5ge8g"]
+script = ExtResource("2_7mp4x")
+room_name = "Upper Edge Tunnel"
+points = [SubResource("Resource_238ds"), SubResource("Resource_8b337")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_g5dqr"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Control Tower"
+room_name = "West Tower"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ewk20"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "West Tower Entrance"
+room_name = "West Tower"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_id8ro"]
+script = ExtResource("2_7mp4x")
+room_name = "West Tower"
+points = [SubResource("Resource_g5dqr"), SubResource("Resource_ewk20")]
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ateip"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "West Tower"
+room_name = "West Tower Entrance"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_qxtj0"]
+script = ExtResource("1_1p527")
+point_type = "Dock"
+point_connection = "Observatory"
+room_name = "West Tower Entrance"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8p2r6"]
+script = ExtResource("2_7mp4x")
+room_name = "West Tower Entrance"
+points = [SubResource("Resource_ateip"), SubResource("Resource_qxtj0")]
+name = "Phendrana Drifts"
+rooms = []
+
+[resource]
+script = ExtResource("1_hesyp")
+name = "Phendrana Drifts"
+rooms = [SubResource("Resource_xex0i"), SubResource("Resource_mnrur"), SubResource("Resource_eetat"), SubResource("Resource_kyd7t"), SubResource("Resource_7v3mx"), SubResource("Resource_3as0o"), SubResource("Resource_rrv61"), SubResource("Resource_y8kxa"), SubResource("Resource_oi3qs"), SubResource("Resource_8f0gv"), SubResource("Resource_jjfps"), SubResource("Resource_vvbpw"), SubResource("Resource_d8ytu"), SubResource("Resource_kr32x"), SubResource("Resource_bmqt2"), SubResource("Resource_om13w"), SubResource("Resource_81nmi"), SubResource("Resource_iihu3"), SubResource("Resource_ix8lb"), SubResource("Resource_kxdjm"), SubResource("Resource_7xocx"), SubResource("Resource_vrqyp"), SubResource("Resource_holis"), SubResource("Resource_ycrhr"), SubResource("Resource_3tmlv"), SubResource("Resource_hqk6q"), SubResource("Resource_hml00"), SubResource("Resource_gusnb"), SubResource("Resource_owiai"), SubResource("Resource_w8kh3"), SubResource("Resource_3o6nk"), SubResource("Resource_33nvy"), SubResource("Resource_nxvvy"), SubResource("Resource_ei7ts"), SubResource("Resource_ov6et"), SubResource("Resource_d82jg"), SubResource("Resource_a27r8"), SubResource("Resource_7sh3s"), SubResource("Resource_ndp0d"), SubResource("Resource_cc071"), SubResource("Resource_ryha4"), SubResource("Resource_oc1c2"), SubResource("Resource_kcu7l"), SubResource("Resource_6v7d3"), SubResource("Resource_kj4su"), SubResource("Resource_a2m5v"), SubResource("Resource_70es7"), SubResource("Resource_wptlh"), SubResource("Resource_0f7f2"), SubResource("Resource_8ua45"), SubResource("Resource_onknc"), SubResource("Resource_n5k3l"), SubResource("Resource_ooh11"), SubResource("Resource_5ge8g"), SubResource("Resource_id8ro"), SubResource("Resource_8p2r6")]

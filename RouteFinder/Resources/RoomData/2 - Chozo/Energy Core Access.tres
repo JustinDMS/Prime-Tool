@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_jlpr3"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_g2q66"]
+
+[sub_resource type="Resource" id="Resource_v77du"]
+script = ExtResource("1_jlpr3")
+point_type = "Dock"
+point_connection = "East Atrium"
+room_name = "Energy Core Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_prr6v"]
+script = ExtResource("1_jlpr3")
+point_type = "Dock"
+point_connection = "Energy Core"
+room_name = "Energy Core Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_g2q66")
+room_name = "Energy Core Access"
+points = [SubResource("Resource_v77du"), SubResource("Resource_prr6v")]
+name = "Chozo Ruins"
+rooms = []

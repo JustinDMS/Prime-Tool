@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://bhn0jbg4ws3xn"]
+
+[ext_resource type="PackedScene" uid="uid://cvsvpaqpjdwtl" path="res://RouteFinder/Map/Chozo Ruins Map.tscn" id="1_48uvl"]
+[ext_resource type="PackedScene" uid="uid://ceriumwvjf8jg" path="res://RouteFinder/Map/Tallon Overworld Map.tscn" id="1_w6pt0"]
+[ext_resource type="PackedScene" uid="uid://cbhx0u4r1hptk" path="res://RouteFinder/Map/Magmoor Caverns Map.tscn" id="3_8nugp"]
+[ext_resource type="PackedScene" uid="uid://dv5vwefvdf2kh" path="res://RouteFinder/Map/Phendrana Drifts Map.tscn" id="4_2be60"]
+[ext_resource type="PackedScene" uid="uid://cemu6cclnm156" path="res://RouteFinder/Map/Phazon Mines Map.tscn" id="5_3tpvh"]
+
+[node name="Map" type="Node3D"]
+
+[node name="Tallon Overworld" parent="." instance=ExtResource("1_w6pt0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 616.962, 0, 950.431)
+
+[node name="Chozo Ruins" parent="." instance=ExtResource("1_48uvl")]
+
+[node name="Magmoor Caverns" parent="." instance=ExtResource("3_8nugp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -561.147, 0, 197.746)
+
+[node name="Phendrana Drifts" parent="." instance=ExtResource("4_2be60")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1068.88, 0, -91.8824)
+
+[node name="Phazon Mines" parent="." instance=ExtResource("5_3tpvh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 284.737, 0, 1434.74)

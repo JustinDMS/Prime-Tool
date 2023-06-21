@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_5bk5p"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_iauro"]
+
+[sub_resource type="Resource" id="Resource_u11wu"]
+script = ExtResource("1_5bk5p")
+point_type = "Dock"
+point_connection = "Nursery Access"
+room_name = "Eyon Tunnel"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_m2hm3"]
+script = ExtResource("1_5bk5p")
+point_type = "Dock"
+point_connection = "Ruined Nursery"
+room_name = "Eyon Tunnel"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_iauro")
+room_name = "Eyon Tunnel"
+points = [SubResource("Resource_u11wu"), SubResource("Resource_m2hm3")]
+name = "Chozo Ruins"
+rooms = []

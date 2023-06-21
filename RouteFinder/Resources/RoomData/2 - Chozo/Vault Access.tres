@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_g8bas"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_huc01"]
+
+[sub_resource type="Resource" id="Resource_556uo"]
+script = ExtResource("1_g8bas")
+point_type = "Dock"
+point_connection = "Vault"
+room_name = "Vault Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_134uj"]
+script = ExtResource("1_g8bas")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns North"
+room_name = "Vault Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_huc01")
+room_name = "Vault Access"
+points = [SubResource("Resource_556uo"), SubResource("Resource_134uj")]
+name = "Chozo Ruins"
+rooms = []

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="Room" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_i6s4j"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_j3pd6"]
+
+[sub_resource type="Resource" id="Resource_pimns"]
+script = ExtResource("1_i6s4j")
+point_type = "Dock"
+point_connection = "Canyon Cavern"
+room_name = "Tallon Canyon"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_aq4fh"]
+script = ExtResource("1_i6s4j")
+point_type = "Dock"
+point_connection = "Gully"
+room_name = "Tallon Canyon"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_k0td5"]
+script = ExtResource("1_i6s4j")
+point_type = "Dock"
+point_connection = "Root Tunnel"
+room_name = "Tallon Canyon"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_qn3h1"]
+script = ExtResource("1_i6s4j")
+point_type = "Dock"
+point_connection = "Transport Tunnel A (Tallon)"
+room_name = "Tallon Canyon"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_j3pd6")
+room_name = "Tallon Canyon"
+points = [SubResource("Resource_pimns"), SubResource("Resource_aq4fh"), SubResource("Resource_k0td5"), SubResource("Resource_qn3h1")]
+name = "Tallon Overworld"
+rooms = []

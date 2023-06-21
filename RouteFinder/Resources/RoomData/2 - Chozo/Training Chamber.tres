@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_3dklf"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_eghaq"]
+
+[sub_resource type="Resource" id="Resource_p2r1m"]
+script = ExtResource("1_3dklf")
+point_type = "Dock"
+point_connection = "Training Chamber Access"
+room_name = "Training Chamber"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_uvcxx"]
+script = ExtResource("1_3dklf")
+point_type = "Dock"
+point_connection = "Piston Tunnel"
+room_name = "Training Chamber"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_eghaq")
+room_name = "Training Chamber"
+points = [SubResource("Resource_p2r1m"), SubResource("Resource_uvcxx")]
+name = "Chozo Ruins"
+rooms = []

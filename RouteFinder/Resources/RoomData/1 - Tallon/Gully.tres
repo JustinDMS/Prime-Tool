@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_s8fn0"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_cqwyo"]
+
+[sub_resource type="Resource" id="Resource_yf8sh"]
+script = ExtResource("1_s8fn0")
+point_type = "Dock"
+point_connection = "Landing Site"
+room_name = "Gully"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_47xlx"]
+script = ExtResource("1_s8fn0")
+point_type = "Dock"
+point_connection = "Tallon Canyon"
+room_name = "Gully"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_cqwyo")
+room_name = "Gully"
+points = [SubResource("Resource_yf8sh"), SubResource("Resource_47xlx")]
+name = "Tallon Overworld"
+rooms = []

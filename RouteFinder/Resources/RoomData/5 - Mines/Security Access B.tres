@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_st6h2"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_tbyns"]
+
+[sub_resource type="Resource" id="Resource_6vmrs"]
+script = ExtResource("1_st6h2")
+point_type = "Dock"
+point_connection = "Elite Research"
+room_name = "Security Access B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_x6ho0"]
+script = ExtResource("1_st6h2")
+point_type = "Dock"
+point_connection = "Mine Security Station"
+room_name = "Security Access B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[resource]
+script = ExtResource("2_tbyns")
+room_name = "Security Access B"
+points = [SubResource("Resource_6vmrs"), SubResource("Resource_x6ho0")]
+name = "Phazon Mines"
+rooms = []

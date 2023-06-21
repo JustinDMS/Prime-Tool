@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_hjwje"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_ugi72"]
+
+[sub_resource type="Resource" id="Resource_ygb5f"]
+script = ExtResource("1_hjwje")
+point_type = "Dock"
+point_connection = "Burning Trail"
+room_name = "Transport to Chozo Ruins North"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sorol"]
+script = ExtResource("1_hjwje")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns North"
+room_name = "Transport to Chozo Ruins North"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[resource]
+script = ExtResource("2_ugi72")
+room_name = "Transport to Chozo Ruins North"
+points = [SubResource("Resource_ygb5f"), SubResource("Resource_sorol")]
+name = "Magmoor Caverns"
+rooms = []

@@ -1,0 +1,1155 @@
+[gd_resource type="Resource" script_class="World" load_steps=141 format=3 uid="uid://dp47outvrq78q"]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_01mm2"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/World.gd" id="2_b1l7c"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_yg6mq"]
+
+[sub_resource type="Resource" id="Resource_hwy07"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Landing Site"
+room_name = "Alcove"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_860fw"]
+script = ExtResource("2_yg6mq")
+room_name = "Alcove"
+points = [SubResource("Resource_hwy07")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_qocla"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Root Cave"
+room_name = "Arbor Chamber"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4ife1"]
+script = ExtResource("2_yg6mq")
+room_name = "Arbor Chamber"
+points = [SubResource("Resource_qocla")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_78rj0"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Temple Lobby"
+room_name = "Artifact Temple"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fg1rg"]
+script = ExtResource("2_yg6mq")
+room_name = "Artifact Temple"
+points = [SubResource("Resource_78rj0")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lliu5"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Deck Beta Transit Hall"
+room_name = "Biohazard Containment"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3vq6x"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Deck Beta Security Hall"
+room_name = "Biohazard Containment"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_05asr"]
+script = ExtResource("2_yg6mq")
+room_name = "Biohazard Containment"
+points = [SubResource("Resource_lliu5"), SubResource("Resource_3vq6x")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lsi6w"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Deck Beta Security Hall"
+room_name = "Biotech Research Area 1"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ki403"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Deck Beta Conduit Hall"
+room_name = "Biotech Research Area 1"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ng56c"]
+script = ExtResource("2_yg6mq")
+room_name = "Biotech Research Area 1"
+points = [SubResource("Resource_lsi6w"), SubResource("Resource_ki403")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ifl2r"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Landing Site"
+room_name = "Canyon Cavern"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_68d3x"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Tallon Canyon"
+room_name = "Canyon Cavern"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4xjhb"]
+script = ExtResource("2_yg6mq")
+room_name = "Canyon Cavern"
+points = [SubResource("Resource_ifl2r"), SubResource("Resource_68d3x")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_527al"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Reactor Access"
+room_name = "Cargo Freight Lift to Deck Gamma"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_va7w2"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Deck Beta Transit Hall"
+room_name = "Cargo Freight Lift to Deck Gamma"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1cplf"]
+script = ExtResource("2_yg6mq")
+room_name = "Cargo Freight Lift to Deck Gamma"
+points = [SubResource("Resource_527al"), SubResource("Resource_va7w2")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rejq8"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Deck Beta Conduit Hall"
+room_name = "Connection Elevator to Deck Beta"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_j4gyr"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Hydro Access Tunnel"
+room_name = "Connection Elevator to Deck Beta"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dcrcq"]
+script = ExtResource("2_yg6mq")
+room_name = "Connection Elevator to Deck Beta"
+points = [SubResource("Resource_rejq8"), SubResource("Resource_j4gyr")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_57vk7"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Biotech Research Area 1"
+room_name = "Deck Beta Conduit Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_62yv5"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Connection Elevator to Deck Beta"
+room_name = "Deck Beta Conduit Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_wl6fm"]
+script = ExtResource("2_yg6mq")
+room_name = "Deck Beta Conduit Hall"
+points = [SubResource("Resource_57vk7"), SubResource("Resource_62yv5")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_y4qt0"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Biohazard Containment"
+room_name = "Deck Beta Security Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sbtva"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Biotech Research Area 1"
+room_name = "Deck Beta Security Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hgao1"]
+script = ExtResource("2_yg6mq")
+room_name = "Deck Beta Security Hall"
+points = [SubResource("Resource_y4qt0"), SubResource("Resource_sbtva")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8ca4c"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Cargo Freight Lift to Deck Gamma"
+room_name = "Deck Beta Transit Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dcl8p"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Biohazard Containment"
+room_name = "Deck Beta Transit Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_x0idg"]
+script = ExtResource("2_yg6mq")
+room_name = "Deck Beta Transit Hall"
+points = [SubResource("Resource_8ca4c"), SubResource("Resource_dcl8p")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1rkh6"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Frigate Crash Site"
+room_name = "Frigate Access Tunnel"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jm87a"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Main Ventilation Shaft Section C"
+room_name = "Frigate Access Tunnel"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lfbkb"]
+script = ExtResource("2_yg6mq")
+room_name = "Frigate Access Tunnel"
+points = [SubResource("Resource_1rkh6"), SubResource("Resource_jm87a")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_oi614"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Waterfall Cavern"
+room_name = "Frigate Crash Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8nkgr"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Overgrown Cavern"
+room_name = "Frigate Crash Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_806i1"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Frigate Access Tunnel"
+room_name = "Frigate Crash Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_njl35"]
+script = ExtResource("2_yg6mq")
+room_name = "Frigate Crash Site"
+points = [SubResource("Resource_oi614"), SubResource("Resource_8nkgr"), SubResource("Resource_806i1")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sp7c7"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Great Tree Hall"
+room_name = "Great Tree Chamber"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6ees4"]
+script = ExtResource("2_yg6mq")
+room_name = "Great Tree Chamber"
+points = [SubResource("Resource_sp7c7")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tuem4"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport Tunnel D"
+room_name = "Great Tree Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_eyhwm"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Great Tree Chamber"
+room_name = "Great Tree Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dq2gw"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Life Grove Tunnel"
+room_name = "Great Tree Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ilj3q"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport Tunnel E"
+room_name = "Great Tree Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_p5e3d"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Hydro Access Tunnel"
+room_name = "Great Tree Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_66dj3"]
+script = ExtResource("2_yg6mq")
+room_name = "Great Tree Hall"
+points = [SubResource("Resource_tuem4"), SubResource("Resource_eyhwm"), SubResource("Resource_dq2gw"), SubResource("Resource_ilj3q"), SubResource("Resource_p5e3d")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_yf8sh"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Landing Site"
+room_name = "Gully"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_47xlx"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Tallon Canyon"
+room_name = "Gully"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_moexd"]
+script = ExtResource("2_yg6mq")
+room_name = "Gully"
+points = [SubResource("Resource_yf8sh"), SubResource("Resource_47xlx")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ochoj"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Connection Elevator to Deck Beta"
+room_name = "Hydro Access Tunnel"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nnu4s"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Great Tree Hall"
+room_name = "Hydro Access Tunnel"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xfr7r"]
+script = ExtResource("2_yg6mq")
+room_name = "Hydro Access Tunnel"
+points = [SubResource("Resource_ochoj"), SubResource("Resource_nnu4s")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7wqa4"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Alcove"
+room_name = "Landing Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_l1jmn"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Canyon Cavern"
+room_name = "Landing Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0hfn7"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Gully"
+room_name = "Landing Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pvpur"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Temple Hall"
+room_name = "Landing Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_82kxl"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Waterfall Cavern"
+room_name = "Landing Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_iejh0"]
+script = ExtResource("2_yg6mq")
+room_name = "Landing Site"
+points = [SubResource("Resource_7wqa4"), SubResource("Resource_l1jmn"), SubResource("Resource_0hfn7"), SubResource("Resource_pvpur"), SubResource("Resource_82kxl")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1iwe4"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Life Grove Tunnel"
+room_name = "Life Grove"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_s517v"]
+script = ExtResource("2_yg6mq")
+room_name = "Life Grove"
+points = [SubResource("Resource_1iwe4")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5ysdc"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Great Tree Hall"
+room_name = "Life Grove Tunnel"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cjv4s"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Life Grove"
+room_name = "Life Grove Tunnel"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kevf7"]
+script = ExtResource("2_yg6mq")
+room_name = "Life Grove Tunnel"
+points = [SubResource("Resource_5ysdc"), SubResource("Resource_cjv4s")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hac2q"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Main Ventilation Shaft Section B"
+room_name = "Main Ventilation Shaft Section A"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_qxrs7"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Reactor Core"
+room_name = "Main Ventilation Shaft Section A"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2g6mj"]
+script = ExtResource("2_yg6mq")
+room_name = "Main Ventilation Shaft Section A"
+points = [SubResource("Resource_hac2q"), SubResource("Resource_qxrs7")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2muvi"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Main Ventilation Shaft Section A"
+room_name = "Main Ventilation Shaft Section B"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ltwe6"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Main Ventilation Shaft Section C"
+room_name = "Main Ventilation Shaft Section B"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0i6ki"]
+script = ExtResource("2_yg6mq")
+room_name = "Main Ventilation Shaft Section B"
+points = [SubResource("Resource_2muvi"), SubResource("Resource_ltwe6")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_685k8"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Frigate Access Tunnel"
+room_name = "Main Ventilation Shaft Section C"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_wu2nl"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Main Ventilation Shaft Section B"
+room_name = "Main Ventilation Shaft Section C"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fyyyo"]
+script = ExtResource("2_yg6mq")
+room_name = "Main Ventilation Shaft Section C"
+points = [SubResource("Resource_685k8"), SubResource("Resource_wu2nl")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_elq7q"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Frigate Crash Site"
+room_name = "Overgrown Cavern"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cyjii"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport Tunnel C (Tallon)"
+room_name = "Overgrown Cavern"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jnsgl"]
+script = ExtResource("2_yg6mq")
+room_name = "Overgrown Cavern"
+points = [SubResource("Resource_elq7q"), SubResource("Resource_cyjii")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tyrvg"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Reactor Core"
+room_name = "Reactor Access"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_apqmc"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Cargo Freight Lift to Deck Gamma"
+room_name = "Reactor Access"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_j6jqr"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Savestation"
+room_name = "Reactor Access"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bdp27"]
+script = ExtResource("2_yg6mq")
+room_name = "Reactor Access"
+points = [SubResource("Resource_tyrvg"), SubResource("Resource_apqmc"), SubResource("Resource_j6jqr")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ss42j"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Main Ventilation Shaft Section A"
+room_name = "Reactor Core"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0wkbg"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Reactor Access"
+room_name = "Reactor Core"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_20ee0"]
+script = ExtResource("2_yg6mq")
+room_name = "Reactor Core"
+points = [SubResource("Resource_ss42j"), SubResource("Resource_0wkbg")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0y1eg"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Arbor Chamber"
+room_name = "Root Cave"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1q7j2"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Root Tunnel"
+room_name = "Root Cave"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4bais"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport Tunnel B (Tallon)"
+room_name = "Root Cave"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2sf13"]
+script = ExtResource("2_yg6mq")
+room_name = "Root Cave"
+points = [SubResource("Resource_0y1eg"), SubResource("Resource_1q7j2"), SubResource("Resource_4bais")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ctsta"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Tallon Canyon"
+room_name = "Root Tunnel"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_okonw"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Root Cave"
+room_name = "Root Tunnel"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_thcyf"]
+script = ExtResource("2_yg6mq")
+room_name = "Root Tunnel"
+points = [SubResource("Resource_ctsta"), SubResource("Resource_okonw")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pqqx6"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Reactor Access"
+room_name = "Savestation"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jetor"]
+script = ExtResource("2_yg6mq")
+room_name = "Savestation"
+points = [SubResource("Resource_pqqx6")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pimns"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Canyon Cavern"
+room_name = "Tallon Canyon"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_aq4fh"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Gully"
+room_name = "Tallon Canyon"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_k0td5"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Root Tunnel"
+room_name = "Tallon Canyon"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_qn3h1"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport Tunnel A (Tallon)"
+room_name = "Tallon Canyon"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0xv2y"]
+script = ExtResource("2_yg6mq")
+room_name = "Tallon Canyon"
+points = [SubResource("Resource_pimns"), SubResource("Resource_aq4fh"), SubResource("Resource_k0td5"), SubResource("Resource_qn3h1")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dj0vk"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Landing Site"
+room_name = "Temple Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_d7q20"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Temple Security Station"
+room_name = "Temple Hall"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7c084"]
+script = ExtResource("2_yg6mq")
+room_name = "Temple Hall"
+points = [SubResource("Resource_dj0vk"), SubResource("Resource_d7q20")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ksjmv"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Artifact Temple"
+room_name = "Temple Lobby"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6ihfs"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Temple Security Station"
+room_name = "Temple Lobby"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sw6qw"]
+script = ExtResource("2_yg6mq")
+room_name = "Temple Lobby"
+points = [SubResource("Resource_ksjmv"), SubResource("Resource_6ihfs")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gxw0e"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Temple Hall"
+room_name = "Temple Security Station"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_b6yhs"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Temple Lobby"
+room_name = "Temple Security Station"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_m30xi"]
+script = ExtResource("2_yg6mq")
+room_name = "Temple Security Station"
+points = [SubResource("Resource_gxw0e"), SubResource("Resource_b6yhs")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ex2s1"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport Tunnel C (Tallon)"
+room_name = "Transport to Chozo Ruins East"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cuyl0"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld East"
+room_name = "Transport to Chozo Ruins East"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_svn4b"]
+script = ExtResource("2_yg6mq")
+room_name = "Transport to Chozo Ruins East"
+points = [SubResource("Resource_ex2s1"), SubResource("Resource_cuyl0")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_liw15"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport Tunnel D"
+room_name = "Transport to Chozo Ruins South"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_n8wvb"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld South (Chozo)"
+room_name = "Transport to Chozo Ruins South"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dxeyq"]
+script = ExtResource("2_yg6mq")
+room_name = "Transport to Chozo Ruins South"
+points = [SubResource("Resource_liw15"), SubResource("Resource_n8wvb")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kfvkv"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport Tunnel A (Tallon)"
+room_name = "Transport to Chozo Ruins West"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_c442m"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld North"
+room_name = "Transport to Chozo Ruins West"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_oomve"]
+script = ExtResource("2_yg6mq")
+room_name = "Transport to Chozo Ruins West"
+points = [SubResource("Resource_kfvkv"), SubResource("Resource_c442m")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_m1l1s"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport Tunnel B (Tallon)"
+room_name = "Transport to Magmoor Caverns East"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nfkne"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld West"
+room_name = "Transport to Magmoor Caverns East"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ibqwe"]
+script = ExtResource("2_yg6mq")
+room_name = "Transport to Magmoor Caverns East"
+points = [SubResource("Resource_m1l1s"), SubResource("Resource_nfkne")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_m6gr6"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport Tunnel E"
+room_name = "Transport to Phazon Mines East"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jcc68"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld South (Mines)"
+room_name = "Transport to Phazon Mines East"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_n0qus"]
+script = ExtResource("2_yg6mq")
+room_name = "Transport to Phazon Mines East"
+points = [SubResource("Resource_m6gr6"), SubResource("Resource_jcc68")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_otgtv"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Tallon Canyon"
+room_name = "Transport Tunnel A (Tallon)"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gsevg"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport to Chozo Ruins West"
+room_name = "Transport Tunnel A (Tallon)"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_78or3"]
+script = ExtResource("2_yg6mq")
+room_name = "Transport Tunnel A (Tallon)"
+points = [SubResource("Resource_otgtv"), SubResource("Resource_gsevg")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_x06mg"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Root Cave"
+room_name = "Transport Tunnel B (Tallon)"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lwmn0"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns East"
+room_name = "Transport Tunnel B (Tallon)"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0sc1o"]
+script = ExtResource("2_yg6mq")
+room_name = "Transport Tunnel B (Tallon)"
+points = [SubResource("Resource_x06mg"), SubResource("Resource_lwmn0")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dj8oi"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Overgrown Cavern"
+room_name = "Transport Tunnel C (Tallon)"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_qrbjf"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport to Chozo Ruins East"
+room_name = "Transport Tunnel C (Tallon)"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_n6vnu"]
+script = ExtResource("2_yg6mq")
+room_name = "Transport Tunnel C (Tallon)"
+points = [SubResource("Resource_dj8oi"), SubResource("Resource_qrbjf")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2owry"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Great Tree Hall"
+room_name = "Transport Tunnel D"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4l7ij"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport to Chozo Ruins South"
+room_name = "Transport Tunnel D"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_l5aul"]
+script = ExtResource("2_yg6mq")
+room_name = "Transport Tunnel D"
+points = [SubResource("Resource_2owry"), SubResource("Resource_4l7ij")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fspbp"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Great Tree Hall"
+room_name = "Transport Tunnel E"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_p4k0t"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Transport to Phazon Mines East"
+room_name = "Transport Tunnel E"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_47y1w"]
+script = ExtResource("2_yg6mq")
+room_name = "Transport Tunnel E"
+points = [SubResource("Resource_fspbp"), SubResource("Resource_p4k0t")]
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6g5m8"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Landing Site"
+room_name = "Waterfall Cavern"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5e6rp"]
+script = ExtResource("1_01mm2")
+point_type = "Dock"
+point_connection = "Frigate Crash Site"
+room_name = "Waterfall Cavern"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ll0c8"]
+script = ExtResource("2_yg6mq")
+room_name = "Waterfall Cavern"
+points = [SubResource("Resource_6g5m8"), SubResource("Resource_5e6rp")]
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_b1l7c")
+name = "Tallon Overworld"
+rooms = [SubResource("Resource_860fw"), SubResource("Resource_4ife1"), SubResource("Resource_fg1rg"), SubResource("Resource_05asr"), SubResource("Resource_ng56c"), SubResource("Resource_4xjhb"), SubResource("Resource_1cplf"), SubResource("Resource_dcrcq"), SubResource("Resource_wl6fm"), SubResource("Resource_hgao1"), SubResource("Resource_x0idg"), SubResource("Resource_lfbkb"), SubResource("Resource_njl35"), SubResource("Resource_6ees4"), SubResource("Resource_66dj3"), SubResource("Resource_moexd"), SubResource("Resource_xfr7r"), SubResource("Resource_iejh0"), SubResource("Resource_s517v"), SubResource("Resource_kevf7"), SubResource("Resource_2g6mj"), SubResource("Resource_0i6ki"), SubResource("Resource_fyyyo"), SubResource("Resource_jnsgl"), SubResource("Resource_bdp27"), SubResource("Resource_20ee0"), SubResource("Resource_2sf13"), SubResource("Resource_thcyf"), SubResource("Resource_jetor"), SubResource("Resource_0xv2y"), SubResource("Resource_7c084"), SubResource("Resource_sw6qw"), SubResource("Resource_m30xi"), SubResource("Resource_svn4b"), SubResource("Resource_dxeyq"), SubResource("Resource_oomve"), SubResource("Resource_ibqwe"), SubResource("Resource_n0qus"), SubResource("Resource_78or3"), SubResource("Resource_0sc1o"), SubResource("Resource_n6vnu"), SubResource("Resource_l5aul"), SubResource("Resource_47y1w"), SubResource("Resource_ll0c8")]

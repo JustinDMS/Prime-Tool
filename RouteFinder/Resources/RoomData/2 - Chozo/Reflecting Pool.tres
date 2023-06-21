@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="Room" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_yjgkw"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_ymlys"]
+
+[sub_resource type="Resource" id="Resource_mcjro"]
+script = ExtResource("1_yjgkw")
+point_type = "Dock"
+point_connection = "Reflecting Pool Access"
+room_name = "Reflecting Pool"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8ttlb"]
+script = ExtResource("1_yjgkw")
+point_type = "Dock"
+point_connection = "Antechamber"
+room_name = "Reflecting Pool"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_h2hfe"]
+script = ExtResource("1_yjgkw")
+point_type = "Dock"
+point_connection = "Save Station 3"
+room_name = "Reflecting Pool"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_b2av7"]
+script = ExtResource("1_yjgkw")
+point_type = "Dock"
+point_connection = "Transport Access South"
+room_name = "Reflecting Pool"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_ymlys")
+room_name = "Reflecting Pool"
+points = [SubResource("Resource_mcjro"), SubResource("Resource_8ttlb"), SubResource("Resource_h2hfe"), SubResource("Resource_b2av7")]
+name = "Chozo Ruins"
+rooms = []

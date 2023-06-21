@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="Room" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_8l2hb"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_7tt7o"]
+
+[sub_resource type="Resource" id="Resource_0y1eg"]
+script = ExtResource("1_8l2hb")
+point_type = "Dock"
+point_connection = "Arbor Chamber"
+room_name = "Root Cave"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1q7j2"]
+script = ExtResource("1_8l2hb")
+point_type = "Dock"
+point_connection = "Root Tunnel"
+room_name = "Root Cave"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4bais"]
+script = ExtResource("1_8l2hb")
+point_type = "Dock"
+point_connection = "Transport Tunnel B (Tallon)"
+room_name = "Root Cave"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_7tt7o")
+room_name = "Root Cave"
+points = [SubResource("Resource_0y1eg"), SubResource("Resource_1q7j2"), SubResource("Resource_4bais")]
+name = "Tallon Overworld"
+rooms = []

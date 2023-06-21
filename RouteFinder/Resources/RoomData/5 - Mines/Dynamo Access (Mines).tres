@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_loaqo"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_ravby"]
+
+[sub_resource type="Resource" id="Resource_dyeso"]
+script = ExtResource("1_loaqo")
+point_type = "Dock"
+point_connection = "Central Dynamo"
+room_name = "Dynamo Access (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_x3g2u"]
+script = ExtResource("1_loaqo")
+point_type = "Dock"
+point_connection = "Omega Research"
+room_name = "Dynamo Access (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[resource]
+script = ExtResource("2_ravby")
+room_name = "Dynamo Access (Mines)"
+points = [SubResource("Resource_dyeso"), SubResource("Resource_x3g2u")]
+name = "Phazon Mines"
+rooms = []

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_lfxl7"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_61s8a"]
+
+[sub_resource type="Resource" id="Resource_ochoj"]
+script = ExtResource("1_lfxl7")
+point_type = "Dock"
+point_connection = "Connection Elevator to Deck Beta"
+room_name = "Hydro Access Tunnel"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nnu4s"]
+script = ExtResource("1_lfxl7")
+point_type = "Dock"
+point_connection = "Great Tree Hall"
+room_name = "Hydro Access Tunnel"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_61s8a")
+room_name = "Hydro Access Tunnel"
+points = [SubResource("Resource_ochoj"), SubResource("Resource_nnu4s")]
+name = "Tallon Overworld"
+rooms = []

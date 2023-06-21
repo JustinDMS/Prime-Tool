@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Room" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_mqw3k"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_o376s"]
+
+[sub_resource type="Resource" id="Resource_whmxx"]
+script = ExtResource("1_mqw3k")
+point_type = "Dock"
+point_connection = "Tower of Light"
+room_name = "Tower Chamber"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_o376s")
+room_name = "Tower Chamber"
+points = [SubResource("Resource_whmxx")]
+name = "Chozo Ruins"
+rooms = []

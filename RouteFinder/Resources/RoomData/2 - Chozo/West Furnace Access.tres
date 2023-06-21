@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_fypeh"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_u7oi4"]
+
+[sub_resource type="Resource" id="Resource_2lxq2"]
+script = ExtResource("1_fypeh")
+point_type = "Dock"
+point_connection = "Energy Core"
+room_name = "West Furnace Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hdsvd"]
+script = ExtResource("1_fypeh")
+point_type = "Dock"
+point_connection = "Furnace"
+room_name = "West Furnace Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_u7oi4")
+room_name = "West Furnace Access"
+points = [SubResource("Resource_2lxq2"), SubResource("Resource_hdsvd")]
+name = "Chozo Ruins"
+rooms = []

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_ye81q"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_nhvgg"]
+
+[sub_resource type="Resource" id="Resource_rwrr3"]
+script = ExtResource("1_ye81q")
+point_type = "Dock"
+point_connection = "Main Plaza"
+room_name = "Ruins Entrance"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_t3ok6"]
+script = ExtResource("1_ye81q")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld North"
+room_name = "Ruins Entrance"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_nhvgg")
+room_name = "Ruins Entrance"
+points = [SubResource("Resource_rwrr3"), SubResource("Resource_t3ok6")]
+name = "Chozo Ruins"
+rooms = []

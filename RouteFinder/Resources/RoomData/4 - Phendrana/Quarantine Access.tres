@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_546r6"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_n7lbu"]
+
+[sub_resource type="Resource" id="Resource_hkydw"]
+script = ExtResource("1_546r6")
+point_type = "Dock"
+point_connection = "Ruined Courtyard"
+room_name = "Quarantine Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gy030"]
+script = ExtResource("1_546r6")
+point_type = "Dock"
+point_connection = "North Quarantine Tunnel"
+room_name = "Quarantine Access"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[resource]
+script = ExtResource("2_n7lbu")
+room_name = "Quarantine Access"
+points = [SubResource("Resource_hkydw"), SubResource("Resource_gy030")]
+name = "Phendrana Drifts"
+rooms = []

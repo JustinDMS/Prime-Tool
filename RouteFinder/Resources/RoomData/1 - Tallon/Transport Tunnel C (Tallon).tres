@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_nwgqd"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_knpbo"]
+
+[sub_resource type="Resource" id="Resource_dj8oi"]
+script = ExtResource("1_nwgqd")
+point_type = "Dock"
+point_connection = "Overgrown Cavern"
+room_name = "Transport Tunnel C (Tallon)"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_qrbjf"]
+script = ExtResource("1_nwgqd")
+point_type = "Dock"
+point_connection = "Transport to Chozo Ruins East"
+room_name = "Transport Tunnel C (Tallon)"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_knpbo")
+room_name = "Transport Tunnel C (Tallon)"
+points = [SubResource("Resource_dj8oi"), SubResource("Resource_qrbjf")]
+name = "Tallon Overworld"
+rooms = []

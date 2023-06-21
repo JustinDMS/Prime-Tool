@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="Room" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_qgj5e"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_6bd64"]
+
+[sub_resource type="Resource" id="Resource_1apuw"]
+script = ExtResource("1_qgj5e")
+point_type = "Dock"
+point_connection = "Frost Cave Access"
+room_name = "Frost Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fbbfp"]
+script = ExtResource("1_qgj5e")
+point_type = "Dock"
+point_connection = "Upper Edge Tunnel"
+room_name = "Frost Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5oao6"]
+script = ExtResource("1_qgj5e")
+point_type = "Dock"
+point_connection = "Save Station C"
+room_name = "Frost Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[resource]
+script = ExtResource("2_6bd64")
+room_name = "Frost Cave"
+points = [SubResource("Resource_1apuw"), SubResource("Resource_fbbfp"), SubResource("Resource_5oao6")]
+name = "Phendrana Drifts"
+rooms = []

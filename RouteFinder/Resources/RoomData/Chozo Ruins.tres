@@ -1,0 +1,1720 @@
+[gd_resource type="Resource" script_class="World" load_steps=209 format=3 uid="uid://b2tj5bd0yh2gi"]
+
+[ext_resource type="PackedScene" uid="uid://cvsvpaqpjdwtl" path="res://RouteFinder/Map/Chozo Ruins Map.tscn" id="1_7xyrs"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_igy3f"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/World.gd" id="1_o3fyg"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_n2pju"]
+
+[sub_resource type="Resource" id="Resource_rmlil"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Reflecting Pool"
+room_name = "Antechamber"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jsic0"]
+script = ExtResource("2_n2pju")
+room_name = "Antechamber"
+points = [SubResource("Resource_rmlil")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jjj3c"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Arboretum Access"
+room_name = "Arboretum"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_t2757"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Gathering Hall Access"
+room_name = "Arboretum"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_yq152"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Sunchamber Lobby"
+room_name = "Arboretum"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0ndjq"]
+script = ExtResource("2_n2pju")
+room_name = "Arboretum"
+points = [SubResource("Resource_jjj3c"), SubResource("Resource_t2757"), SubResource("Resource_yq152")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_vf8c3"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Fountain"
+room_name = "Arboretum Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ii4gq"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Arboretum"
+room_name = "Arboretum Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_yksyf"]
+script = ExtResource("2_n2pju")
+room_name = "Arboretum Access"
+points = [SubResource("Resource_vf8c3"), SubResource("Resource_ii4gq")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_qhkqo"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Burn Dome Access"
+room_name = "Burn Dome"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6sccr"]
+script = ExtResource("2_n2pju")
+room_name = "Burn Dome"
+points = [SubResource("Resource_qhkqo")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_urhe2"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Burn Dome"
+room_name = "Burn Dome Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bb6ct"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Energy Core"
+room_name = "Burn Dome Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4kqas"]
+script = ExtResource("2_n2pju")
+room_name = "Burn Dome Access"
+points = [SubResource("Resource_urhe2"), SubResource("Resource_bb6ct")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_g3nqi"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Crossway Access West"
+room_name = "Crossway"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1556s"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Crossway Access South"
+room_name = "Crossway"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bf38t"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Elder Hall Access"
+room_name = "Crossway"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fas7u"]
+script = ExtResource("2_n2pju")
+room_name = "Crossway"
+points = [SubResource("Resource_g3nqi"), SubResource("Resource_1556s"), SubResource("Resource_bf38t")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rl31w"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Crossway"
+room_name = "Crossway Access South"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_g1hxs"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Hall of the Elders"
+room_name = "Crossway Access South"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_56fct"]
+script = ExtResource("2_n2pju")
+room_name = "Crossway Access South"
+points = [SubResource("Resource_rl31w"), SubResource("Resource_g1hxs")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lkxu5"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Furnace"
+room_name = "Crossway Access West"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xjn2o"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Crossway"
+room_name = "Crossway Access West"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_y1u77"]
+script = ExtResource("2_n2pju")
+room_name = "Crossway Access West"
+points = [SubResource("Resource_lkxu5"), SubResource("Resource_xjn2o")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_76pdq"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Dynamo Access (Chozo)"
+room_name = "Dynamo"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_64dg8"]
+script = ExtResource("2_n2pju")
+room_name = "Dynamo"
+points = [SubResource("Resource_76pdq")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_05tcm"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Dynamo"
+room_name = "Dynamo Access (Chozo)"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lck6d"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Watery Hall"
+room_name = "Dynamo Access (Chozo)"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_o82ae"]
+script = ExtResource("2_n2pju")
+room_name = "Dynamo Access (Chozo)"
+points = [SubResource("Resource_05tcm"), SubResource("Resource_lck6d")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bed11"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Gathering Hall"
+room_name = "East Atrium"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_y4nnm"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Energy Core Access"
+room_name = "East Atrium"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dxjps"]
+script = ExtResource("2_n2pju")
+room_name = "East Atrium"
+points = [SubResource("Resource_bed11"), SubResource("Resource_y4nnm")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_20tkx"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Furnace"
+room_name = "East Furnace Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gdnud"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Hall of the Elders"
+room_name = "East Furnace Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_44uft"]
+script = ExtResource("2_n2pju")
+room_name = "East Furnace Access"
+points = [SubResource("Resource_20tkx"), SubResource("Resource_gdnud")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dp0t8"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Hall of the Elders"
+room_name = "Elder Chamber"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_voinu"]
+script = ExtResource("2_n2pju")
+room_name = "Elder Chamber"
+points = [SubResource("Resource_dp0t8")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tefvh"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Crossway"
+room_name = "Elder Hall Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0urio"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Hall of the Elders"
+room_name = "Elder Hall Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_w6pte"]
+script = ExtResource("2_n2pju")
+room_name = "Elder Hall Access"
+points = [SubResource("Resource_tefvh"), SubResource("Resource_0urio")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_y514i"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Burn Dome Access"
+room_name = "Energy Core"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bliy8"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Energy Core Access"
+room_name = "Energy Core"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5dr4h"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "West Furnace Access"
+room_name = "Energy Core"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_h5ygn"]
+script = ExtResource("2_n2pju")
+room_name = "Energy Core"
+points = [SubResource("Resource_y514i"), SubResource("Resource_bliy8"), SubResource("Resource_5dr4h")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_v77du"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "East Atrium"
+room_name = "Energy Core Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_prr6v"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Energy Core"
+room_name = "Energy Core Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_r7g8g"]
+script = ExtResource("2_n2pju")
+room_name = "Energy Core Access"
+points = [SubResource("Resource_v77du"), SubResource("Resource_prr6v")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_u11wu"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Nursery Access"
+room_name = "Eyon Tunnel"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_m2hm3"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Nursery"
+room_name = "Eyon Tunnel"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sg1ql"]
+script = ExtResource("2_n2pju")
+room_name = "Eyon Tunnel"
+points = [SubResource("Resource_u11wu"), SubResource("Resource_m2hm3")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7r587"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "West Furnace Access"
+room_name = "Furnace"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cmrgp"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Crossway Access West"
+room_name = "Furnace"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_l60be"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "East Furnace Access"
+room_name = "Furnace"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_n2rvq"]
+script = ExtResource("2_n2pju")
+room_name = "Furnace"
+points = [SubResource("Resource_7r587"), SubResource("Resource_cmrgp"), SubResource("Resource_l60be")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_k6hdb"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Gathering Hall Access"
+room_name = "Gathering Hall"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ph1m3"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Watery Hall Access"
+room_name = "Gathering Hall"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_svlbi"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "East Atrium"
+room_name = "Gathering Hall"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ujto0"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Save Station 2"
+room_name = "Gathering Hall"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_acswy"]
+script = ExtResource("2_n2pju")
+room_name = "Gathering Hall"
+points = [SubResource("Resource_k6hdb"), SubResource("Resource_ph1m3"), SubResource("Resource_svlbi"), SubResource("Resource_ujto0")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8vls2"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Arboretum"
+room_name = "Gathering Hall Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_p61b4"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Gathering Hall"
+room_name = "Gathering Hall Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ahf61"]
+script = ExtResource("2_n2pju")
+room_name = "Gathering Hall Access"
+points = [SubResource("Resource_8vls2"), SubResource("Resource_p61b4")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_a880l"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "East Furnace Access"
+room_name = "Hall of the Elders"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gbv5c"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Crossway Access South"
+room_name = "Hall of the Elders"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_48m1i"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Elder Hall Access"
+room_name = "Hall of the Elders"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_otah2"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Elder Chamber"
+room_name = "Hall of the Elders"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lu0w6"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Reflecting Pool Access"
+room_name = "Hall of the Elders"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ammfa"]
+script = ExtResource("2_n2pju")
+room_name = "Hall of the Elders"
+points = [SubResource("Resource_a880l"), SubResource("Resource_gbv5c"), SubResource("Resource_48m1i"), SubResource("Resource_otah2"), SubResource("Resource_lu0w6")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_w06r3"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Totem Access"
+room_name = "Hive Totem"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_swikb"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport Access North"
+room_name = "Hive Totem"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ecngb"]
+script = ExtResource("2_n2pju")
+room_name = "Hive Totem"
+points = [SubResource("Resource_w06r3"), SubResource("Resource_swikb")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_raj6k"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Meditation Fountain"
+room_name = "Magma Pool"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sico2"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Training Chamber Access"
+room_name = "Magma Pool"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_t0xl4"]
+script = ExtResource("2_n2pju")
+room_name = "Magma Pool"
+points = [SubResource("Resource_raj6k"), SubResource("Resource_sico2")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_vkmib"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruins Entrance"
+room_name = "Main Plaza"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_flngn"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Shrine Access"
+room_name = "Main Plaza"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jwoxc"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Piston Tunnel"
+room_name = "Main Plaza"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_x4m2p"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Fountain Access"
+room_name = "Main Plaza"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2ae5l"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Nursery Access"
+room_name = "Main Plaza"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_b50e8"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Plaza Access"
+room_name = "Main Plaza"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kqquy"]
+script = ExtResource("2_n2pju")
+room_name = "Main Plaza"
+points = [SubResource("Resource_vkmib"), SubResource("Resource_flngn"), SubResource("Resource_jwoxc"), SubResource("Resource_x4m2p"), SubResource("Resource_2ae5l"), SubResource("Resource_b50e8")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dwyms"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Gallery"
+room_name = "Map Station (Chozo)"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fgp5g"]
+script = ExtResource("2_n2pju")
+room_name = "Map Station (Chozo)"
+points = [SubResource("Resource_dwyms")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_mswii"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Fountain"
+room_name = "Meditation Fountain"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2ibn0"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Magma Pool"
+room_name = "Meditation Fountain"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_b73us"]
+script = ExtResource("2_n2pju")
+room_name = "Meditation Fountain"
+points = [SubResource("Resource_mswii"), SubResource("Resource_2ibn0")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ldqfe"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Nursery"
+room_name = "North Atrium"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sxnaa"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Gallery"
+room_name = "North Atrium"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_72t1k"]
+script = ExtResource("2_n2pju")
+room_name = "North Atrium"
+points = [SubResource("Resource_ldqfe"), SubResource("Resource_sxnaa")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_oe08i"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Main Plaza"
+room_name = "Nursery Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2abk3"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Eyon Tunnel"
+room_name = "Nursery Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6wvhf"]
+script = ExtResource("2_n2pju")
+room_name = "Nursery Access"
+points = [SubResource("Resource_oe08i"), SubResource("Resource_2abk3")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_uxba8"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Main Plaza"
+room_name = "Piston Tunnel"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sgt6i"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Training Chamber"
+room_name = "Piston Tunnel"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7or5k"]
+script = ExtResource("2_n2pju")
+room_name = "Piston Tunnel"
+points = [SubResource("Resource_uxba8"), SubResource("Resource_sgt6i")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_q6pnw"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Main Plaza"
+room_name = "Plaza Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_j3yx7"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Vault"
+room_name = "Plaza Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_23ito"]
+script = ExtResource("2_n2pju")
+room_name = "Plaza Access"
+points = [SubResource("Resource_q6pnw"), SubResource("Resource_j3yx7")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_mcjro"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Reflecting Pool Access"
+room_name = "Reflecting Pool"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8ttlb"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Antechamber"
+room_name = "Reflecting Pool"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_h2hfe"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Save Station 3"
+room_name = "Reflecting Pool"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_b2av7"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport Access South"
+room_name = "Reflecting Pool"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sqxgb"]
+script = ExtResource("2_n2pju")
+room_name = "Reflecting Pool"
+points = [SubResource("Resource_mcjro"), SubResource("Resource_8ttlb"), SubResource("Resource_h2hfe"), SubResource("Resource_b2av7")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8f0q0"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Hall of the Elders"
+room_name = "Reflecting Pool Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_chws3"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Reflecting Pool"
+room_name = "Reflecting Pool Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1tiou"]
+script = ExtResource("2_n2pju")
+room_name = "Reflecting Pool Access"
+points = [SubResource("Resource_8f0q0"), SubResource("Resource_chws3")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4f4yg"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Fountain Access"
+room_name = "Ruined Fountain"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7xyrl"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Arboretum Access"
+room_name = "Ruined Fountain"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_v2fyk"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Meditation Fountain"
+room_name = "Ruined Fountain"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lxb55"]
+script = ExtResource("2_n2pju")
+room_name = "Ruined Fountain"
+points = [SubResource("Resource_4f4yg"), SubResource("Resource_7xyrl"), SubResource("Resource_v2fyk")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_680ag"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Main Plaza"
+room_name = "Ruined Fountain Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_vn2a8"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Fountain"
+room_name = "Ruined Fountain Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_f2fqh"]
+script = ExtResource("2_n2pju")
+room_name = "Ruined Fountain Access"
+points = [SubResource("Resource_680ag"), SubResource("Resource_vn2a8")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_mr5oa"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "North Atrium"
+room_name = "Ruined Gallery"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_y1o0y"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Totem Access"
+room_name = "Ruined Gallery"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1tidg"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Map Station (Chozo)"
+room_name = "Ruined Gallery"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_axj2w"]
+script = ExtResource("2_n2pju")
+room_name = "Ruined Gallery"
+points = [SubResource("Resource_mr5oa"), SubResource("Resource_y1o0y"), SubResource("Resource_1tidg")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_c0hqw"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Eyon Tunnel"
+room_name = "Ruined Nursery"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0au5k"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "North Atrium"
+room_name = "Ruined Nursery"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sh0j7"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Save Station 1"
+room_name = "Ruined Nursery"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2lubu"]
+script = ExtResource("2_n2pju")
+room_name = "Ruined Nursery"
+points = [SubResource("Resource_c0hqw"), SubResource("Resource_0au5k"), SubResource("Resource_sh0j7")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nk5xl"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Shrine Access"
+room_name = "Ruined Shrine"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pvp5f"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Tower of Light Access"
+room_name = "Ruined Shrine"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_csmur"]
+script = ExtResource("2_n2pju")
+room_name = "Ruined Shrine"
+points = [SubResource("Resource_nk5xl"), SubResource("Resource_pvp5f")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fff8l"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Main Plaza"
+room_name = "Ruined Shrine Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dw7ci"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Shrine"
+room_name = "Ruined Shrine Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_14ejk"]
+script = ExtResource("2_n2pju")
+room_name = "Ruined Shrine Access"
+points = [SubResource("Resource_fff8l"), SubResource("Resource_dw7ci")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rwrr3"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Main Plaza"
+room_name = "Ruins Entrance"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_t3ok6"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld North"
+room_name = "Ruins Entrance"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kw01x"]
+script = ExtResource("2_n2pju")
+room_name = "Ruins Entrance"
+points = [SubResource("Resource_rwrr3"), SubResource("Resource_t3ok6")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_mlor2"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Nursery"
+room_name = "Save Station 1"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_04fq6"]
+script = ExtResource("2_n2pju")
+room_name = "Save Station 1"
+points = [SubResource("Resource_mlor2")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1p2xh"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Gathering Hall"
+room_name = "Save Station 2"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5xfys"]
+script = ExtResource("2_n2pju")
+room_name = "Save Station 2"
+points = [SubResource("Resource_1p2xh")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tps4o"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Reflecting Pool"
+room_name = "Save Station 3"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nh628"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld East"
+room_name = "Save Station 3"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_uvbbi"]
+script = ExtResource("2_n2pju")
+room_name = "Save Station 3"
+points = [SubResource("Resource_tps4o"), SubResource("Resource_nh628")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_f8w1a"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Sun Tower Access"
+room_name = "Sun Tower"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_iehup"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns North"
+room_name = "Sun Tower"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_o1kle"]
+script = ExtResource("2_n2pju")
+room_name = "Sun Tower"
+points = [SubResource("Resource_f8w1a"), SubResource("Resource_iehup")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dw05x"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Sunchamber"
+room_name = "Sun Tower Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_43k38"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Sun Tower"
+room_name = "Sun Tower Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ryu83"]
+script = ExtResource("2_n2pju")
+room_name = "Sun Tower Access"
+points = [SubResource("Resource_dw05x"), SubResource("Resource_43k38")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_383bu"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Sunchamber Access"
+room_name = "Sunchamber"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cusw2"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Sun Tower Access"
+room_name = "Sunchamber"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lbc5o"]
+script = ExtResource("2_n2pju")
+room_name = "Sunchamber"
+points = [SubResource("Resource_383bu"), SubResource("Resource_cusw2")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fpcfy"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Sunchamber"
+room_name = "Sunchamber Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kk768"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Sunchamber Lobby"
+room_name = "Sunchamber Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_eermn"]
+script = ExtResource("2_n2pju")
+room_name = "Sunchamber Access"
+points = [SubResource("Resource_fpcfy"), SubResource("Resource_kk768")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5hjnd"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Sunchamber Access"
+room_name = "Sunchamber Lobby"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_i4t76"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Arboretum"
+room_name = "Sunchamber Lobby"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_h3tbi"]
+script = ExtResource("2_n2pju")
+room_name = "Sunchamber Lobby"
+points = [SubResource("Resource_5hjnd"), SubResource("Resource_i4t76")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_l8pog"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Gallery"
+room_name = "Totem Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_35d5r"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Hive Totem"
+room_name = "Totem Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dcdcb"]
+script = ExtResource("2_n2pju")
+room_name = "Totem Access"
+points = [SubResource("Resource_l8pog"), SubResource("Resource_35d5r")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_whmxx"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Tower of Light"
+room_name = "Tower Chamber"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7k8ot"]
+script = ExtResource("2_n2pju")
+room_name = "Tower Chamber"
+points = [SubResource("Resource_whmxx")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_d4p0b"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Tower Chamber"
+room_name = "Tower of Light"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pn84y"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Tower of Light Access"
+room_name = "Tower of Light"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2b38c"]
+script = ExtResource("2_n2pju")
+room_name = "Tower of Light"
+points = [SubResource("Resource_d4p0b"), SubResource("Resource_pn84y")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_q4y1u"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruined Shrine"
+room_name = "Tower of Light Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rqsrx"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Tower of Light"
+room_name = "Tower of Light Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_w5ara"]
+script = ExtResource("2_n2pju")
+room_name = "Tower of Light Access"
+points = [SubResource("Resource_q4y1u"), SubResource("Resource_rqsrx")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_p2r1m"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Training Chamber Access"
+room_name = "Training Chamber"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_uvcxx"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Piston Tunnel"
+room_name = "Training Chamber"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_gl2un"]
+script = ExtResource("2_n2pju")
+room_name = "Training Chamber"
+points = [SubResource("Resource_p2r1m"), SubResource("Resource_uvcxx")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_snbj4"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Training Chamber"
+room_name = "Training Chamber Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pyc6v"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Piston Tunnel"
+room_name = "Training Chamber Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tfx2f"]
+script = ExtResource("2_n2pju")
+room_name = "Training Chamber Access"
+points = [SubResource("Resource_snbj4"), SubResource("Resource_pyc6v")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pj70n"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Hive Totem"
+room_name = "Transport Access North"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_l82q0"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns North"
+room_name = "Transport Access North"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bweys"]
+script = ExtResource("2_n2pju")
+room_name = "Transport Access North"
+points = [SubResource("Resource_pj70n"), SubResource("Resource_l82q0")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_n4t0u"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Reflecting Pool"
+room_name = "Transport Access South"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ip2xw"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld South (Chozo)"
+room_name = "Transport Access South"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_7d10h"]
+script = ExtResource("2_n2pju")
+room_name = "Transport Access South"
+points = [SubResource("Resource_n4t0u"), SubResource("Resource_ip2xw")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_muwyc"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport Access North"
+room_name = "Transport to Magmoor Caverns North"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nwkpj"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Sun Tower"
+room_name = "Transport to Magmoor Caverns North"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sq5dg"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Vault Access"
+room_name = "Transport to Magmoor Caverns North"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_yvksd"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport to Chozo Ruins North"
+room_name = "Transport to Magmoor Caverns North"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1yq28"]
+script = ExtResource("2_n2pju")
+room_name = "Transport to Magmoor Caverns North"
+points = [SubResource("Resource_muwyc"), SubResource("Resource_nwkpj"), SubResource("Resource_sq5dg"), SubResource("Resource_yvksd")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cl0qv"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Save Station 3"
+room_name = "Transport to Tallon Overworld East"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_yvaqa"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport to Chozo Ruins East"
+room_name = "Transport to Tallon Overworld East"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xukrg"]
+script = ExtResource("2_n2pju")
+room_name = "Transport to Tallon Overworld East"
+points = [SubResource("Resource_cl0qv"), SubResource("Resource_yvaqa")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_aq0bi"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Ruins Entrance"
+room_name = "Transport to Tallon Overworld North"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4tnd7"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport to Chozo Ruins West"
+room_name = "Transport to Tallon Overworld North"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_khe7x"]
+script = ExtResource("2_n2pju")
+room_name = "Transport to Tallon Overworld North"
+points = [SubResource("Resource_aq0bi"), SubResource("Resource_4tnd7")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jopxl"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport Access South"
+room_name = "Transport to Tallon Overworld South (Chozo)"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_eeig5"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport to Chozo Ruins South"
+room_name = "Transport to Tallon Overworld South (Chozo)"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_m111i"]
+script = ExtResource("2_n2pju")
+room_name = "Transport to Tallon Overworld South (Chozo)"
+points = [SubResource("Resource_jopxl"), SubResource("Resource_eeig5")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_w6dyk"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Plaza Access"
+room_name = "Vault"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rrjtd"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Vault Access"
+room_name = "Vault"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_i0xgl"]
+script = ExtResource("2_n2pju")
+room_name = "Vault"
+points = [SubResource("Resource_w6dyk"), SubResource("Resource_rrjtd")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_556uo"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Vault"
+room_name = "Vault Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_134uj"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns North"
+room_name = "Vault Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1vjd4"]
+script = ExtResource("2_n2pju")
+room_name = "Vault Access"
+points = [SubResource("Resource_556uo"), SubResource("Resource_134uj")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1ad7o"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Watery Hall Access"
+room_name = "Watery Hall"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5kvcp"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Dynamo Access (Chozo)"
+room_name = "Watery Hall"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_m6c5y"]
+script = ExtResource("2_n2pju")
+room_name = "Watery Hall"
+points = [SubResource("Resource_1ad7o"), SubResource("Resource_5kvcp")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ad38l"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Gathering Hall"
+room_name = "Watery Hall Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_s6pa7"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Watery Hall"
+room_name = "Watery Hall Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_opxbo"]
+script = ExtResource("2_n2pju")
+room_name = "Watery Hall Access"
+points = [SubResource("Resource_ad38l"), SubResource("Resource_s6pa7")]
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2lxq2"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Energy Core"
+room_name = "West Furnace Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hdsvd"]
+script = ExtResource("1_igy3f")
+point_type = "Dock"
+point_connection = "Furnace"
+room_name = "West Furnace Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_b5ktb"]
+script = ExtResource("2_n2pju")
+room_name = "West Furnace Access"
+points = [SubResource("Resource_2lxq2"), SubResource("Resource_hdsvd")]
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("1_o3fyg")
+name = "Chozo Ruins"
+rooms = [SubResource("Resource_jsic0"), SubResource("Resource_0ndjq"), SubResource("Resource_yksyf"), SubResource("Resource_6sccr"), SubResource("Resource_4kqas"), SubResource("Resource_fas7u"), SubResource("Resource_56fct"), SubResource("Resource_y1u77"), SubResource("Resource_64dg8"), SubResource("Resource_o82ae"), SubResource("Resource_dxjps"), SubResource("Resource_44uft"), SubResource("Resource_voinu"), SubResource("Resource_w6pte"), SubResource("Resource_h5ygn"), SubResource("Resource_r7g8g"), SubResource("Resource_sg1ql"), SubResource("Resource_n2rvq"), SubResource("Resource_acswy"), SubResource("Resource_ahf61"), SubResource("Resource_ammfa"), SubResource("Resource_ecngb"), SubResource("Resource_t0xl4"), SubResource("Resource_kqquy"), SubResource("Resource_fgp5g"), SubResource("Resource_b73us"), SubResource("Resource_72t1k"), SubResource("Resource_6wvhf"), SubResource("Resource_7or5k"), SubResource("Resource_23ito"), SubResource("Resource_sqxgb"), SubResource("Resource_1tiou"), SubResource("Resource_lxb55"), SubResource("Resource_f2fqh"), SubResource("Resource_axj2w"), SubResource("Resource_2lubu"), SubResource("Resource_csmur"), SubResource("Resource_14ejk"), SubResource("Resource_kw01x"), SubResource("Resource_04fq6"), SubResource("Resource_5xfys"), SubResource("Resource_uvbbi"), SubResource("Resource_o1kle"), SubResource("Resource_ryu83"), SubResource("Resource_lbc5o"), SubResource("Resource_eermn"), SubResource("Resource_h3tbi"), SubResource("Resource_dcdcb"), SubResource("Resource_7k8ot"), SubResource("Resource_2b38c"), SubResource("Resource_w5ara"), SubResource("Resource_gl2un"), SubResource("Resource_tfx2f"), SubResource("Resource_bweys"), SubResource("Resource_7d10h"), SubResource("Resource_1yq28"), SubResource("Resource_xukrg"), SubResource("Resource_khe7x"), SubResource("Resource_m111i"), SubResource("Resource_i0xgl"), SubResource("Resource_1vjd4"), SubResource("Resource_m6c5y"), SubResource("Resource_opxbo"), SubResource("Resource_b5ktb")]
+meshes = ExtResource("1_7xyrs")

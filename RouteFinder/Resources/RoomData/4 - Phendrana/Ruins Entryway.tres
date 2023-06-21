@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_6aips"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_cd01n"]
+
+[sub_resource type="Resource" id="Resource_0ueub"]
+script = ExtResource("1_6aips")
+point_type = "Dock"
+point_connection = "Phendrana Shorelines"
+room_name = "Ruins Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_s284k"]
+script = ExtResource("1_6aips")
+point_type = "Dock"
+point_connection = "Ice Ruins West"
+room_name = "Ruins Entryway"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[resource]
+script = ExtResource("2_cd01n")
+room_name = "Ruins Entryway"
+points = [SubResource("Resource_0ueub"), SubResource("Resource_s284k")]
+name = "Phendrana Drifts"
+rooms = []

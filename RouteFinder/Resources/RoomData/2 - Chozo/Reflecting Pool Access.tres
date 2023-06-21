@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_e0hlc"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_hvu4x"]
+
+[sub_resource type="Resource" id="Resource_8f0q0"]
+script = ExtResource("1_e0hlc")
+point_type = "Dock"
+point_connection = "Hall of the Elders"
+room_name = "Reflecting Pool Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_chws3"]
+script = ExtResource("1_e0hlc")
+point_type = "Dock"
+point_connection = "Reflecting Pool"
+room_name = "Reflecting Pool Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_hvu4x")
+room_name = "Reflecting Pool Access"
+points = [SubResource("Resource_8f0q0"), SubResource("Resource_chws3")]
+name = "Chozo Ruins"
+rooms = []

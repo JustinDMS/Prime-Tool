@@ -1,0 +1,214 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckj6wxk22nfc1"]
+
+[ext_resource type="Script" path="res://AutoTimer/AutoTimer.gd" id="1_noq0g"]
+
+[node name="AutoTimer" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_noq0g")
+time_interval = 0.5
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(520, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="TimeBox" type="ItemList" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="Display" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/Display"]
+layout_mode = 2
+alignment = 2
+
+[node name="CheckBox_Scanning" type="CheckBox" parent="MarginContainer/HBoxContainer/Display/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+text = "Scanning?"
+
+[node name="Button_Hook" type="Button" parent="MarginContainer/HBoxContainer/Display/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Hook Dolphin"
+
+[node name="CheckBox_Hooked" type="CheckBox" parent="MarginContainer/HBoxContainer/Display/HBoxContainer"]
+layout_mode = 2
+disabled = true
+button_mask = 0
+text = "Hooked?"
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/HBoxContainer/Display"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HBoxContainer/Display"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/HBoxContainer/Display/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "# Times:"
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+text = "20"
+placeholder_text = "20"
+alignment = 1
+max_length = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 23
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label_Best" type="Label" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Best:"
+
+[node name="Label_Worst" type="Label" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Worst:"
+
+[node name="Label_Avg" type="Label" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Average:"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="BestTime" type="Label" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "n/a"
+
+[node name="WorstTime" type="Label" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "n/a"
+
+[node name="AverageTime" type="Label" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "n/a"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "↺"
+
+[node name="Button_ResetBest" type="Button" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer/VBoxContainer3/Label"]
+custom_minimum_size = Vector2(26, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label2" type="Label" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+text = "↺"
+
+[node name="Button_ResetWorst" type="Button" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer/VBoxContainer3/Label2"]
+custom_minimum_size = Vector2(26, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer2"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Start Time:"
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer2"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Goal Time:"
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer2"]
+layout_mode = 2
+
+[node name="Label_Delta" type="Label" parent="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Δ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="item_selected" from="MarginContainer/HBoxContainer/TimeBox" to="." method="_on_time_box_item_selected"]
+[connection signal="toggled" from="MarginContainer/HBoxContainer/Display/HBoxContainer/CheckBox_Scanning" to="." method="_on_check_box_scanning_toggled"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Display/HBoxContainer/Button_Hook" to="." method="_on_button_hook_pressed"]
+[connection signal="toggled" from="MarginContainer/HBoxContainer/Display/HBoxContainer/CheckBox_Hooked" to="." method="_on_check_box_hooked_toggled"]
+[connection signal="text_changed" from="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer2/LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer/VBoxContainer3/Label/Button_ResetBest" to="." method="_on_button_reset_best_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/Display/MarginContainer/HBoxContainer3/VBoxContainer/HBoxContainer/VBoxContainer3/Label2/Button_ResetWorst" to="." method="_on_button_reset_worst_pressed"]

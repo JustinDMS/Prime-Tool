@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_wrwvx"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_g3jpy"]
+
+[sub_resource type="Resource" id="Resource_q6pnw"]
+script = ExtResource("1_wrwvx")
+point_type = "Dock"
+point_connection = "Main Plaza"
+room_name = "Plaza Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_j3yx7"]
+script = ExtResource("1_wrwvx")
+point_type = "Dock"
+point_connection = "Vault"
+room_name = "Plaza Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_g3jpy")
+room_name = "Plaza Access"
+points = [SubResource("Resource_q6pnw"), SubResource("Resource_j3yx7")]
+name = "Chozo Ruins"
+rooms = []

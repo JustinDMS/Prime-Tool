@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_171te"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_k2h5n"]
+
+[sub_resource type="Resource" id="Resource_snbj4"]
+script = ExtResource("1_171te")
+point_type = "Dock"
+point_connection = "Training Chamber"
+room_name = "Training Chamber Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pyc6v"]
+script = ExtResource("1_171te")
+point_type = "Dock"
+point_connection = "Piston Tunnel"
+room_name = "Training Chamber Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_k2h5n")
+room_name = "Training Chamber Access"
+points = [SubResource("Resource_snbj4"), SubResource("Resource_pyc6v")]
+name = "Chozo Ruins"
+rooms = []

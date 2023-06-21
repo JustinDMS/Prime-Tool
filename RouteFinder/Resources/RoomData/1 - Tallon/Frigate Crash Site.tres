@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="Room" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_jb5la"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_isdjd"]
+
+[sub_resource type="Resource" id="Resource_oi614"]
+script = ExtResource("1_jb5la")
+point_type = "Dock"
+point_connection = "Waterfall Cavern"
+room_name = "Frigate Crash Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8nkgr"]
+script = ExtResource("1_jb5la")
+point_type = "Dock"
+point_connection = "Overgrown Cavern"
+room_name = "Frigate Crash Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_806i1"]
+script = ExtResource("1_jb5la")
+point_type = "Dock"
+point_connection = "Frigate Access Tunnel"
+room_name = "Frigate Crash Site"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_isdjd")
+room_name = "Frigate Crash Site"
+points = [SubResource("Resource_oi614"), SubResource("Resource_8nkgr"), SubResource("Resource_806i1")]
+name = "Tallon Overworld"
+rooms = []

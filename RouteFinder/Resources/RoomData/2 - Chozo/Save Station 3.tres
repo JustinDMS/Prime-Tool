@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_kigg1"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_jd62w"]
+
+[sub_resource type="Resource" id="Resource_tps4o"]
+script = ExtResource("1_kigg1")
+point_type = "Dock"
+point_connection = "Reflecting Pool"
+room_name = "Save Station 3"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nh628"]
+script = ExtResource("1_kigg1")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld East"
+room_name = "Save Station 3"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_jd62w")
+room_name = "Save Station 3"
+points = [SubResource("Resource_tps4o"), SubResource("Resource_nh628")]
+name = "Chozo Ruins"
+rooms = []

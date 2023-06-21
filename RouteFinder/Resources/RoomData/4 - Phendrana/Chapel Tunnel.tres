@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_afo1g"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_5i4ls"]
+
+[sub_resource type="Resource" id="Resource_a1535"]
+script = ExtResource("1_afo1g")
+point_type = "Dock"
+point_connection = "Chapel of the Elders"
+room_name = "Chapel Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_amk23"]
+script = ExtResource("1_afo1g")
+point_type = "Dock"
+point_connection = "Chozo Ice Temple"
+room_name = "Chapel Tunnel"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[resource]
+script = ExtResource("2_5i4ls")
+room_name = "Chapel Tunnel"
+points = [SubResource("Resource_a1535"), SubResource("Resource_amk23")]
+name = "Phendrana Drifts"
+rooms = []

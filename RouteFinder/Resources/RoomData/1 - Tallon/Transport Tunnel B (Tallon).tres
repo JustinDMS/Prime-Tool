@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3 uid="uid://6yim3rbm6w7y"]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_fkjsr"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_vpnff"]
+
+[sub_resource type="Resource" id="Resource_x06mg"]
+script = ExtResource("1_fkjsr")
+point_type = "Dock"
+point_connection = "Root Cave"
+room_name = "Transport Tunnel B (Tallon)"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lwmn0"]
+script = ExtResource("1_fkjsr")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns East"
+room_name = "Transport Tunnel B (Tallon)"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_vpnff")
+room_name = "Transport Tunnel B (Tallon)"
+points = [SubResource("Resource_x06mg"), SubResource("Resource_lwmn0")]
+name = "Tallon Overworld"
+rooms = []

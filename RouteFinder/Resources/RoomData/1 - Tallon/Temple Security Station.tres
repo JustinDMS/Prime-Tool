@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_jeh8l"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_ebwnx"]
+
+[sub_resource type="Resource" id="Resource_gxw0e"]
+script = ExtResource("1_jeh8l")
+point_type = "Dock"
+point_connection = "Temple Hall"
+room_name = "Temple Security Station"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_b6yhs"]
+script = ExtResource("1_jeh8l")
+point_type = "Dock"
+point_connection = "Temple Lobby"
+room_name = "Temple Security Station"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_ebwnx")
+room_name = "Temple Security Station"
+points = [SubResource("Resource_gxw0e"), SubResource("Resource_b6yhs")]
+name = "Tallon Overworld"
+rooms = []

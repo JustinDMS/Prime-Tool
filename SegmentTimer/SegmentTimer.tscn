@@ -11,26 +11,36 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-anchor_left = 0.067
-anchor_right = 0.928
-offset_left = 0.239998
-offset_top = 25.5
-offset_right = -20.16
-offset_bottom = 77.5
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(520, 0)
 layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
-
-[node name="HBox_Time1" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="T1_HH" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="HBox_Time1" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="T1_HH" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
 layout_mode = 2
 focus_neighbor_right = NodePath("../T1_MM")
 focus_neighbor_bottom = NodePath("../../HBox_Time2/T2_HH")
@@ -39,11 +49,11 @@ placeholder_text = "HH"
 max_length = 2
 caret_blink = true
 
-[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
 layout_mode = 2
 text = ":"
 
-[node name="T1_MM" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
+[node name="T1_MM" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
 layout_mode = 2
 focus_neighbor_left = NodePath("../T1_HH")
 focus_neighbor_right = NodePath("../T1_SS")
@@ -52,11 +62,11 @@ focus_next = NodePath("../T1_SS")
 placeholder_text = "MM"
 max_length = 2
 
-[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
 layout_mode = 2
 text = ":"
 
-[node name="T1_SS" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
+[node name="T1_SS" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
 layout_mode = 2
 focus_neighbor_left = NodePath("../T1_MM")
 focus_neighbor_right = NodePath("../T1_MIL")
@@ -65,12 +75,12 @@ focus_next = NodePath("../T1_MIL")
 placeholder_text = "SS"
 max_length = 2
 
-[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
+[node name="Label3" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
 layout_mode = 2
 size_flags_vertical = 1
 text = "."
 
-[node name="T1_MIL" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
+[node name="T1_MIL" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1"]
 layout_mode = 2
 focus_neighbor_left = NodePath("../T1_SS")
 focus_neighbor_right = NodePath("../../HBox_Time2/T2_HH")
@@ -79,11 +89,11 @@ focus_next = NodePath("../../HBox_Time2/T2_HH")
 placeholder_text = "sss"
 max_length = 3
 
-[node name="HBox_Time2" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="HBox_Time2" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="T2_HH" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
+[node name="T2_HH" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
 layout_mode = 2
 focus_neighbor_left = NodePath("../../HBox_Time1/T1_MIL")
 focus_neighbor_top = NodePath("../../HBox_Time1/T1_HH")
@@ -94,11 +104,11 @@ placeholder_text = "HH"
 max_length = 2
 caret_blink = true
 
-[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
 layout_mode = 2
 text = ":"
 
-[node name="T2_MM" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
+[node name="T2_MM" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
 layout_mode = 2
 focus_neighbor_left = NodePath("../T2_HH")
 focus_neighbor_top = NodePath("../../HBox_Time1/T1_MM")
@@ -108,11 +118,11 @@ focus_next = NodePath("../T2_SS")
 placeholder_text = "MM"
 max_length = 2
 
-[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
 layout_mode = 2
 text = ":"
 
-[node name="T2_SS" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
+[node name="T2_SS" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
 layout_mode = 2
 focus_neighbor_left = NodePath("../T2_MM")
 focus_neighbor_top = NodePath("../../HBox_Time1/T1_SS")
@@ -122,12 +132,12 @@ focus_next = NodePath("../T2_MIL")
 placeholder_text = "SS"
 max_length = 2
 
-[node name="Label3" type="Label" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
+[node name="Label3" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
 layout_mode = 2
 size_flags_vertical = 1
 text = "."
 
-[node name="T2_MIL" type="LineEdit" parent="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
+[node name="T2_MIL" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2"]
 layout_mode = 2
 focus_neighbor_left = NodePath("../T2_SS")
 focus_neighbor_top = NodePath("../../HBox_Time1/T1_MIL")
@@ -137,18 +147,18 @@ focus_next = NodePath("../../../../HBoxContainer2/Button_Calculate")
 placeholder_text = "sss"
 max_length = 3
 
-[node name="Button_SwapTimes" type="Button" parent="VBoxContainer/HBoxContainer"]
+[node name="Button_SwapTimes" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "⇅"
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/HBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(52, 52)
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer/MarginContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer"]
 layout_mode = 2
 
-[node name="Option_Operation" type="OptionButton" parent="VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer"]
+[node name="Option_Operation" type="OptionButton" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 item_count = 2
 selected = 0
@@ -157,82 +167,82 @@ popup/item_0/id = 0
 popup/item_1/text = "-"
 popup/item_1/id = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer"]
 layout_mode = 2
 
-[node name="Button_Clear1" type="Button" parent="VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-text = "c"
-
-[node name="Button_Clear2" type="Button" parent="VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="Button_Clear1" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 text = "c"
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+[node name="Button_Clear2" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "c"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button_Calculate" type="Button" parent="VBoxContainer/HBoxContainer2"]
+[node name="Button_Calculate" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 text = "Calculate"
 
-[node name="Button_Clear" type="Button" parent="VBoxContainer/HBoxContainer2"]
+[node name="Button_Clear" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Clear"
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="LineEdit_Result" type="LineEdit" parent="VBoxContainer/HBoxContainer3"]
+[node name="LineEdit_Result" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "seconds"
 editable = false
 
-[node name="Button_CopySeconds" type="Button" parent="VBoxContainer/HBoxContainer3/LineEdit_Result"]
+[node name="Button_CopySeconds" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer3/LineEdit_Result"]
 layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 tooltip_text = "Click to copy"
 flat = true
 
-[node name="LineEdit_ResultFormatted" type="LineEdit" parent="VBoxContainer/HBoxContainer3"]
+[node name="LineEdit_ResultFormatted" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 placeholder_text = "HH:MM:SS.sss"
 editable = false
 
-[node name="Button_CopyFormatted" type="Button" parent="VBoxContainer/HBoxContainer3/LineEdit_ResultFormatted"]
+[node name="Button_CopyFormatted" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer3/LineEdit_ResultFormatted"]
 layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 tooltip_text = "Click to copy"
 flat = true
 
-[connection signal="text_changed" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_HH" to="." method="_on_T1_HH_text_changed"]
-[connection signal="text_submitted" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_HH" to="." method="_on_T1_HH_text_entered"]
-[connection signal="text_changed" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MM" to="." method="_on_T1_MM_text_changed"]
-[connection signal="text_submitted" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MM" to="." method="_on_T1_MM_text_entered"]
-[connection signal="text_changed" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_SS" to="." method="_on_T1_SS_text_changed"]
-[connection signal="text_submitted" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_SS" to="." method="_on_T1_SS_text_entered"]
-[connection signal="text_changed" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MIL" to="." method="_on_T1_MIL_text_changed"]
-[connection signal="text_submitted" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MIL" to="." method="_on_T1_MIL_text_entered"]
-[connection signal="text_changed" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_HH" to="." method="_on_T2_HH_text_changed"]
-[connection signal="text_submitted" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_HH" to="." method="_on_T2_HH_text_entered"]
-[connection signal="text_changed" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MM" to="." method="_on_T2_MM_text_changed"]
-[connection signal="text_submitted" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MM" to="." method="_on_T2_MM_text_entered"]
-[connection signal="text_changed" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_SS" to="." method="_on_T2_SS_text_changed"]
-[connection signal="text_submitted" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_SS" to="." method="_on_T2_SS_text_entered"]
-[connection signal="text_changed" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MIL" to="." method="_on_T2_MIL_text_changed"]
-[connection signal="text_submitted" from="VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MIL" to="." method="_on_T2_MIL_text_entered"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/Button_SwapTimes" to="." method="_on_button_swap_times_pressed"]
-[connection signal="item_selected" from="VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer/Option_Operation" to="." method="_on_Option_Operation_item_selected"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/Button_Clear1" to="." method="_on_Button_Clear1_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/Button_Clear2" to="." method="_on_Button_Clear2_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer2/Button_Calculate" to="." method="_on_Button_Calculate_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer2/Button_Clear" to="." method="_on_Button_Clear_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer3/LineEdit_Result/Button_CopySeconds" to="." method="_on_Button_CopySeconds_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer3/LineEdit_ResultFormatted/Button_CopyFormatted" to="." method="_on_Button_CopyFormatted_pressed"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_HH" to="." method="_on_T1_HH_text_changed"]
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_HH" to="." method="_on_T1_HH_text_entered"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MM" to="." method="_on_T1_MM_text_changed"]
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MM" to="." method="_on_T1_MM_text_entered"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_SS" to="." method="_on_T1_SS_text_changed"]
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_SS" to="." method="_on_T1_SS_text_entered"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MIL" to="." method="_on_T1_MIL_text_changed"]
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MIL" to="." method="_on_T1_MIL_text_entered"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_HH" to="." method="_on_T2_HH_text_changed"]
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_HH" to="." method="_on_T2_HH_text_entered"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MM" to="." method="_on_T2_MM_text_changed"]
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MM" to="." method="_on_T2_MM_text_entered"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_SS" to="." method="_on_T2_SS_text_changed"]
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_SS" to="." method="_on_T2_SS_text_entered"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MIL" to="." method="_on_T2_MIL_text_changed"]
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MIL" to="." method="_on_T2_MIL_text_entered"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button_SwapTimes" to="." method="_on_button_swap_times_pressed"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer/Option_Operation" to="." method="_on_Option_Operation_item_selected"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/Button_Clear1" to="." method="_on_Button_Clear1_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/MarginContainer/HBoxContainer/VBoxContainer/Button_Clear2" to="." method="_on_Button_Clear2_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/Button_Calculate" to="." method="_on_Button_Calculate_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/Button_Clear" to="." method="_on_Button_Clear_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer3/LineEdit_Result/Button_CopySeconds" to="." method="_on_Button_CopySeconds_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer3/LineEdit_ResultFormatted/Button_CopyFormatted" to="." method="_on_Button_CopyFormatted_pressed"]

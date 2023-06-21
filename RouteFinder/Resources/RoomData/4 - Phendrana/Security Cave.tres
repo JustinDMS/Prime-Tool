@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Room" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_mx1xa"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_i1sxg"]
+
+[sub_resource type="Resource" id="Resource_su6i0"]
+script = ExtResource("1_mx1xa")
+point_type = "Dock"
+point_connection = "Phendrana's Edge"
+room_name = "Security Cave"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[resource]
+script = ExtResource("2_i1sxg")
+room_name = "Security Cave"
+points = [SubResource("Resource_su6i0")]
+name = "Phendrana Drifts"
+rooms = []

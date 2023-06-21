@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_7o41u"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_uu1kf"]
+
+[sub_resource type="Resource" id="Resource_yke2j"]
+script = ExtResource("1_7o41u")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld South (Mines)"
+room_name = "Quarry Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sllwv"]
+script = ExtResource("1_7o41u")
+point_type = "Dock"
+point_connection = "Main Quarry"
+room_name = "Quarry Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[resource]
+script = ExtResource("2_uu1kf")
+room_name = "Quarry Access"
+points = [SubResource("Resource_yke2j"), SubResource("Resource_sllwv")]
+name = "Phazon Mines"
+rooms = []

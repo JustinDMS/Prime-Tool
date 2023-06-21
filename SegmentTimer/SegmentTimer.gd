@@ -1,17 +1,21 @@
 extends Control
 
-@onready var t1_hh = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_HH
-@onready var t1_mm = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MM
-@onready var t1_ss = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_SS
-@onready var t1_mil = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MIL
+############################ TO DO #####################################
+# Add ability to convert from seconds to HH:MM:SS.sss
+########################################################################
 
-@onready var t2_hh = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_HH
-@onready var t2_mm = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MM
-@onready var t2_ss = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_SS
-@onready var t2_mil = $VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MIL
+@onready var t1_hh = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_HH
+@onready var t1_mm = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MM
+@onready var t1_ss = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_SS
+@onready var t1_mil = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MIL
 
-@onready var result = $VBoxContainer/HBoxContainer3/LineEdit_Result
-@onready var result_formatted = $VBoxContainer/HBoxContainer3/LineEdit_ResultFormatted
+@onready var t2_hh = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_HH
+@onready var t2_mm = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MM
+@onready var t2_ss = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_SS
+@onready var t2_mil = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time2/T2_MIL
+
+@onready var result = $MarginContainer/VBoxContainer/HBoxContainer3/LineEdit_Result
+@onready var result_formatted = $MarginContainer/VBoxContainer/HBoxContainer3/LineEdit_ResultFormatted
 
 var current_operation := 0
 

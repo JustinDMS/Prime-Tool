@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="Room" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_uwoad"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_iv6po"]
+
+[sub_resource type="Resource" id="Resource_278j8"]
+script = ExtResource("1_uwoad")
+point_type = "Dock"
+point_connection = "Transport Tunnel B (Magmoor)"
+room_name = "Transport to Tallon Overworld West"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_d52op"]
+script = ExtResource("1_uwoad")
+point_type = "Dock"
+point_connection = "Twin Fires Tunnel"
+room_name = "Transport to Tallon Overworld West"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rn10c"]
+script = ExtResource("1_uwoad")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns East"
+room_name = "Transport to Tallon Overworld West"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[resource]
+script = ExtResource("2_iv6po")
+room_name = "Transport to Tallon Overworld West"
+points = [SubResource("Resource_278j8"), SubResource("Resource_d52op"), SubResource("Resource_rn10c")]
+name = "Magmoor Caverns"
+rooms = []

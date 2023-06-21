@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Room" load_steps=4 format=3 uid="uid://bcebncl8w18le"]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_n51el"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_efnyo"]
+
+[sub_resource type="Resource" id="Resource_rmlil"]
+script = ExtResource("1_n51el")
+point_type = "Dock"
+point_connection = "Reflecting Pool"
+room_name = "Antechamber"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_efnyo")
+room_name = "Antechamber"
+points = [SubResource("Resource_rmlil")]
+name = "Chozo Ruins"
+rooms = []

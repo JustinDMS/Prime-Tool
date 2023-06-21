@@ -12,3 +12,4 @@ export_presets.cfg
 data_*/
 *.import
 icon.png.import
+*.glb

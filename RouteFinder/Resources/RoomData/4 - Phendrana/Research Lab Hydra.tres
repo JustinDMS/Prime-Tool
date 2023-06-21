@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_r5vpp"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_ao33r"]
+
+[sub_resource type="Resource" id="Resource_jlew7"]
+script = ExtResource("1_r5vpp")
+point_type = "Dock"
+point_connection = "Hydra Lab Entryway"
+room_name = "Research Lab Hydra"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8icr8"]
+script = ExtResource("1_r5vpp")
+point_type = "Dock"
+point_connection = "Observatory Access"
+room_name = "Research Lab Hydra"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[resource]
+script = ExtResource("2_ao33r")
+room_name = "Research Lab Hydra"
+points = [SubResource("Resource_jlew7"), SubResource("Resource_8icr8")]
+name = "Phendrana Drifts"
+rooms = []

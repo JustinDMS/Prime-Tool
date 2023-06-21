@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_qs2fx"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_3mvlo"]
+
+[sub_resource type="Resource" id="Resource_os66n"]
+script = ExtResource("1_qs2fx")
+point_type = "Dock"
+point_connection = "Twin Fires Tunnel"
+room_name = "Twin Fires"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nqi83"]
+script = ExtResource("1_qs2fx")
+point_type = "Dock"
+point_connection = "North Core Tunnel"
+room_name = "Twin Fires"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[resource]
+script = ExtResource("2_3mvlo")
+room_name = "Twin Fires"
+points = [SubResource("Resource_os66n"), SubResource("Resource_nqi83")]
+name = "Magmoor Caverns"
+rooms = []

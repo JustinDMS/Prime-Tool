@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="Room" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_8c036"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_qt2s1"]
+
+[sub_resource type="Resource" id="Resource_g6rgm"]
+script = ExtResource("1_8c036")
+point_type = "Dock"
+point_connection = "Courtyard Entryway"
+room_name = "Ruined Courtyard"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_m5swp"]
+script = ExtResource("1_8c036")
+point_type = "Dock"
+point_connection = "Save Station A"
+room_name = "Ruined Courtyard"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_imx51"]
+script = ExtResource("1_8c036")
+point_type = "Dock"
+point_connection = "Speciman Storage"
+room_name = "Ruined Courtyard"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_yl7nn"]
+script = ExtResource("1_8c036")
+point_type = "Dock"
+point_connection = "Quarantine Access"
+room_name = "Ruined Courtyard"
+points = []
+name = "Phendrana Drifts"
+rooms = []
+
+[resource]
+script = ExtResource("2_qt2s1")
+room_name = "Ruined Courtyard"
+points = [SubResource("Resource_g6rgm"), SubResource("Resource_m5swp"), SubResource("Resource_imx51"), SubResource("Resource_yl7nn")]
+name = "Phendrana Drifts"
+rooms = []

@@ -1,14 +1,18 @@
 extends Control
 
-@onready var averages_node = $VBoxContainer/HBoxContainer/LineEdit
-@onready var times_container = $VBoxContainer/VBox_Times
-@onready var averages_result = $VBoxContainer/HBoxContainer/LineEdit_Average
+############################ TO DO #####################################
+# 
+########################################################################
+
+@onready var averages_node = $MarginContainer/VBoxContainer/HBoxContainer/LineEdit
+@onready var times_container = $MarginContainer/VBoxContainer/VBox_Times
+@onready var averages_result = $MarginContainer/VBoxContainer/HBoxContainer/LineEdit_Average
 @onready var times = {
-	1 : $VBoxContainer/VBox_Times/LineEdit
+	1 : $MarginContainer/VBoxContainer/VBox_Times/LineEdit
 }
 
 var num_times = 1
-var window_size = Vector2(400, 146)
+var window_size := Vector2(550, 200) 
 
 
 func _ready():
@@ -33,8 +37,10 @@ func updateNumTimes():
 
 
 func updateWindowSize():
-	window_size.y = 146 + 34 * num_times
-	get_window().set_size(window_size)
+	if DisplayServer.window_get_mode() != DisplayServer.WINDOW_MODE_MAXIMIZED:
+		var temp : Vector2 = window_size
+		temp.y = window_size.y + 34 * num_times
+		get_window().set_size(temp)
 
 
 func addLineEdit():

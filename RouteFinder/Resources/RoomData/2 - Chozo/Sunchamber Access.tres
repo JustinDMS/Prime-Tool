@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_4s1yr"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_ffa8t"]
+
+[sub_resource type="Resource" id="Resource_fpcfy"]
+script = ExtResource("1_4s1yr")
+point_type = "Dock"
+point_connection = "Sunchamber"
+room_name = "Sunchamber Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kk768"]
+script = ExtResource("1_4s1yr")
+point_type = "Dock"
+point_connection = "Sunchamber Lobby"
+room_name = "Sunchamber Access"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_ffa8t")
+room_name = "Sunchamber Access"
+points = [SubResource("Resource_fpcfy"), SubResource("Resource_kk768")]
+name = "Chozo Ruins"
+rooms = []

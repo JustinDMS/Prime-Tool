@@ -4,85 +4,91 @@
 
 [node name="AverageTime" type="Control"]
 layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 0.7
+offset_bottom = -1.52588e-05
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1")
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.067
-anchor_right = 0.938
-offset_left = -0.150002
-offset_top = 25.0
-offset_right = -0.100006
-offset_bottom = 198.0
-grow_horizontal = 2
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(520, 0)
+layout_mode = 2
+size_flags_horizontal = 0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 
-[node name="Button_Increment" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="Button_Increment" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "+"
 
-[node name="Button_Decrement" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="Button_Decrement" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 text = "-"
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "1"
 placeholder_text = "5"
 max_length = 2
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/HBoxContainer"]
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_horizontal = 6
 
-[node name="Button_Calculate" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+[node name="Button_Calculate" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 text = "Calculate"
 
-[node name="Button_Clear" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer2"]
+[node name="Button_Clear" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 text = "Clear"
 
-[node name="LineEdit_Average" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
+[node name="LineEdit_Average" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 custom_minimum_size = Vector2(75, 0)
 layout_mode = 2
 editable = false
 
-[node name="Button_Copy" type="Button" parent="VBoxContainer/HBoxContainer/LineEdit_Average"]
+[node name="Button_Copy" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer/LineEdit_Average"]
 layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 tooltip_text = "Click to copy"
 flat = true
 
-[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="VBox_Times" type="VBoxContainer" parent="VBoxContainer"]
+[node name="VBox_Times" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
+size_flags_vertical = 0
 
-[node name="LineEdit" type="LineEdit" parent="VBoxContainer/VBox_Times"]
+[node name="LineEdit" type="LineEdit" parent="MarginContainer/VBoxContainer/VBox_Times"]
 layout_mode = 2
 placeholder_text = "Time 1"
 
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/Button_Increment" to="." method="_on_Button_Increment_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/Button_Decrement" to="." method="_on_Button_Decrement_pressed"]
-[connection signal="text_changed" from="VBoxContainer/HBoxContainer/LineEdit" to="." method="_on_LineEdit_text_changed"]
-[connection signal="text_submitted" from="VBoxContainer/HBoxContainer/LineEdit" to="." method="_on_LineEdit_text_entered"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer2/Button_Calculate" to="." method="_on_Button_Calculate_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer2/Button_Clear" to="." method="_on_Button_Clear_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/LineEdit_Average/Button_Copy" to="." method="_on_Button_Copy_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/Button_Increment" to="." method="_on_Button_Increment_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/Button_Decrement" to="." method="_on_Button_Decrement_pressed"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/LineEdit" to="." method="_on_LineEdit_text_changed"]
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/HBoxContainer/LineEdit" to="." method="_on_LineEdit_text_entered"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/Button_Calculate" to="." method="_on_Button_Calculate_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/Button_Clear" to="." method="_on_Button_Clear_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/LineEdit_Average/Button_Copy" to="." method="_on_Button_Copy_pressed"]

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_duvil"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_g3vbs"]
+
+[sub_resource type="Resource" id="Resource_2owry"]
+script = ExtResource("1_duvil")
+point_type = "Dock"
+point_connection = "Great Tree Hall"
+room_name = "Transport Tunnel D"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4l7ij"]
+script = ExtResource("1_duvil")
+point_type = "Dock"
+point_connection = "Transport to Chozo Ruins South"
+room_name = "Transport Tunnel D"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_g3vbs")
+room_name = "Transport Tunnel D"
+points = [SubResource("Resource_2owry"), SubResource("Resource_4l7ij")]
+name = "Tallon Overworld"
+rooms = []

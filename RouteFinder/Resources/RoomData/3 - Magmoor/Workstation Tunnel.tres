@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_ibd2a"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_0ewhc"]
+
+[sub_resource type="Resource" id="Resource_cbnb0"]
+script = ExtResource("1_ibd2a")
+point_type = "Dock"
+point_connection = "Magmoor Workstation"
+room_name = "Workstation Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1gw51"]
+script = ExtResource("1_ibd2a")
+point_type = "Dock"
+point_connection = "Transport to Phazon Mines West"
+room_name = "Workstation Tunnel"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[resource]
+script = ExtResource("2_0ewhc")
+room_name = "Workstation Tunnel"
+points = [SubResource("Resource_cbnb0"), SubResource("Resource_1gw51")]
+name = "Magmoor Caverns"
+rooms = []

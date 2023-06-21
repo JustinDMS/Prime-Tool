@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_34s8n"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_pimpv"]
+
+[sub_resource type="Resource" id="Resource_ss42j"]
+script = ExtResource("1_34s8n")
+point_type = "Dock"
+point_connection = "Main Ventilation Shaft Section A"
+room_name = "Reactor Core"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0wkbg"]
+script = ExtResource("1_34s8n")
+point_type = "Dock"
+point_connection = "Reactor Access"
+room_name = "Reactor Core"
+points = []
+name = "Tallon Overworld"
+rooms = []
+
+[resource]
+script = ExtResource("2_pimpv")
+room_name = "Reactor Core"
+points = [SubResource("Resource_ss42j"), SubResource("Resource_0wkbg")]
+name = "Tallon Overworld"
+rooms = []

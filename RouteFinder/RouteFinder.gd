@@ -1,4 +1,3 @@
-class_name RouteFinder
 extends Control
 
 # UI Elements

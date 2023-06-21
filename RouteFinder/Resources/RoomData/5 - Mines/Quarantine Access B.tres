@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_d3loq"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_tmyd7"]
+
+[sub_resource type="Resource" id="Resource_ra01s"]
+script = ExtResource("1_d3loq")
+point_type = "Dock"
+point_connection = "Fungal Hall B"
+room_name = "Quarantine Access B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5rn4g"]
+script = ExtResource("1_d3loq")
+point_type = "Dock"
+point_connection = "Metroid Quarantine B"
+room_name = "Quarantine Access B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[resource]
+script = ExtResource("2_tmyd7")
+room_name = "Quarantine Access B"
+points = [SubResource("Resource_ra01s"), SubResource("Resource_5rn4g")]
+name = "Phazon Mines"
+rooms = []

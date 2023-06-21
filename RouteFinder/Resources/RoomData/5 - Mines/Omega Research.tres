@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="Room" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_mol5s"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_58th5"]
+
+[sub_resource type="Resource" id="Resource_mw3ty"]
+script = ExtResource("1_mol5s")
+point_type = "Dock"
+point_connection = "Dynamo Access (Mines)"
+room_name = "Omega Research"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_63mfx"]
+script = ExtResource("1_mol5s")
+point_type = "Dock"
+point_connection = "Map Station Mines"
+room_name = "Omega Research"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_i8wif"]
+script = ExtResource("1_mol5s")
+point_type = "Dock"
+point_connection = "Ventilation Shaft"
+room_name = "Omega Research"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[resource]
+script = ExtResource("2_58th5")
+room_name = "Omega Research"
+points = [SubResource("Resource_mw3ty"), SubResource("Resource_63mfx"), SubResource("Resource_i8wif")]
+name = "Phazon Mines"
+rooms = []

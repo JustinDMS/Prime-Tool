@@ -1,0 +1,91 @@
+[gd_scene load_steps=30 format=3 uid="uid://cbhx0u4r1hptk"]
+
+[ext_resource type="PackedScene" uid="uid://djrg8oycgk73a" path="res://RouteFinder/Map/Magmoor Caverns/Burning Trail.glb" id="1_2770j"]
+[ext_resource type="PackedScene" uid="uid://bqwmnghkud3m0" path="res://RouteFinder/Map/Magmoor Caverns/Fiery Shores.glb" id="2_0wsks"]
+[ext_resource type="PackedScene" uid="uid://ctrxo1us8pm7h" path="res://RouteFinder/Map/Magmoor Caverns/Geothermal Core.glb" id="3_knm2c"]
+[ext_resource type="PackedScene" uid="uid://d2slmxmfw7cy6" path="res://RouteFinder/Map/Magmoor Caverns/Lake Tunnel.glb" id="4_yu8kt"]
+[ext_resource type="PackedScene" uid="uid://bgpe0nrfu4noj" path="res://RouteFinder/Map/Magmoor Caverns/Lava Lake.glb" id="5_4dodr"]
+[ext_resource type="PackedScene" uid="uid://btb72mnu08jtf" path="res://RouteFinder/Map/Magmoor Caverns/Magmoor Workstation.glb" id="6_isyd3"]
+[ext_resource type="PackedScene" uid="uid://wbmcp27rg4ny" path="res://RouteFinder/Map/Magmoor Caverns/Monitor Station.glb" id="7_cp4pa"]
+[ext_resource type="PackedScene" uid="uid://b6mbw726u222p" path="res://RouteFinder/Map/Magmoor Caverns/Monitor Tunnel.glb" id="8_oac5k"]
+[ext_resource type="PackedScene" uid="uid://b6tp3c21flshi" path="res://RouteFinder/Map/Magmoor Caverns/North Core Tunnel.glb" id="9_ks6j4"]
+[ext_resource type="PackedScene" uid="uid://bopyioame4s6y" path="res://RouteFinder/Map/Magmoor Caverns/Pit Tunnel.glb" id="10_qe7eb"]
+[ext_resource type="PackedScene" uid="uid://hhc51gpcw45n" path="res://RouteFinder/Map/Magmoor Caverns/Plasma Processing.glb" id="11_cit0a"]
+[ext_resource type="PackedScene" uid="uid://dik5h7a40seh2" path="res://RouteFinder/Map/Magmoor Caverns/Save Station Magmoor A.glb" id="12_fbte2"]
+[ext_resource type="PackedScene" uid="uid://1kc7motpyf5h" path="res://RouteFinder/Map/Magmoor Caverns/Save Station Magmoor B.glb" id="13_y6okn"]
+[ext_resource type="PackedScene" uid="uid://fw7r70wqwf87" path="res://RouteFinder/Map/Magmoor Caverns/Shore Tunnel.glb" id="14_8i4dg"]
+[ext_resource type="PackedScene" uid="uid://bamrsgcum8fxa" path="res://RouteFinder/Map/Magmoor Caverns/South Core Tunnel.glb" id="15_4cce2"]
+[ext_resource type="PackedScene" uid="uid://c1pk34q88cdh2" path="res://RouteFinder/Map/Magmoor Caverns/Storage Cavern.glb" id="16_wwmxf"]
+[ext_resource type="PackedScene" uid="uid://bj65v1dvxqlm2" path="res://RouteFinder/Map/Magmoor Caverns/Transport to Chozo Ruins North.glb" id="17_snhnk"]
+[ext_resource type="PackedScene" uid="uid://bptqav5dyhfb7" path="res://RouteFinder/Map/Magmoor Caverns/Transport to Phazon Mines West.glb" id="18_h58h1"]
+[ext_resource type="PackedScene" uid="uid://dtlj18djdvfd7" path="res://RouteFinder/Map/Magmoor Caverns/Transport to Phendrana Drifts North.glb" id="19_2aun6"]
+[ext_resource type="PackedScene" uid="uid://cgr4x7vrns6lu" path="res://RouteFinder/Map/Magmoor Caverns/Transport to Phendrana Drifts South.glb" id="20_y5v4b"]
+[ext_resource type="PackedScene" uid="uid://yd544ms7mddx" path="res://RouteFinder/Map/Magmoor Caverns/Transport to Tallon Overworld West.glb" id="21_cly02"]
+[ext_resource type="PackedScene" uid="uid://qs1ort4goxcm" path="res://RouteFinder/Map/Magmoor Caverns/Transport Tunnel A.glb" id="22_vke7f"]
+[ext_resource type="PackedScene" uid="uid://cww3ra2v5el8f" path="res://RouteFinder/Map/Magmoor Caverns/Transport Tunnel B.glb" id="23_cqd7e"]
+[ext_resource type="PackedScene" uid="uid://bo6x02patf21k" path="res://RouteFinder/Map/Magmoor Caverns/Transport Tunnel C.glb" id="24_qdltq"]
+[ext_resource type="PackedScene" uid="uid://bqis8efyhyoxa" path="res://RouteFinder/Map/Magmoor Caverns/Triclops Pit.glb" id="25_q41a4"]
+[ext_resource type="PackedScene" uid="uid://xu0b361400ra" path="res://RouteFinder/Map/Magmoor Caverns/Twin Fires Tunnel.glb" id="26_7r51n"]
+[ext_resource type="PackedScene" uid="uid://f0a8xflanm1a" path="res://RouteFinder/Map/Magmoor Caverns/Twin Fires.glb" id="27_qe3y2"]
+[ext_resource type="PackedScene" uid="uid://c3gy12xuyfpkk" path="res://RouteFinder/Map/Magmoor Caverns/Warrior Shrine.glb" id="28_y1fet"]
+[ext_resource type="PackedScene" uid="uid://d1qg6xkkasafc" path="res://RouteFinder/Map/Magmoor Caverns/Workstation Tunnel.glb" id="29_88lqa"]
+
+[node name="Magmoor Caverns" type="Node3D"]
+
+[node name="Burning Trail" parent="." instance=ExtResource("1_2770j")]
+
+[node name="Fiery Shores" parent="." instance=ExtResource("2_0wsks")]
+
+[node name="Geothermal Core" parent="." instance=ExtResource("3_knm2c")]
+
+[node name="Lake Tunnel (Magmoor)" parent="." instance=ExtResource("4_yu8kt")]
+
+[node name="Lava Lake" parent="." instance=ExtResource("5_4dodr")]
+
+[node name="Magmoor Workstation" parent="." instance=ExtResource("6_isyd3")]
+
+[node name="Monitor Station" parent="." instance=ExtResource("7_cp4pa")]
+
+[node name="Monitor Tunnel" parent="." instance=ExtResource("8_oac5k")]
+
+[node name="North Core Tunnel" parent="." instance=ExtResource("9_ks6j4")]
+
+[node name="Pit Tunnel" parent="." instance=ExtResource("10_qe7eb")]
+
+[node name="Plasma Processing" parent="." instance=ExtResource("11_cit0a")]
+
+[node name="Save Station Magmoor A" parent="." instance=ExtResource("12_fbte2")]
+
+[node name="Save Station Magmoor B" parent="." instance=ExtResource("13_y6okn")]
+
+[node name="Shore Tunnel" parent="." instance=ExtResource("14_8i4dg")]
+
+[node name="South Core Tunnel" parent="." instance=ExtResource("15_4cce2")]
+
+[node name="Storage Cavern" parent="." instance=ExtResource("16_wwmxf")]
+
+[node name="Transport to Chozo Ruins North" parent="." instance=ExtResource("17_snhnk")]
+
+[node name="Transport to Phazon Mines West" parent="." instance=ExtResource("18_h58h1")]
+
+[node name="Transport to Phendrana Drifts North" parent="." instance=ExtResource("19_2aun6")]
+
+[node name="Transport to Phendrana Drifts South" parent="." instance=ExtResource("20_y5v4b")]
+
+[node name="Transport to Tallon Overworld West" parent="." instance=ExtResource("21_cly02")]
+
+[node name="Transport Tunnel A (Magmoor)" parent="." instance=ExtResource("22_vke7f")]
+
+[node name="Transport Tunnel B (Magmoor)" parent="." instance=ExtResource("23_cqd7e")]
+
+[node name="Transport Tunnel C (Magmoor)" parent="." instance=ExtResource("24_qdltq")]
+
+[node name="Triclops Pit" parent="." instance=ExtResource("25_q41a4")]
+
+[node name="Twin Fires Tunnel" parent="." instance=ExtResource("26_7r51n")]
+
+[node name="Twin Fires" parent="." instance=ExtResource("27_qe3y2")]
+
+[node name="Warrior Shrine" parent="." instance=ExtResource("28_y1fet")]
+
+[node name="Workstation Tunnel" parent="." instance=ExtResource("29_88lqa")]

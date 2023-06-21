@@ -1,0 +1,1096 @@
+[gd_resource type="Resource" script_class="World" load_steps=134 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_4o72c"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/World.gd" id="1_p1mnd"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_t2pln"]
+
+[sub_resource type="Resource" id="Resource_7a3ts"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Dynamo Access (Mines)"
+room_name = "Central Dynamo"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cwq41"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Quarantine Access A"
+room_name = "Central Dynamo"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8673w"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Save Station Mines B"
+room_name = "Central Dynamo"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5nwje"]
+script = ExtResource("2_t2pln")
+room_name = "Central Dynamo"
+points = [SubResource("Resource_7a3ts"), SubResource("Resource_cwq41"), SubResource("Resource_8673w")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dyeso"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Central Dynamo"
+room_name = "Dynamo Access (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_x3g2u"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Omega Research"
+room_name = "Dynamo Access (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_uhf0b"]
+script = ExtResource("2_t2pln")
+room_name = "Dynamo Access (Mines)"
+points = [SubResource("Resource_dyeso"), SubResource("Resource_x3g2u")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hqboh"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elevator Access A"
+room_name = "Elevator A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hobr7"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elite Control Access"
+room_name = "Elevator A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_u8pob"]
+script = ExtResource("2_t2pln")
+room_name = "Elevator A"
+points = [SubResource("Resource_hqboh"), SubResource("Resource_hobr7")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lpl7l"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elevator A"
+room_name = "Elevator Access A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_kh81n"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Ore Processing"
+room_name = "Elevator Access A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_2e46b"]
+script = ExtResource("2_t2pln")
+room_name = "Elevator Access A"
+points = [SubResource("Resource_lpl7l"), SubResource("Resource_kh81n")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6rtkw"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Metroid Quarantine A"
+room_name = "Elevator Access B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jmccp"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elevator B"
+room_name = "Elevator Access B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8oncv"]
+script = ExtResource("2_t2pln")
+room_name = "Elevator Access B"
+points = [SubResource("Resource_6rtkw"), SubResource("Resource_jmccp")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_js1t5"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elevator Access B"
+room_name = "Elevator B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_53xjd"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Fungal Hall Access"
+room_name = "Elevator B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dhh66"]
+script = ExtResource("2_t2pln")
+room_name = "Elevator B"
+points = [SubResource("Resource_js1t5"), SubResource("Resource_53xjd")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fwq74"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elite Control Access"
+room_name = "Elite Control"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_h4v1t"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Maintenance Tunnel"
+room_name = "Elite Control"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sirlo"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Ventilation Shaft"
+room_name = "Elite Control"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_p7rqq"]
+script = ExtResource("2_t2pln")
+room_name = "Elite Control"
+points = [SubResource("Resource_fwq74"), SubResource("Resource_h4v1t"), SubResource("Resource_sirlo")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_wswmh"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elevator A"
+room_name = "Elite Control Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ntrs3"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elite Control"
+room_name = "Elite Control Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ami6u"]
+script = ExtResource("2_t2pln")
+room_name = "Elite Control Access"
+points = [SubResource("Resource_wswmh"), SubResource("Resource_ntrs3")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bvxlb"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elite Quarters Access"
+room_name = "Elite Quarters"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_4xxlb"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Processing Center Access"
+room_name = "Elite Quarters"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rprga"]
+script = ExtResource("2_t2pln")
+room_name = "Elite Quarters"
+points = [SubResource("Resource_bvxlb"), SubResource("Resource_4xxlb")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6au16"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elite Quarters"
+room_name = "Elite Quarters Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3jijq"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Metroid Quarantine B"
+room_name = "Elite Quarters Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bkgl1"]
+script = ExtResource("2_t2pln")
+room_name = "Elite Quarters Access"
+points = [SubResource("Resource_6au16"), SubResource("Resource_3jijq")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_iavfr"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Research Access (Mines)"
+room_name = "Elite Research"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_50mri"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Security Access B"
+room_name = "Elite Research"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_003sh"]
+script = ExtResource("2_t2pln")
+room_name = "Elite Research"
+points = [SubResource("Resource_iavfr"), SubResource("Resource_50mri")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_uyofm"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Fungal Hall Access"
+room_name = "Fungal Hall A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_be550"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Phazon Mining Tunnel"
+room_name = "Fungal Hall A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_eb1sl"]
+script = ExtResource("2_t2pln")
+room_name = "Fungal Hall A"
+points = [SubResource("Resource_uyofm"), SubResource("Resource_be550")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_t371w"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elevator B"
+room_name = "Fungal Hall Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ftbyk"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Fungal Hall A"
+room_name = "Fungal Hall Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ngkyg"]
+script = ExtResource("2_t2pln")
+room_name = "Fungal Hall Access"
+points = [SubResource("Resource_t371w"), SubResource("Resource_ftbyk")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_v031g"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Phazon Mining Tunnel"
+room_name = "Fungal Hall B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5ssgo"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Missile Station Mines"
+room_name = "Fungal Hall B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dvwaw"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Quarantine Access B"
+room_name = "Fungal Hall B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5063r"]
+script = ExtResource("2_t2pln")
+room_name = "Fungal Hall B"
+points = [SubResource("Resource_v031g"), SubResource("Resource_5ssgo"), SubResource("Resource_dvwaw")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ss1so"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Quarry Access"
+room_name = "Main Quarry"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lnjel"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Save Station Mines A"
+room_name = "Main Quarry"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dxghg"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Security Access A"
+room_name = "Main Quarry"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_war5q"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Waste Disposal"
+room_name = "Main Quarry"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0e7wv"]
+script = ExtResource("2_t2pln")
+room_name = "Main Quarry"
+points = [SubResource("Resource_ss1so"), SubResource("Resource_lnjel"), SubResource("Resource_dxghg"), SubResource("Resource_war5q")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6g2gi"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elite Control"
+room_name = "Maintenance Tunnel"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_65re7"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Phazon Processing Center"
+room_name = "Maintenance Tunnel"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8quof"]
+script = ExtResource("2_t2pln")
+room_name = "Maintenance Tunnel"
+points = [SubResource("Resource_6g2gi"), SubResource("Resource_65re7")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hgw3y"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Omega Research"
+room_name = "Map Station Mines"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bp154"]
+script = ExtResource("2_t2pln")
+room_name = "Map Station Mines"
+points = [SubResource("Resource_hgw3y")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1dvqr"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elevator Access B"
+room_name = "Metroid Quarantine A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_bko0x"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Quarantine Access A"
+room_name = "Metroid Quarantine A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cl6xn"]
+script = ExtResource("2_t2pln")
+room_name = "Metroid Quarantine A"
+points = [SubResource("Resource_1dvqr"), SubResource("Resource_bko0x")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ddied"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Quarantine Access B"
+room_name = "Metroid Quarantine B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_76xqm"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Save Station Mines C"
+room_name = "Metroid Quarantine B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sb4xx"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elite Quarters Access"
+room_name = "Metroid Quarantine B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_20fa7"]
+script = ExtResource("2_t2pln")
+room_name = "Metroid Quarantine B"
+points = [SubResource("Resource_ddied"), SubResource("Resource_76xqm"), SubResource("Resource_sb4xx")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_r5qp5"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Security Access A"
+room_name = "Mine Security Station"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_51dty"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Security Access B"
+room_name = "Mine Security Station"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ukaou"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Storage Depot A"
+room_name = "Mine Security Station"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_uoyor"]
+script = ExtResource("2_t2pln")
+room_name = "Mine Security Station"
+points = [SubResource("Resource_r5qp5"), SubResource("Resource_51dty"), SubResource("Resource_ukaou")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_j27m6"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Fungal Hall B"
+room_name = "Missile Station Mines"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ua2o6"]
+script = ExtResource("2_t2pln")
+room_name = "Missile Station Mines"
+points = [SubResource("Resource_j27m6")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_mw3ty"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Dynamo Access (Mines)"
+room_name = "Omega Research"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_63mfx"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Map Station Mines"
+room_name = "Omega Research"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_i8wif"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Ventilation Shaft"
+room_name = "Omega Research"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_cuas6"]
+script = ExtResource("2_t2pln")
+room_name = "Omega Research"
+points = [SubResource("Resource_mw3ty"), SubResource("Resource_63mfx"), SubResource("Resource_i8wif")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sstjb"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Storage Depot B"
+room_name = "Ore Processing"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_87kpw"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elevator Access A"
+room_name = "Ore Processing"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_d4i35"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Research Access (Mines)"
+room_name = "Ore Processing"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_e21b8"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Waste Disposal"
+room_name = "Ore Processing"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_wcmwm"]
+script = ExtResource("2_t2pln")
+room_name = "Ore Processing"
+points = [SubResource("Resource_sstjb"), SubResource("Resource_87kpw"), SubResource("Resource_d4i35"), SubResource("Resource_e21b8")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_8h6kb"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Fungal Hall A"
+room_name = "Phazon Mining Tunnel"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_75nl5"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Fungal Hall B"
+room_name = "Phazon Mining Tunnel"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_vjvt4"]
+script = ExtResource("2_t2pln")
+room_name = "Phazon Mining Tunnel"
+points = [SubResource("Resource_8h6kb"), SubResource("Resource_75nl5")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_tbfkb"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Maintenance Tunnel"
+room_name = "Phazon Processing Center"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jf633"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Processing Center Access"
+room_name = "Phazon Processing Center"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_iarcr"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Transport Access (Mines)"
+room_name = "Phazon Processing Center"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_wg4k5"]
+script = ExtResource("2_t2pln")
+room_name = "Phazon Processing Center"
+points = [SubResource("Resource_tbfkb"), SubResource("Resource_jf633"), SubResource("Resource_iarcr")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_rhexh"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Phazon Processing Center"
+room_name = "Processing Center Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3vqhl"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elite Quarters"
+room_name = "Processing Center Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_knq7l"]
+script = ExtResource("2_t2pln")
+room_name = "Processing Center Access"
+points = [SubResource("Resource_rhexh"), SubResource("Resource_3vqhl")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5jsk2"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Central Dynamo"
+room_name = "Quarantine Access A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0flmt"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Metroid Quarantine A"
+room_name = "Quarantine Access A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_raxy8"]
+script = ExtResource("2_t2pln")
+room_name = "Quarantine Access A"
+points = [SubResource("Resource_5jsk2"), SubResource("Resource_0flmt")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ra01s"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Fungal Hall B"
+room_name = "Quarantine Access B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5rn4g"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Metroid Quarantine B"
+room_name = "Quarantine Access B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jwpiv"]
+script = ExtResource("2_t2pln")
+room_name = "Quarantine Access B"
+points = [SubResource("Resource_ra01s"), SubResource("Resource_5rn4g")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_yke2j"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Transport to Tallon Overworld South (Mines)"
+room_name = "Quarry Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sllwv"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Main Quarry"
+room_name = "Quarry Access"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1wyyu"]
+script = ExtResource("2_t2pln")
+room_name = "Quarry Access"
+points = [SubResource("Resource_yke2j"), SubResource("Resource_sllwv")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_auiu2"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Ore Processing"
+room_name = "Research Access (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_pgltr"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elite Research"
+room_name = "Research Access (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_3bmdu"]
+script = ExtResource("2_t2pln")
+room_name = "Research Access (Mines)"
+points = [SubResource("Resource_auiu2"), SubResource("Resource_pgltr")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_f0k81"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Main Quarry"
+room_name = "Save Station Mines A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6q2hm"]
+script = ExtResource("2_t2pln")
+room_name = "Save Station Mines A"
+points = [SubResource("Resource_f0k81")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_srbim"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Central Dynamo"
+room_name = "Save Station Mines B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jhpmw"]
+script = ExtResource("2_t2pln")
+room_name = "Save Station Mines B"
+points = [SubResource("Resource_srbim")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_47tf7"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Metroid Quarantine B"
+room_name = "Save Station Mines C"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_fr4tt"]
+script = ExtResource("2_t2pln")
+room_name = "Save Station Mines C"
+points = [SubResource("Resource_47tf7")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_l84fe"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Main Quarry"
+room_name = "Security Access A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_1dsyg"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Mine Security Station"
+room_name = "Security Access A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_f3v6m"]
+script = ExtResource("2_t2pln")
+room_name = "Security Access A"
+points = [SubResource("Resource_l84fe"), SubResource("Resource_1dsyg")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6vmrs"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elite Research"
+room_name = "Security Access B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_x6ho0"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Mine Security Station"
+room_name = "Security Access B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_qqdev"]
+script = ExtResource("2_t2pln")
+room_name = "Security Access B"
+points = [SubResource("Resource_6vmrs"), SubResource("Resource_x6ho0")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_17pij"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Mine Security Station"
+room_name = "Storage Depot A"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_u67v2"]
+script = ExtResource("2_t2pln")
+room_name = "Storage Depot A"
+points = [SubResource("Resource_17pij")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0x6l3"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Ore Processing"
+room_name = "Storage Depot B"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_g8isj"]
+script = ExtResource("2_t2pln")
+room_name = "Storage Depot B"
+points = [SubResource("Resource_0x6l3")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ub5gm"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Phazon Processing Center"
+room_name = "Transport Access (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_5yit4"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Transport to Magmoor Caverns South (Mines)"
+room_name = "Transport Access (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_6pglo"]
+script = ExtResource("2_t2pln")
+room_name = "Transport Access (Mines)"
+points = [SubResource("Resource_ub5gm"), SubResource("Resource_5yit4")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0yky2"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Transport Access (Mines)"
+room_name = "Transport to Magmoor Caverns South (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_t5eaw"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Transport to Phazon Mines West"
+room_name = "Transport to Magmoor Caverns South (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_dgbph"]
+script = ExtResource("2_t2pln")
+room_name = "Transport to Magmoor Caverns South (Mines)"
+points = [SubResource("Resource_0yky2"), SubResource("Resource_t5eaw")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_b2svf"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Quarry Access"
+room_name = "Transport to Tallon Overworld South (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_xiqfp"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Transport to Phazon Mines East"
+room_name = "Transport to Tallon Overworld South (Mines)"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_q3s0r"]
+script = ExtResource("2_t2pln")
+room_name = "Transport to Tallon Overworld South (Mines)"
+points = [SubResource("Resource_b2svf"), SubResource("Resource_xiqfp")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_q4fb4"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Elite Control"
+room_name = "Ventilation Shaft"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_hafm2"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Omega Research"
+room_name = "Ventilation Shaft"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_lors1"]
+script = ExtResource("2_t2pln")
+room_name = "Ventilation Shaft"
+points = [SubResource("Resource_q4fb4"), SubResource("Resource_hafm2")]
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_0ttp3"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Main Quarry"
+room_name = "Waste Disposal"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_u3vak"]
+script = ExtResource("1_4o72c")
+point_type = "Dock"
+point_connection = "Ore Processing"
+room_name = "Waste Disposal"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_jjhgd"]
+script = ExtResource("2_t2pln")
+room_name = "Waste Disposal"
+points = [SubResource("Resource_0ttp3"), SubResource("Resource_u3vak")]
+name = "Phazon Mines"
+rooms = []
+
+[resource]
+script = ExtResource("1_p1mnd")
+name = "Phazon Mines"
+rooms = [SubResource("Resource_5nwje"), SubResource("Resource_uhf0b"), SubResource("Resource_u8pob"), SubResource("Resource_2e46b"), SubResource("Resource_8oncv"), SubResource("Resource_dhh66"), SubResource("Resource_p7rqq"), SubResource("Resource_ami6u"), SubResource("Resource_rprga"), SubResource("Resource_bkgl1"), SubResource("Resource_003sh"), SubResource("Resource_eb1sl"), SubResource("Resource_ngkyg"), SubResource("Resource_5063r"), SubResource("Resource_0e7wv"), SubResource("Resource_8quof"), SubResource("Resource_bp154"), SubResource("Resource_cl6xn"), SubResource("Resource_20fa7"), SubResource("Resource_uoyor"), SubResource("Resource_ua2o6"), SubResource("Resource_cuas6"), SubResource("Resource_wcmwm"), SubResource("Resource_vjvt4"), SubResource("Resource_wg4k5"), SubResource("Resource_knq7l"), SubResource("Resource_raxy8"), SubResource("Resource_jwpiv"), SubResource("Resource_1wyyu"), SubResource("Resource_3bmdu"), SubResource("Resource_6q2hm"), SubResource("Resource_jhpmw"), SubResource("Resource_fr4tt"), SubResource("Resource_f3v6m"), SubResource("Resource_qqdev"), SubResource("Resource_u67v2"), SubResource("Resource_g8isj"), SubResource("Resource_6pglo"), SubResource("Resource_dgbph"), SubResource("Resource_q3s0r"), SubResource("Resource_lors1"), SubResource("Resource_jjhgd")]

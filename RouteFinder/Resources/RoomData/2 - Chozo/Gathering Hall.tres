@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="Room" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_1yw7g"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_v7nqk"]
+
+[sub_resource type="Resource" id="Resource_k6hdb"]
+script = ExtResource("1_1yw7g")
+point_type = "Dock"
+point_connection = "Gathering Hall Access"
+room_name = "Gathering Hall"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ph1m3"]
+script = ExtResource("1_1yw7g")
+point_type = "Dock"
+point_connection = "Watery Hall Access"
+room_name = "Gathering Hall"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_svlbi"]
+script = ExtResource("1_1yw7g")
+point_type = "Dock"
+point_connection = "East Atrium"
+room_name = "Gathering Hall"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_ujto0"]
+script = ExtResource("1_1yw7g")
+point_type = "Dock"
+point_connection = "Save Station 2"
+room_name = "Gathering Hall"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_v7nqk")
+room_name = "Gathering Hall"
+points = [SubResource("Resource_k6hdb"), SubResource("Resource_ph1m3"), SubResource("Resource_svlbi"), SubResource("Resource_ujto0")]
+name = "Chozo Ruins"
+rooms = []

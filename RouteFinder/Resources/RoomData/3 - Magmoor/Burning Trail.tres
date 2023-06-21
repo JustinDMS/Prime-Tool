@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="Room" load_steps=6 format=3 uid="uid://2kxd5a04uydw"]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_ywn5e"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_18bql"]
+
+[sub_resource type="Resource" id="Resource_3bwa7"]
+script = ExtResource("1_ywn5e")
+point_type = "Dock"
+point_connection = "Save Station Magmoor A"
+room_name = "Burning Trail"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_orpnx"]
+script = ExtResource("1_ywn5e")
+point_type = "Dock"
+point_connection = "Lake Tunnel (Magmoor)"
+room_name = "Burning Trail"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_oh88i"]
+script = ExtResource("1_ywn5e")
+point_type = "Dock"
+point_connection = "Transport to Chozo Ruins North"
+room_name = "Burning Trail"
+points = []
+name = "Magmoor Caverns"
+rooms = []
+
+[resource]
+script = ExtResource("2_18bql")
+room_name = "Burning Trail"
+points = [SubResource("Resource_3bwa7"), SubResource("Resource_orpnx"), SubResource("Resource_oh88i")]
+name = "Magmoor Caverns"
+rooms = []

@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="Room" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_rmv1h"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_sd8un"]
+
+[sub_resource type="Resource" id="Resource_sstjb"]
+script = ExtResource("1_rmv1h")
+point_type = "Dock"
+point_connection = "Storage Depot B"
+room_name = "Ore Processing"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_87kpw"]
+script = ExtResource("1_rmv1h")
+point_type = "Dock"
+point_connection = "Elevator Access A"
+room_name = "Ore Processing"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_d4i35"]
+script = ExtResource("1_rmv1h")
+point_type = "Dock"
+point_connection = "Research Access (Mines)"
+room_name = "Ore Processing"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_e21b8"]
+script = ExtResource("1_rmv1h")
+point_type = "Dock"
+point_connection = "Waste Disposal"
+room_name = "Ore Processing"
+points = []
+name = "Phazon Mines"
+rooms = []
+
+[resource]
+script = ExtResource("2_sd8un")
+room_name = "Ore Processing"
+points = [SubResource("Resource_sstjb"), SubResource("Resource_87kpw"), SubResource("Resource_d4i35"), SubResource("Resource_e21b8")]
+name = "Phazon Mines"
+rooms = []

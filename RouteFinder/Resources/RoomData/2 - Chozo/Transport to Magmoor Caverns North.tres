@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="Room" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_7ggxd"]
+[ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_4tia2"]
+
+[sub_resource type="Resource" id="Resource_muwyc"]
+script = ExtResource("1_7ggxd")
+point_type = "Dock"
+point_connection = "Transport Access North"
+room_name = "Transport to Magmoor Caverns North"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_nwkpj"]
+script = ExtResource("1_7ggxd")
+point_type = "Dock"
+point_connection = "Sun Tower"
+room_name = "Transport to Magmoor Caverns North"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_sq5dg"]
+script = ExtResource("1_7ggxd")
+point_type = "Dock"
+point_connection = "Vault Access"
+room_name = "Transport to Magmoor Caverns North"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[sub_resource type="Resource" id="Resource_yvksd"]
+script = ExtResource("1_7ggxd")
+point_type = "Dock"
+point_connection = "Transport to Chozo Ruins North"
+room_name = "Transport to Magmoor Caverns North"
+points = []
+name = "Chozo Ruins"
+rooms = []
+
+[resource]
+script = ExtResource("2_4tia2")
+room_name = "Transport to Magmoor Caverns North"
+points = [SubResource("Resource_muwyc"), SubResource("Resource_nwkpj"), SubResource("Resource_sq5dg"), SubResource("Resource_yvksd")]
+name = "Chozo Ruins"
+rooms = []
