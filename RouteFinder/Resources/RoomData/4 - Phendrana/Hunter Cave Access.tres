@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3 uid="uid://3ebp2kj0a63l"]
 
 [ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_2x5qw"]
 [ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_isd5j"]

@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3 uid="uid://dh3uclerj46l"]
 
 [ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_mxlj0"]
 [ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_ywekk"]
@@ -7,7 +7,7 @@
 script = ExtResource("1_mxlj0")
 point_type = "Dock"
 point_connection = "Ruined Courtyard"
-room_name = "Speciman Storage"
+room_name = "Specimen Storage"
 points = []
 name = "Phendrana Drifts"
 rooms = []
@@ -16,14 +16,14 @@ rooms = []
 script = ExtResource("1_mxlj0")
 point_type = "Dock"
 point_connection = "Research Entrance"
-room_name = "Speciman Storage"
+room_name = "Specimen Storage"
 points = []
 name = "Phendrana Drifts"
 rooms = []
 
 [resource]
 script = ExtResource("2_ywekk")
-room_name = "Speciman Storage"
+room_name = "Specimen Storage"
 points = [SubResource("Resource_fumhg"), SubResource("Resource_rbgho")]
 name = "Phendrana Drifts"
 rooms = []

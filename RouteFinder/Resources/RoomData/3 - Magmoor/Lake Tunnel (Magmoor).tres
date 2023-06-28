@@ -7,7 +7,7 @@
 script = ExtResource("1_f3yys")
 point_type = "Dock"
 point_connection = "Burning Trail"
-room_name = "Lake Tunnel"
+room_name = "Lake Tunnel (Magmoor)"
 points = []
 name = "Magmoor Caverns"
 rooms = []
@@ -16,7 +16,7 @@ rooms = []
 script = ExtResource("1_f3yys")
 point_type = "Dock"
 point_connection = "Lava Lake"
-room_name = "Lake Tunnel"
+room_name = "Lake Tunnel (Magmoor)"
 points = []
 name = "Magmoor Caverns"
 rooms = []
