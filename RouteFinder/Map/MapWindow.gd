@@ -1,67 +1,35 @@
-extends Window
-signal room_clicked(room_node : Node3D)
+extends Control
+signal room_clicked(room_array : Array)
+signal room_removed(room_name : String)
+signal rooms_arranged
 
 ############################ TO DO #####################################
 # 
 ########################################################################
 
-@onready var map = $SubViewportContainer/SubViewport/Map
-@onready var camera = $SubViewportContainer/SubViewport/Camera3D
-@onready var hud = $SubViewportContainer/SubViewport/Camera3D/CameraHUD
+@onready var map = $HBoxContainer/SubViewportContainer/SubViewport/Map
+@onready var camera = $HBoxContainer/SubViewportContainer/SubViewport/Camera3D
+@onready var subviewport = $HBoxContainer/SubViewportContainer/SubViewport
+@onready var room_panels = $HBoxContainer/Panel/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer
 
-@onready var label_room = $SubViewportContainer/SubViewport/Camera3D/CameraHUD/MarginContainer/HBoxContainer/VBoxContainer2/Label_RoomName
-
-var zoom_speed : float = 50.0
-var zoom_lerp : float = 0.8
-var drag_sensitivity : float = 1.0
-var camera_x_sensitivity : float = 0.005
-var camera_y_sensitivity : float = 0.005
-var camera_home : Transform3D
-var move_speed : float = 25.0
-var move_lerp : float = 0.25
+var selected_rooms : Array = []
+var kill_callable := Callable(self, "removeRoom")
 
 
-func _ready():
-	camera_home = camera.transform
-
-
-func _process(_delta):
-	if Input.is_action_pressed("move_up"):
-		camera.position.y = lerp(camera.position.y, camera.position.y + move_speed, move_lerp)
-	if Input.is_action_pressed("move_down"):
-		camera.position.y = lerp(camera.position.y, camera.position.y - move_speed, move_lerp)
-
-
-func _input(event):
-	if Input.is_action_just_pressed("reset_map"):
-		camera.transform = camera_home
-	
-	if Input.is_action_just_pressed("scroll_in"):
-		camera.position = lerp(camera.position, camera.position - (camera.get_global_transform().basis.z * zoom_speed), zoom_lerp)
-	if Input.is_action_just_pressed("scroll_out"):
-		camera.position = lerp(camera.position, camera.position + (camera.get_global_transform().basis.z * zoom_speed), zoom_lerp)
-	
-	if event is InputEventMouseMotion:
-		if Input.is_action_pressed("pan_map"):
-			camera.position -= Vector3(event.relative.x / drag_sensitivity, 0, event.relative.y / drag_sensitivity).rotated(Vector3.UP, camera.rotation.y)
-		elif Input.is_action_pressed("right_click"):
-			camera.rotate_y(-event.relative.x * camera_x_sensitivity)
-			camera.rotation.x -= event.relative.y * camera_y_sensitivity
-			camera.rotation.x = clamp(camera.rotation.x, -PI/2, PI/2)
-	
-	if Input.is_action_just_pressed("left_click"):
-		var clicked_room = getRoomMeshFromClick()
-		if clicked_room:
-			emit_signal("room_clicked", clicked_room.get_parent())
-			label_room.set_text(clicked_room.get_parent().name)
-
-
-func _on_close_requested():
-	queue_free()
+func _input(_event):
+	if is_visible_in_tree():
+		if Input.is_action_just_pressed("left_click"):
+			var clicked_room = getRoomMeshFromClick()
+			if clicked_room:
+				if clicked_room not in selected_rooms:
+					selected_rooms.append(clicked_room)
+					emit_signal("room_clicked", selected_rooms)
 
 
 func getRoomMeshFromClick() -> MeshInstance3D:
-	var mouse_pos = get_viewport().get_mouse_position()
+	var mouse_pos = subviewport.get_mouse_position()
+	if mouse_pos.x < 0:
+		return null
 	var ray_length = 5000
 	var from = camera.project_ray_origin(mouse_pos)
 	var to = from + camera.project_ray_normal(mouse_pos) * ray_length
@@ -74,3 +42,45 @@ func getRoomMeshFromClick() -> MeshInstance3D:
 	if raycast_result:
 		return raycast_result.collider.get_parent()
 	return null
+
+
+func createNewPanel(room_name : String, room_mesh : MeshInstance3D) -> Panel:
+	var min_size = Vector2(320, 30)
+	
+	var label : Label = Label.new()
+	label.set_text(room_name)
+	label.custom_minimum_size = min_size
+	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	
+	var panel : Panel = Panel.new()
+	panel.custom_minimum_size = min_size
+	panel.add_theme_stylebox_override("panel", load("res://RouteFinder/Map/HUD/DragPanelStyleBox.tres"))
+	panel.mouse_default_cursor_shape = Control.CURSOR_DRAG
+	panel.set_script(load("res://RouteFinder/Map/HUD/RoomNamePanel.gd"))
+	panel.tree_exited.connect(kill_callable.bind(room_mesh))
+	panel.mesh = room_mesh
+	
+	panel.add_child(label)
+	
+	return panel
+
+
+func addPanel(panel : Panel) -> void:
+	room_panels.add_child(panel)
+
+
+func doesPanelExist(room_name : String) -> bool:
+	for p in room_panels.get_children():
+		if room_name == p.get_child(0).get_text():
+			return true
+	return false
+
+
+func removeRoom(room_mesh : MeshInstance3D) -> void:
+	print("Running removeRoom")
+	if selected_rooms.has(room_mesh):
+		selected_rooms.erase(room_mesh)
+		emit_signal("rooms_arranged")
+		return
+	print("Couldn't find room in selected_rooms")

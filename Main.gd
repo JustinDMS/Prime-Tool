@@ -5,7 +5,7 @@ extends Node
 var tab_sizes : Dictionary = {
 	0 : Vector2(550, 200), # Segment Timer
 	1 : Vector2(550, 200), # Average Time
-	2 : Vector2(550, 650), # Route Finder
+	2 : Vector2(1350, 830), # Route Finder
 	3 : Vector2(550, 250), # Auto Timer
 }
 

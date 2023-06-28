@@ -1,21 +1,15 @@
 extends Control
 
 ############################ TO DO #####################################
+# Deprecate route finder and show results immediately on map
 # Show direction of elevators
 ########################################################################
 
 # UI Elements
-@onready var option_room_1 = $MarginContainer/VBoxContainer/VBoxContainer_A/Option_Room1
-@onready var option_room_2 = $MarginContainer/VBoxContainer/VBoxContainer_B/Option_Room2
-@onready var option_world_1 = $MarginContainer/VBoxContainer/VBoxContainer_A/Option_World1
-@onready var option_world_2 = $MarginContainer/VBoxContainer/VBoxContainer_B/Option_World2
-@onready var option_point_1 = $MarginContainer/VBoxContainer/VBoxContainer_A/Option_Point1
-@onready var option_point_2 = $MarginContainer/VBoxContainer/VBoxContainer_B/Option_Point2
-@onready var copy_button = $MarginContainer/VBoxContainer/HBoxContainer/Button_CopyText
-@onready var item_list = $MarginContainer/VBoxContainer/Result_ItemList
+@onready var map = $MarginContainer2/MapWindow/HBoxContainer/SubViewportContainer/SubViewport/Map
+@onready var map_hud = $MarginContainer2/MapWindow
 
 # Pathfinding
-enum point {POINT_A, POINT_B}
 var room_path = []
 var room_queue = []
 var rooms_visited = {}
@@ -33,7 +27,6 @@ var worlds = {
 var window_size := Vector2(550, 650)
 
 # Map
-var map_scene
 var world_materials : Dictionary = {
 	"Tallon Overworld" = preload("res://RouteFinder/Map/Materials/mat_Tallon.tres"),
 	"Chozo Ruins" = preload("res://RouteFinder/Map/Materials/mat_Chozo.tres"),
@@ -46,51 +39,11 @@ var mat_green : Material = preload("res://RouteFinder/Map/Materials/Mat_Green.tr
 var mat_cyan : Material = preload("res://RouteFinder/Map/Materials/mat_Selected.tres")
 var mat_yellow : Material = preload("res://RouteFinder/Map/Materials/mat_Point.tres")
 var room_meshes : Array = []
-var clicked_room
 
 
 func _ready():
-	buildRoomList(worlds[0], point.POINT_A)
-	buildRoomList(worlds[1], point.POINT_B)
-	buildPointList(worlds[0].rooms[0], point.POINT_A)
-	buildPointList(worlds[1].rooms[0], point.POINT_B)
-
-
-func displayResults(end : Point) -> void:
-	for r in room_path:
-		item_list.add_item(r.room_name)
-	
-	copy_button.set_text("Copy " + str(distance[end.room_name] + 1) + " rooms")
-
-
-func buildRoomList(world : World, route_point : point) -> void:
-	
-	var options_node
-	
-	if route_point == 0: # Point A
-		options_node = option_room_1
-	elif route_point == 1: # Point B
-		options_node = option_room_2
-	
-	options_node.clear()
-	
-	for i in world.rooms:
-		options_node.add_item(i.room_name)
-
-
-func buildPointList(room : Room, route_point : point) -> void:
-	
-	var options_node
-	
-	if route_point == 0: # Point A
-		options_node = option_point_1
-	elif route_point == 1: # Point B
-		options_node = option_point_2
-	
-	options_node.clear()
-	
-	for i in room.points:
-		options_node.add_item("Door to " + i.point_connection)
+	createClickRoom()
+	setRoomColors()
 
 
 func findPath(start : Point, end : Point) -> void:
@@ -115,7 +68,7 @@ func findPath(start : Point, end : Point) -> void:
 func searchConnectingPoints(room : Room, end : Point) -> Array:
 	
 	var temp_room_array = []
-
+	
 	for p in room.points:
 		
 		distance[p.point_connection] = distance[room.room_name] + 1
@@ -133,7 +86,6 @@ func searchConnectingPoints(room : Room, end : Point) -> Array:
 
 
 func constructRoomPath(start : Point, end : Point) -> void:
-	
 	room_path = [end]
 	var previous_room = end
 	
@@ -144,11 +96,6 @@ func constructRoomPath(start : Point, end : Point) -> void:
 			previous_room = temp
 	
 	room_path.insert(0, start)
-	
-	if getMapOpen(): 
-		highlightRoute()
-	
-	displayResults(end)
 
 
 func resetContainers():
@@ -158,54 +105,6 @@ func resetContainers():
 	distance.clear()
 	parent_rooms.clear()
 	room_meshes.clear()
-	
-	item_list.clear()
-	copy_button.set_text("Copy")
-	
-	if getMapOpen():
-		clearHighlights()
-
-
-func _on_Option_World1_item_selected(index):
-	buildRoomList(worlds[index], point.POINT_A)
-	buildPointList(worlds[index].rooms[0], point.POINT_A)
-
-
-func _on_Option_World2_item_selected(index):
-	buildRoomList(worlds[index], point.POINT_B)
-	buildPointList(worlds[index].rooms[0], point.POINT_B)
-
-
-func _on_Button_GetRooms_pressed():
-	var start : Point = worlds[option_world_1.get_selected_id()].rooms[option_room_1.get_selected_id()].points[option_point_1.get_selected_id()]
-	var end : Point = worlds[option_world_2.get_selected_id()].rooms[option_room_2.get_selected_id()].points[option_point_2.get_selected_id()]
-	
-	if start == end:
-		pass
-	else:
-		resetContainers()
-		findPath(start, end)
-
-
-func _on_Button_CopyText_pressed():
-	var text := ""
-	for r in room_path:
-		text += r.room_name
-		if r != room_path[-1]:
-			text += "\n"
-	DisplayServer.clipboard_set(text)
-
-
-func _on_Button_Clear_pressed():
-	resetContainers()
-
-
-func _on_option_room_1_item_selected(index):
-	buildPointList(worlds[option_world_1.get_selected_id()].rooms[index], point.POINT_A)
-
-
-func _on_option_room_2_item_selected(index):
-	buildPointList(worlds[option_world_2.get_selected_id()].rooms[index], point.POINT_B)
 
 
 func getRoomFromName(room_name : String) -> Room:
@@ -234,66 +133,80 @@ func getWorldFromName(world_name : String) -> World:
 			return null
 
 
-func _on_button_open_map_pressed():
-	if not getMapOpen():
-		var new_scene = load("res://RouteFinder/Map/MapWindow.tscn").instantiate()
-		map_scene = new_scene
-		get_parent().add_child(map_scene)
-		map_scene.room_clicked.connect(roomClicked)
-		createClickRoom()
-		setRoomColors()
-		map_scene.popup()
-
-
-func getMapOpen() -> bool:
-	if is_instance_valid(map_scene):
-		return true
-	return false
-
-
-func highlightRoute() -> void:
-	for r in room_path:
-		var world_node = map_scene.map.get_node(r.name)
+func highlightRoute(destinations : Array, all_rooms : Array) -> void:
+	for r in all_rooms:
+		var world_node = map.get_node(r.name)
 		var room_node = world_node.get_node(r.room_name)
 		var room_mesh = room_node.get_child(-1)
 		room_meshes.append(room_mesh)
 	
 	for r in room_meshes:
-		r.set_surface_override_material(0, mat_green)
-	
-	room_meshes[0].set_surface_override_material(0, mat_yellow)
-	room_meshes[-1].set_surface_override_material(0, mat_yellow)
-
-
-func clearHighlights() -> void:
-	for r in room_meshes:
-		r.set_surface_override_material(0, mat_white)
-	room_meshes.clear()
-	setRoomColors()
+		if getRoomFromName(r.get_parent().name) not in destinations:
+			r.set_surface_override_material(0, mat_green)
+		else:
+			r.set_surface_override_material(0, mat_yellow)
 
 
 func setRoomColors() -> void:
-	for world in map_scene.map.get_children():
+	for world in map.get_children():
 		for room in world.get_children():
 			var room_mesh = room.get_child(-1)
 			room_mesh.set_surface_override_material(0, world_materials[world.name])
 
 
 func createClickRoom() -> void:
-	for world in map_scene.map.get_children():
+	for world in map.get_children():
 		for room in world.get_children():
 			var room_mesh : MeshInstance3D = room.get_child(-1)
 			room_mesh.create_convex_collision()
 
 
-func roomClicked(room : Node3D) -> void:
-	if clicked_room:
-		if clicked_room.get_child(-1) in room_meshes:
-			if room_meshes[0] == clicked_room.get_child(-1) or room_meshes[-1] == clicked_room.get_child(-1):
-				clicked_room.get_child(-1).set_surface_override_material(0, mat_yellow)
-			else:
-				clicked_room.get_child(-1).set_surface_override_material(0, mat_green)
-		else:
-			clicked_room.get_child(-1).set_surface_override_material(0, world_materials[clicked_room.get_parent().name])
-	clicked_room = room
-	clicked_room.get_child(-1).set_surface_override_material(0, mat_cyan)
+func roomClicked(rooms : Array) -> void:
+	for room in rooms:
+		highlightSelectedRoom(room)
+		if not map_hud.doesPanelExist(room.get_parent().name):
+			var panel : Panel = map_hud.createNewPanel(room.get_parent().name, room)
+			map_hud.addPanel(panel)
+	roomsArranged()
+
+
+func highlightSelectedRoom(room_mesh : MeshInstance3D) -> void:
+	room_mesh.set_surface_override_material(0, mat_cyan)
+
+
+func roomsArranged():
+	var destinations : Array = []
+	for room in map_hud.room_panels.get_children():
+		var room_obj = getRoomFromName(room.get_child(0).get_text())
+		destinations.append(room_obj)
+	setRoomColors()
+	if len(destinations) > 1:
+		displayRoute(destinations)
+	elif len(destinations) == 1:
+		for world in map.get_children():
+			for room in world.get_children():
+				if room.name == destinations[0].room_name:
+					highlightSelectedRoom(room.get_child(-1))
+	elif len(destinations) == 0:
+		return
+
+
+func displayRoute(destinations : Array) -> void:
+	resetContainers()
+	var master_path = []
+	for i in range(0, len(destinations)):
+		if i + 1 == len(destinations):
+			highlightRoute(destinations, master_path)
+			return
+		findPath(destinations[i].points[0], destinations[i + 1].points[0])
+		for room in room_path:
+			master_path.append(room)
+		resetContainers()
+
+
+func roomRemoved(room_name : String):
+	for world in map.get_children():
+		for room in world.get_children():
+			if room.name == room_name:
+				print("Removing ", room_name)
+				map_hud.removeRoom(room.get_child(-1))

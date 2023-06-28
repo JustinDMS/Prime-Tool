@@ -7,7 +7,7 @@
 script = ExtResource("1_5j6pu")
 point_type = "Dock"
 point_connection = "Hunter Cave"
-room_name = "Lake Tunnel"
+room_name = "Lake Tunnel (Phendrana)"
 points = []
 name = "Phendrana Drifts"
 rooms = []
@@ -16,7 +16,7 @@ rooms = []
 script = ExtResource("1_5j6pu")
 point_type = "Dock"
 point_connection = "Gravity Chamber"
-room_name = "Lake Tunnel"
+room_name = "Lake Tunnel (Phendrana)"
 points = []
 name = "Phendrana Drifts"
 rooms = []

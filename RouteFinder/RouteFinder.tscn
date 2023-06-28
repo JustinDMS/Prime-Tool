@@ -1,135 +1,37 @@
-[gd_scene load_steps=3 format=3 uid="uid://clrx38dg0oi78"]
+[gd_scene load_steps=4 format=3 uid="uid://clrx38dg0oi78"]
 
 [ext_resource type="Script" path="res://RouteFinder/ResourceMaker.gd" id="2_06d1n"]
 [ext_resource type="Script" path="res://RouteFinder/Resource_RouteFinder.gd" id="3_wsjll"]
+[ext_resource type="PackedScene" uid="uid://b0epbgaunvj2b" path="res://RouteFinder/Map/MapWindow.tscn" id="3_y7rk0"]
 
 [node name="RouteFinder" type="Control"]
+custom_minimum_size = Vector2(1350, 800)
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 2.455
+offset_right = -0.250122
+offset_bottom = 800.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_wsjll")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="ResourceMaker" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+script = ExtResource("2_06d1n")
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+custom_minimum_size = Vector2(1300, 800)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_left = 15
-theme_override_constants/margin_top = 15
-theme_override_constants/margin_right = 15
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-custom_minimum_size = Vector2(520, 0)
-layout_mode = 2
-size_flags_horizontal = 0
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+[node name="MapWindow" parent="MarginContainer2" instance=ExtResource("3_y7rk0")]
 layout_mode = 2
 
-[node name="Button_OpenMap" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
-layout_mode = 2
-text = "Open Map Viewer"
-
-[node name="VBoxContainer_A" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer_A"]
-layout_mode = 2
-text = "Point A"
-
-[node name="Option_World1" type="OptionButton" parent="MarginContainer/VBoxContainer/VBoxContainer_A"]
-layout_mode = 2
-item_count = 5
-selected = 0
-popup/item_0/text = "Tallon Overworld"
-popup/item_0/id = 0
-popup/item_1/text = "Chozo Ruins"
-popup/item_1/id = 1
-popup/item_2/text = "Magmoor Caverns"
-popup/item_2/id = 2
-popup/item_3/text = "Phendrana Drifts"
-popup/item_3/id = 3
-popup/item_4/text = "Phazon Mines"
-popup/item_4/id = 4
-
-[node name="Option_Room1" type="OptionButton" parent="MarginContainer/VBoxContainer/VBoxContainer_A"]
-layout_mode = 2
-fit_to_longest_item = false
-
-[node name="Option_Point1" type="OptionButton" parent="MarginContainer/VBoxContainer/VBoxContainer_A"]
-layout_mode = 2
-fit_to_longest_item = false
-
-[node name="VBoxContainer_B" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer_B"]
-layout_mode = 2
-text = "Point B"
-
-[node name="Option_World2" type="OptionButton" parent="MarginContainer/VBoxContainer/VBoxContainer_B"]
-layout_mode = 2
-item_count = 5
-selected = 1
-popup/item_0/text = "Tallon Overworld"
-popup/item_0/id = 0
-popup/item_1/text = "Chozo Ruins"
-popup/item_1/id = 1
-popup/item_2/text = "Magmoor Caverns"
-popup/item_2/id = 2
-popup/item_3/text = "Phendrana Drifts"
-popup/item_3/id = 3
-popup/item_4/text = "Phazon Mines"
-popup/item_4/id = 4
-
-[node name="Option_Room2" type="OptionButton" parent="MarginContainer/VBoxContainer/VBoxContainer_B"]
-layout_mode = 2
-
-[node name="Option_Point2" type="OptionButton" parent="MarginContainer/VBoxContainer/VBoxContainer_B"]
-layout_mode = 2
-
-[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 15
-
-[node name="Button_GetRooms" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "Get Rooms"
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-
-[node name="Button_CopyText" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "Copy"
-
-[node name="Button_Clear" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "Clear"
-
-[node name="Result_ItemList" type="ItemList" parent="MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(260, 200)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 2
-
-[node name="ResourceMaker" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 0
-script = ExtResource("2_06d1n")
-
-[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer2/Button_OpenMap" to="." method="_on_button_open_map_pressed"]
-[connection signal="item_selected" from="MarginContainer/VBoxContainer/VBoxContainer_A/Option_World1" to="." method="_on_Option_World1_item_selected"]
-[connection signal="item_selected" from="MarginContainer/VBoxContainer/VBoxContainer_A/Option_Room1" to="." method="_on_option_room_1_item_selected"]
-[connection signal="item_selected" from="MarginContainer/VBoxContainer/VBoxContainer_B/Option_World2" to="." method="_on_Option_World2_item_selected"]
-[connection signal="item_selected" from="MarginContainer/VBoxContainer/VBoxContainer_B/Option_Room2" to="." method="_on_option_room_2_item_selected"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Button_GetRooms" to="." method="_on_Button_GetRooms_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button_CopyText" to="." method="_on_Button_CopyText_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/Button_Clear" to="." method="_on_Button_Clear_pressed"]
+[connection signal="room_clicked" from="MarginContainer2/MapWindow" to="." method="roomClicked"]
+[connection signal="room_removed" from="MarginContainer2/MapWindow" to="." method="roomRemoved"]
+[connection signal="rooms_arranged" from="MarginContainer2/MapWindow" to="." method="roomsArranged"]
