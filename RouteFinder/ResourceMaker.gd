@@ -14,7 +14,8 @@ var data
 
 
 func _ready():
-	readJSON()
+	pass
+	#readJSON()
 	#addRoomsToWorld()
 
 
