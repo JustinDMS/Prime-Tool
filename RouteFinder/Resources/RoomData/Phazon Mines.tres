@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="World" load_steps=134 format=3]
+[gd_resource type="Resource" script_class="World" load_steps=134 format=3 uid="uid://dpguwvmp5fcud"]
 
 [ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_4o72c"]
 [ext_resource type="Script" path="res://RouteFinder/Resources/World.gd" id="1_p1mnd"]
@@ -1001,7 +1001,7 @@ rooms = []
 
 [sub_resource type="Resource" id="Resource_t5eaw"]
 script = ExtResource("1_4o72c")
-point_type = "Dock"
+point_type = "Teleporter"
 point_connection = "Transport to Phazon Mines West"
 room_name = "Transport to Magmoor Caverns South (Mines)"
 points = []
@@ -1026,7 +1026,7 @@ rooms = []
 
 [sub_resource type="Resource" id="Resource_xiqfp"]
 script = ExtResource("1_4o72c")
-point_type = "Dock"
+point_type = "Teleporter"
 point_connection = "Transport to Phazon Mines East"
 room_name = "Transport to Tallon Overworld South (Mines)"
 points = []

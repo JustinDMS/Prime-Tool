@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3 uid="uid://o833j2yashl8"]
 
 [ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_omxwg"]
 [ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_o26lp"]
@@ -14,7 +14,7 @@ rooms = []
 
 [sub_resource type="Resource" id="Resource_4tnd7"]
 script = ExtResource("1_omxwg")
-point_type = "Dock"
+point_type = "Teleporter"
 point_connection = "Transport to Chozo Ruins West"
 room_name = "Transport to Tallon Overworld North"
 points = []

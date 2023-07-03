@@ -1499,7 +1499,7 @@ rooms = []
 
 [sub_resource type="Resource" id="Resource_yvksd"]
 script = ExtResource("1_igy3f")
-point_type = "Dock"
+point_type = "Teleporter"
 point_connection = "Transport to Chozo Ruins North"
 room_name = "Transport to Magmoor Caverns North"
 points = []
@@ -1524,7 +1524,7 @@ rooms = []
 
 [sub_resource type="Resource" id="Resource_yvaqa"]
 script = ExtResource("1_igy3f")
-point_type = "Dock"
+point_type = "Teleporter"
 point_connection = "Transport to Chozo Ruins East"
 room_name = "Transport to Tallon Overworld East"
 points = []
@@ -1549,7 +1549,7 @@ rooms = []
 
 [sub_resource type="Resource" id="Resource_4tnd7"]
 script = ExtResource("1_igy3f")
-point_type = "Dock"
+point_type = "Teleporter"
 point_connection = "Transport to Chozo Ruins West"
 room_name = "Transport to Tallon Overworld North"
 points = []
@@ -1574,7 +1574,7 @@ rooms = []
 
 [sub_resource type="Resource" id="Resource_eeig5"]
 script = ExtResource("1_igy3f")
-point_type = "Dock"
+point_type = "Teleporter"
 point_connection = "Transport to Chozo Ruins South"
 room_name = "Transport to Tallon Overworld South (Chozo)"
 points = []

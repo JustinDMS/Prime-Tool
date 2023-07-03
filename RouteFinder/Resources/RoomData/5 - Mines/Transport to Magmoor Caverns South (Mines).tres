@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3 uid="uid://cgh13yar518ny"]
 
 [ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_3i0bx"]
 [ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_okibd"]
@@ -14,7 +14,7 @@ rooms = []
 
 [sub_resource type="Resource" id="Resource_t5eaw"]
 script = ExtResource("1_3i0bx")
-point_type = "Dock"
+point_type = "Teleporter"
 point_connection = "Transport to Phazon Mines West"
 room_name = "Transport to Magmoor Caverns South (Mines)"
 points = []

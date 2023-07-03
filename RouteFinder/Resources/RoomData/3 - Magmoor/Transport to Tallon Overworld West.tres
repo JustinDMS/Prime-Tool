@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Room" load_steps=6 format=3]
+[gd_resource type="Resource" script_class="Room" load_steps=6 format=3 uid="uid://tp152usqd1vw"]
 
 [ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_uwoad"]
 [ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_iv6po"]
@@ -23,7 +23,7 @@ rooms = []
 
 [sub_resource type="Resource" id="Resource_rn10c"]
 script = ExtResource("1_uwoad")
-point_type = "Dock"
+point_type = "Teleporter"
 point_connection = "Transport to Magmoor Caverns East"
 room_name = "Transport to Tallon Overworld West"
 points = []

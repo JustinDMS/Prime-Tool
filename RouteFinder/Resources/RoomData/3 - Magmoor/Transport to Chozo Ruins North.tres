@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="Room" load_steps=5 format=3]
+[gd_resource type="Resource" script_class="Room" load_steps=5 format=3 uid="uid://bwhw8gy7llq2a"]
 
 [ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_hjwje"]
 [ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_ugi72"]
@@ -14,7 +14,7 @@ rooms = []
 
 [sub_resource type="Resource" id="Resource_sorol"]
 script = ExtResource("1_hjwje")
-point_type = "Dock"
+point_type = "Teleporter"
 point_connection = "Transport to Magmoor Caverns North"
 room_name = "Transport to Chozo Ruins North"
 points = []

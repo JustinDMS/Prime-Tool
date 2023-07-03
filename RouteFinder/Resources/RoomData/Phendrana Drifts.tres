@@ -1362,7 +1362,7 @@ rooms = []
 
 [sub_resource type="Resource" id="Resource_xtdck"]
 script = ExtResource("1_1p527")
-point_type = "Dock"
+point_type = "Teleporter"
 point_connection = "Transport to Phendrana Drifts South"
 room_name = "Transport to Magmoor Caverns South (Phendrana)"
 points = []
@@ -1387,7 +1387,7 @@ rooms = []
 
 [sub_resource type="Resource" id="Resource_jmt4d"]
 script = ExtResource("1_1p527")
-point_type = "Dock"
+point_type = "Teleporter"
 point_connection = "Transport to Phendrana Drifts North"
 room_name = "Transport to Magmoor Caverns West"
 points = []
