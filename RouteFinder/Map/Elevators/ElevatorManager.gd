@@ -15,21 +15,20 @@ extends Node3D
 @onready var indicator : PackedScene = load("res://RouteFinder/Map/Elevators/IndicatorMesh.tscn")
 
 const wait_time : float = 1.5
-const count : float = 10.0
 const delay : float = 0.1
 
 enum start_side {A, B}
 
-var offsets : Dictionary = {
-	"ChozoWest_TallonNorth" : 0.07,
-	"ChozoEast_TallonEast" : 0.335,
-	"ChozoNorth_MagmoorNorth" : 0.025,
-	"ChozoSouth_TallonSouth": 0.067,
-	"TallonSouth_MinesEast" : 0.0525,
-	"TallonWest_MagmoorEast" : 0.12,
-	"MagmoorSouth_MinesWest" : 0.082,
-	"MagmoorWest_PhendranaNorth" : 0.026,
-	"MagmoorSouth_PhendranaSouth" : 0.0292
+var counts : Dictionary = {
+	"ChozoWest_TallonNorth" : 10,
+	"ChozoEast_TallonEast" : 5,
+	"ChozoNorth_MagmoorNorth" : 20,
+	"ChozoSouth_TallonSouth": 10,
+	"TallonSouth_MinesEast" : 10,
+	"TallonWest_MagmoorEast" : 5,
+	"MagmoorSouth_MinesWest" : 10,
+	"MagmoorWest_PhendranaNorth" : 20,
+	"MagmoorSouth_PhendranaSouth" : 20
 }
 var elevator_info : Dictionary
 
@@ -41,9 +40,6 @@ func _ready():
 
 func setIndicators(room_path : Array) -> void:
 	elevator_info.clear()
-	# Set paths being used
-	# Determine what side it's coming from
-	# Create Tweens using above info
 	var used_elevators : Array = []
 	for room in room_path:
 		for point in room.points:
@@ -52,8 +48,6 @@ func setIndicators(room_path : Array) -> void:
 				if len(used_elevators) == 2:
 					var elevator_path : Array = getElevatorPath(used_elevators)
 					elevator_info[elevator_path[0]] = elevator_path[1]
-					for i in used_elevators:
-						print(i.room_name)
 					used_elevators.clear()
 	timer.wait_time = wait_time
 	setPathVisibility()
@@ -102,7 +96,7 @@ func getElevatorPath(points : Array) -> Array:
 			side = start_side.A
 		"Transport to Tallon Overworld South (Chozo)":
 			path = $ChozoSouth_TallonSouth
-			side = start_side.B
+			side = start_side.A
 		"Transport to Phazon Mines East":
 			path = $TallonSouth_MinesEast
 			side = start_side.A
@@ -144,11 +138,11 @@ func _on_timer_timeout():
 
 
 func spawnIndicatorForPath(path3d : Path3D, side : start_side, progress : float) -> void:
-	for i in range(1, count):
+	for i in range(1, counts[path3d.name]):
 		if side == start_side.A:
-			progress = (1.0/count) * i
+			progress = (1.0/counts[path3d.name]) * i
 		elif side == start_side.B:
-			progress = 1 - (1.0/count) * i
+			progress = 1 - (1.0/counts[path3d.name]) * i
 		path3d.get_child(0).progress_ratio = progress
 		var new_indicator = indicator.instantiate()
 		path3d.get_parent().add_child(new_indicator)
