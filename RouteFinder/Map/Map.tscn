@@ -1,10 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://bhn0jbg4ws3xn"]
+[gd_scene load_steps=16 format=3 uid="uid://do6ub1hash3e3"]
 
 [ext_resource type="PackedScene" uid="uid://cvsvpaqpjdwtl" path="res://RouteFinder/Map/Chozo Ruins Map.tscn" id="1_48uvl"]
 [ext_resource type="PackedScene" uid="uid://ceriumwvjf8jg" path="res://RouteFinder/Map/Tallon Overworld Map.tscn" id="1_w6pt0"]
 [ext_resource type="PackedScene" uid="uid://cbhx0u4r1hptk" path="res://RouteFinder/Map/Magmoor Caverns Map.tscn" id="3_8nugp"]
 [ext_resource type="PackedScene" uid="uid://dv5vwefvdf2kh" path="res://RouteFinder/Map/Phendrana Drifts Map.tscn" id="4_2be60"]
 [ext_resource type="PackedScene" uid="uid://cemu6cclnm156" path="res://RouteFinder/Map/Phazon Mines Map.tscn" id="5_3tpvh"]
+[ext_resource type="Curve3D" uid="uid://chb1yh5kvjaq0" path="res://RouteFinder/Map/Elevators/Curve_ChozoWest_TallonNorth.tres" id="6_1rdsl"]
+[ext_resource type="Script" path="res://RouteFinder/Map/Elevators/ElevatorManager.gd" id="6_tdktb"]
+[ext_resource type="Curve3D" uid="uid://v6k3cf1nrymd" path="res://RouteFinder/Map/Elevators/Curve_ChozoEast_TallonEast.tres" id="7_uyj2d"]
+[ext_resource type="Curve3D" uid="uid://blouidcroxbua" path="res://RouteFinder/Map/Elevators/Curve_ChozoNorth_MagmoorNorth.tres" id="8_3f3m5"]
+[ext_resource type="Curve3D" uid="uid://b7imq3w8f8yg7" path="res://RouteFinder/Map/Elevators/Curve_ChozoSouth_TallonSouth.tres" id="9_gigfc"]
+[ext_resource type="Curve3D" uid="uid://bn6gni3n37ibs" path="res://RouteFinder/Map/Elevators/Curve_TallonSouth_MinesEast.tres" id="10_n2jih"]
+[ext_resource type="Curve3D" uid="uid://b4atn5hi6y0gp" path="res://RouteFinder/Map/Elevators/Curve_MagmoorSouth_MinesWest.tres" id="11_o0f4v"]
+[ext_resource type="Curve3D" uid="uid://c62tflspcu3cd" path="res://RouteFinder/Map/Elevators/Curve_TallonWest_MagmoorEast.tres" id="12_807sf"]
+[ext_resource type="Curve3D" uid="uid://dxobubmwjmaea" path="res://RouteFinder/Map/Elevators/Curve_MagmoorWest_PhendranaNorth.tres" id="13_ra7vl"]
+[ext_resource type="Curve3D" uid="uid://b4o4e64ius0tf" path="res://RouteFinder/Map/Elevators/Curve_MagmoorSouth_PhendranaSouth.tres" id="15_v0ufk"]
 
 [node name="Map" type="Node3D"]
 
@@ -21,3 +31,83 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1068.88, 0, -91.8824)
 
 [node name="Phazon Mines" parent="." instance=ExtResource("5_3tpvh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 284.737, 0, 1434.74)
+
+[node name="ElevatorManager" type="Node3D" parent="."]
+script = ExtResource("6_tdktb")
+
+[node name="ChozoWest_TallonNorth" type="Path3D" parent="ElevatorManager"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.161, -22.253, 153.961)
+curve = ExtResource("6_1rdsl")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="ElevatorManager/ChozoWest_TallonNorth"]
+transform = Transform3D(0.99999, 4.62307e-05, -0.000825324, 4.62306e-05, 0.993737, 0.111679, 0.000825324, -0.111679, 0.993735, -0.0117043, 1.58376, 22.0247)
+progress = 22.0919
+
+[node name="ChozoEast_TallonEast" type="Path3D" parent="ElevatorManager"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 650.193, 58.9172, 290.567)
+curve = ExtResource("7_uyj2d")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="ElevatorManager/ChozoEast_TallonEast"]
+transform = Transform3D(0.00690375, -0.162299, -0.986708, 2.77534e-05, 0.986733, -0.162302, 0.999976, 0.00109311, 0.00681665, -22.4028, -3.685, 0.15477)
+progress = 22.7044
+
+[node name="ChozoNorth_MagmoorNorth" type="Path3D" parent="ElevatorManager"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 179.728, -18.6036, -345.515)
+curve = ExtResource("8_3f3m5")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="ElevatorManager/ChozoNorth_MagmoorNorth"]
+transform = Transform3D(0.243515, 0.116077, -0.962917, 0, 0.992805, 0.119679, 0.969897, -0.0291438, 0.241763, -21.7947, 2.70883, 5.47208)
+progress = 22.6344
+
+[node name="ChozoSouth_TallonSouth" type="Path3D" parent="ElevatorManager"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 770.27, 58.1917, 407.477)
+curve = ExtResource("9_gigfc")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="ElevatorManager/ChozoSouth_TallonSouth"]
+transform = Transform3D(0.946371, -0.022962, -0.322261, -1.86264e-09, 0.997463, -0.071072, 0.323081, 0.0672606, 0.943969, -7.26009, -1.60115, 21.2663)
+progress = 22.5285
+
+[node name="TallonSouth_MinesEast" type="Path3D" parent="ElevatorManager"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 583.481, -75.7379, 922.64)
+curve = ExtResource("10_n2jih")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="ElevatorManager/TallonSouth_MinesEast"]
+transform = Transform3D(0.999434, 0.0110403, -0.0317662, 3.56324e-06, 0.944536, 0.328382, 0.0336304, -0.328197, 0.944, -0.726019, 7.50521, 21.5752)
+progress = 22.855
+
+[node name="TallonWest_MagmoorEast" type="Path3D" parent="ElevatorManager"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -93.4772, -77.8017, 739.174)
+curve = ExtResource("12_807sf")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="ElevatorManager/TallonWest_MagmoorEast"]
+transform = Transform3D(0.0177028, 0.843328, -0.537093, 1.78814e-07, 0.537178, 0.843458, 0.999843, -0.0149317, 0.00950941, -12.1486, 19.0784, 0.215097)
+progress = 22.6191
+
+[node name="MagmoorSouth_MinesWest" type="Path3D" parent="ElevatorManager"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160.877, 27.7473, 1216.59)
+curve = ExtResource("11_o0f4v")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="ElevatorManager/MagmoorSouth_MinesWest"]
+transform = Transform3D(0.58582, -0.00426236, -0.810423, -7.22706e-07, 0.999978, -0.00525983, 0.810441, 0.0030819, 0.585806, -18.1544, -0.117826, 13.1227)
+progress = 22.401
+
+[node name="MagmoorWest_PhendranaNorth" type="Path3D" parent="ElevatorManager"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -500.805, 82.9014, 471.895)
+curve = ExtResource("13_ra7vl")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="ElevatorManager/MagmoorWest_PhendranaNorth"]
+transform = Transform3D(-0.705762, -0.0894476, -0.702773, 1.49682e-05, 0.991988, -0.126273, 0.708449, -0.0891292, -0.700104, -15.7191, -2.82437, -15.6594)
+progress = 22.3675
+
+[node name="MagmoorSouth_PhendranaSouth" type="Path3D" parent="ElevatorManager"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -239.863, 93.6466, 1166.25)
+curve = ExtResource("15_v0ufk")
+
+[node name="PathFollow3D" type="PathFollow3D" parent="ElevatorManager/MagmoorSouth_PhendranaSouth"]
+transform = Transform3D(-0.53216, -0.0544822, -0.844881, -7.00355e-07, 0.99792, -0.0643502, 0.846644, -0.0342441, -0.531052, -18.959, -1.44401, -11.9167)
+progress = 22.44
+
+[node name="Timer" type="Timer" parent="ElevatorManager"]
+one_shot = true
+
+[connection signal="timeout" from="ElevatorManager/Timer" to="ElevatorManager" method="_on_timer_timeout"]

@@ -11,6 +11,7 @@ signal rooms_arranged
 @onready var camera = $HBoxContainer/SubViewportContainer/SubViewport/Camera3D
 @onready var subviewport = $HBoxContainer/SubViewportContainer/SubViewport
 @onready var room_panels = $HBoxContainer/Panel/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer
+@onready var elevator_manager = $HBoxContainer/SubViewportContainer/SubViewport/Map/ElevatorManager
 
 var selected_rooms : Array = []
 var kill_callable := Callable(self, "removeRoom")

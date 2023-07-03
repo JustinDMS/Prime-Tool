@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dakx66fusp71g"]
+
+[ext_resource type="Script" path="res://RouteFinder/Map/Elevators/IndicatorMesh.gd" id="1_6gp2v"]
+[ext_resource type="Material" uid="uid://deqsweuvk0q32" path="res://RouteFinder/Map/Elevators/mat_Indicator.tres" id="1_x1gc0"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_tjwvy"]
+material = ExtResource("1_x1gc0")
+radius = 5.0
+height = 10.0
+radial_segments = 16
+rings = 8
+
+[node name="IndicatorMesh" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("SphereMesh_tjwvy")
+script = ExtResource("1_6gp2v")

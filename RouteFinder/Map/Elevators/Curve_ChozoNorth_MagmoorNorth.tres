@@ -1,0 +1,8 @@
+[gd_resource type="Curve3D" format=3 uid="uid://blouidcroxbua"]
+
+[resource]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -871.812, 108.356, 218.889),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2

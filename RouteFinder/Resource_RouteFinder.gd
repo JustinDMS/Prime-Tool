@@ -145,10 +145,15 @@ func highlightRoute(destinations : Array, all_rooms : Array) -> void:
 			r.set_surface_override_material(0, mat_green)
 		else:
 			r.set_surface_override_material(0, mat_yellow)
+	
+	showElevatorDirection(all_rooms)
+	map_hud.elevator_manager.setIndicators(all_rooms)
 
 
 func setRoomColors() -> void:
 	for world in map.get_children():
+		if world.name == "ElevatorManager":
+			return
 		for room in world.get_children():
 			var room_mesh = room.get_child(-1)
 			room_mesh.set_surface_override_material(0, world_materials[world.name])
@@ -156,6 +161,8 @@ func setRoomColors() -> void:
 
 func createClickRoom() -> void:
 	for world in map.get_children():
+		if world.name == "ElevatorManager":
+			return
 		for room in world.get_children():
 			var room_mesh : MeshInstance3D = room.get_child(-1)
 			room_mesh.create_convex_collision()
@@ -187,7 +194,10 @@ func roomsArranged():
 			for room in world.get_children():
 				if room.name == destinations[0].room_name:
 					highlightSelectedRoom(room.get_child(-1))
+		stopElevatorIndicator()
+		
 	elif len(destinations) == 0:
+		stopElevatorIndicator()
 		return
 
 
@@ -210,3 +220,11 @@ func roomRemoved(room_name : String):
 			if room.name == room_name:
 				print("Removing ", room_name)
 				map_hud.removeRoom(room.get_child(-1))
+
+
+func showElevatorDirection(all_rooms : Array) -> void:
+	map_hud.elevator_manager.setIndicators(all_rooms)
+
+
+func stopElevatorIndicator() -> void:
+	map_hud.elevator_manager.stopIndicators()
