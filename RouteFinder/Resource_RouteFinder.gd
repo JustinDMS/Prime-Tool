@@ -1,10 +1,5 @@
 extends Control
 
-############################ TO DO #####################################
-# Deprecate route finder and show results immediately on map
-# Show direction of elevators
-########################################################################
-
 # UI Elements
 @onready var map = $MarginContainer2/MapWindow/HBoxContainer/SubViewportContainer/SubViewport/Map
 @onready var map_hud = $MarginContainer2/MapWindow
@@ -22,9 +17,6 @@ var worlds = {
 	3 : load("res://RouteFinder/Resources/RoomData/Phendrana Drifts.tres"),
 	4 : load("res://RouteFinder/Resources/RoomData/Phazon Mines.tres")
 }
-
-# Etc
-var window_size := Vector2(550, 650)
 
 # Map
 var world_materials : Dictionary = {

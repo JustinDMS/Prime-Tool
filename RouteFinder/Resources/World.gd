@@ -12,4 +12,4 @@ func printWorld():
 
 func printAllRooms():
 	for r in rooms:
-		print(r)
+		print(r.room_name)

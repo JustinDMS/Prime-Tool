@@ -3,10 +3,6 @@ signal room_clicked(room_array : Array)
 signal room_removed(room_name : String)
 signal rooms_arranged
 
-############################ TO DO #####################################
-# 
-########################################################################
-
 @onready var map = $HBoxContainer/SubViewportContainer/SubViewport/Map
 @onready var camera = $HBoxContainer/SubViewportContainer/SubViewport/Camera3D
 @onready var subviewport = $HBoxContainer/SubViewportContainer/SubViewport
@@ -79,7 +75,6 @@ func doesPanelExist(room_name : String) -> bool:
 
 
 func removeRoom(room_mesh : MeshInstance3D) -> void:
-	print("Running removeRoom")
 	if selected_rooms.has(room_mesh):
 		selected_rooms.erase(room_mesh)
 		emit_signal("rooms_arranged")

@@ -14,10 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_wsjll")
 
-[node name="ResourceMaker" type="Control" parent="."]
-visible = false
-layout_mode = 1
-anchors_preset = 0
+[node name="ResourceMaker" type="Node" parent="."]
 script = ExtResource("2_06d1n")
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]
