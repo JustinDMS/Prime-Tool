@@ -2,19 +2,26 @@ extends Control
 signal room_clicked(room_array : Array)
 signal room_removed(room_name : String)
 signal rooms_arranged
+signal room_info_displayed(room_name : String)
 
 @onready var map = $HBoxContainer/SubViewportContainer/SubViewport/Map
 @onready var camera = $HBoxContainer/SubViewportContainer/SubViewport/Camera3D
 @onready var subviewport = $HBoxContainer/SubViewportContainer/SubViewport
 @onready var room_panels = $HBoxContainer/Panel/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer
 @onready var elevator_manager = $HBoxContainer/SubViewportContainer/SubViewport/Map/ElevatorManager
+@onready var room_info_display = $HBoxContainer/Panel/MarginContainer/VBoxContainer/RoomInfoDisplay
+
 
 var selected_rooms : Array = []
 var kill_callable := Callable(self, "removeRoom")
 
-
 func _input(_event):
 	if is_visible_in_tree():
+		if Input.is_action_just_pressed("room_info_select"):
+			var clicked_room = getRoomMeshFromClick()
+			if clicked_room:
+				emit_signal("room_info_displayed", clicked_room.get_parent().name)
+			return
 		if Input.is_action_just_pressed("left_click"):
 			var clicked_room = getRoomMeshFromClick()
 			if clicked_room:
@@ -80,3 +87,7 @@ func removeRoom(room_mesh : MeshInstance3D) -> void:
 		emit_signal("rooms_arranged")
 		return
 	print("Couldn't find room in selected_rooms")
+
+
+func makeRoomInfoDisplay(room : Room) -> void:
+	room_info_display.setInfo(room)

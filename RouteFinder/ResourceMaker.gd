@@ -38,7 +38,7 @@ var data
 
 
 func _ready():
-	pass
+	queue_free()
 
 
 func saveConnectionResource(connection : Connection, path : String):

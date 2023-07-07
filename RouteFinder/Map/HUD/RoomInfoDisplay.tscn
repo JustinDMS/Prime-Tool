@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://ho2v16b6byu8"]
+
+[ext_resource type="Script" path="res://RouteFinder/Map/HUD/RoomInfoDisplay.gd" id="1_obawg"]
+
+[node name="RoomInfoDisplay" type="Tree"]
+custom_minimum_size = Vector2(320, 250)
+anchors_preset = -1
+anchor_right = 0.582
+anchor_bottom = 1.25
+offset_right = -0.100006
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 15
+script = ExtResource("1_obawg")

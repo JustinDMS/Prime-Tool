@@ -220,3 +220,7 @@ func showElevatorDirection(all_rooms : Array) -> void:
 
 func stopElevatorIndicator() -> void:
 	map_hud.elevator_manager.stopIndicators()
+
+
+func _on_map_window_room_info_displayed(room_name):
+	map_hud.makeRoomInfoDisplay(getRoomFromName(room_name))
