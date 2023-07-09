@@ -9,7 +9,15 @@ signal room_info_displayed(room_name : String)
 @onready var subviewport = $HBoxContainer/SubViewportContainer/SubViewport
 @onready var room_panels = $HBoxContainer/Panel/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer
 @onready var elevator_manager = $HBoxContainer/SubViewportContainer/SubViewport/Map/ElevatorManager
-@onready var room_info_display = $HBoxContainer/Panel/MarginContainer/VBoxContainer/RoomInfoDisplay
+@onready var room_info_display = $HBoxContainer/Panel2/MarginContainer/VBoxContainer/RoomInfoDisplay
+
+var panel_colors = {
+	"Tallon Overworld" = load("res://RouteFinder/Map/HUD/StyleBox_Tallon.tres"),
+	"Chozo Ruins" = load("res://RouteFinder/Map/HUD/StyleBox_Chozo.tres"),
+	"Magmoor Caverns" = load("res://RouteFinder/Map/HUD/StyleBox_Magmoor.tres"),
+	"Phendrana Drifts" = load("res://RouteFinder/Map/HUD/StyleBox_Phendrana.tres"),
+	"Phazon Mines" = load("res://RouteFinder/Map/HUD/StyleBox_Mines.tres")
+}
 
 
 var selected_rooms : Array = []
@@ -48,18 +56,19 @@ func getRoomMeshFromClick() -> MeshInstance3D:
 	return null
 
 
-func createNewPanel(room_name : String, room_mesh : MeshInstance3D) -> Panel:
+func createNewPanel(room : Room, room_mesh : MeshInstance3D) -> Panel:
 	var min_size = Vector2(320, 30)
 	
 	var label : Label = Label.new()
-	label.set_text(room_name)
+	label.set_text(room.room_name)
 	label.custom_minimum_size = min_size
 	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	label.add_theme_color_override("font_color", Color.BLACK)
 	
 	var panel : Panel = Panel.new()
 	panel.custom_minimum_size = min_size
-	panel.add_theme_stylebox_override("panel", load("res://RouteFinder/Map/HUD/DragPanelStyleBox.tres"))
+	panel.add_theme_stylebox_override("panel", panel_colors[room.name])
 	panel.mouse_default_cursor_shape = Control.CURSOR_DRAG
 	panel.set_script(load("res://RouteFinder/Map/HUD/RoomNamePanel.gd"))
 	panel.tree_exited.connect(kill_callable.bind(room_mesh))

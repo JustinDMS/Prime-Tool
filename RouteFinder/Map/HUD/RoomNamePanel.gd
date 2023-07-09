@@ -1,6 +1,5 @@
 extends Panel
 
-var style_box = preload("res://RouteFinder/Map/HUD/DragPanelStyleBox.tres")
 var is_hovering := false
 var map_window
 var mesh : MeshInstance3D
@@ -25,6 +24,7 @@ func _get_drag_data(_at_position):
 	var data = {}
 	data["Kill Callable"] = map_window.rooms_arranged.get_connections()[0]["callable"]
 	data["Label"] = get_child(0)
+	data["Style Box"] = get_theme_stylebox("panel")
 	var drag_preview : Control = createCopy(data)
 	set_drag_preview(drag_preview)
 	
@@ -54,10 +54,11 @@ func createCopy(data) -> Control:
 	label.custom_minimum_size = min_size
 	label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	label.add_theme_color_override("font_color", Color.BLACK)
 	
 	var panel : Panel = Panel.new()
 	panel.custom_minimum_size = min_size
-	panel.add_theme_stylebox_override("panel", style_box)
+	panel.add_theme_stylebox_override("panel", data["Style Box"])
 	panel.mouse_default_cursor_shape = Control.CURSOR_DRAG
 	panel.set_script(load("res://RouteFinder/Map/HUD/RoomNamePanel.gd"))
 	panel.tree_exited.connect(data["Kill Callable"])

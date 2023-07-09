@@ -9,6 +9,13 @@
 [node name="Main" type="Node"]
 script = ExtResource("3")
 
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="TabContainer" type="TabContainer" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,19 +25,17 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
+[node name="Route Finder" parent="TabContainer" instance=ExtResource("4")]
+layout_mode = 2
+
 [node name="Segment Timer" parent="TabContainer" instance=ExtResource("1")]
+visible = false
 layout_mode = 2
 
 [node name="Average Time" parent="TabContainer" instance=ExtResource("2")]
 visible = false
 layout_mode = 2
 
-[node name="Route Finder" parent="TabContainer" instance=ExtResource("4")]
-visible = false
-layout_mode = 2
-
 [node name="Auto Timer" parent="TabContainer" instance=ExtResource("5_8na4k")]
 visible = false
 layout_mode = 2
-
-[connection signal="tab_selected" from="TabContainer" to="." method="_on_TabContainer_tab_selected"]

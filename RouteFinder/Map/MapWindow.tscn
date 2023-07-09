@@ -8,11 +8,11 @@
 [sub_resource type="Environment" id="Environment_yxytf"]
 
 [node name="MapWindow" type="Control"]
-custom_minimum_size = Vector2(1350, 800)
+custom_minimum_size = Vector2(1700, 800)
 layout_mode = 3
-anchor_right = 2.455
-anchor_bottom = 4.0
-offset_right = -350.25
+anchor_right = 1.0
+anchor_bottom = 0.941
+offset_bottom = 0.149963
 script = ExtResource("1_lrpwp")
 metadata/_edit_vertical_guides_ = [-269.0]
 
@@ -23,6 +23,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/separation = 0
 
 [node name="Panel" type="Panel" parent="HBoxContainer"]
 custom_minimum_size = Vector2(350, 0)
@@ -66,13 +67,11 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="RoomInfoDisplay" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer" instance=ExtResource("2_hd812")]
-custom_minimum_size = Vector2(0, 250)
-layout_mode = 2
-
 [node name="SubViewportContainer" type="SubViewportContainer" parent="HBoxContainer"]
 custom_minimum_size = Vector2(1000, 800)
 layout_mode = 2
+size_flags_horizontal = 3
+stretch = true
 
 [node name="SubViewport" type="SubViewport" parent="HBoxContainer/SubViewportContainer"]
 handle_input_locally = false
@@ -92,3 +91,36 @@ directional_shadow_mode = 0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="HBoxContainer/SubViewportContainer/SubViewport"]
 environment = SubResource("Environment_yxytf")
+
+[node name="Panel2" type="Panel" parent="HBoxContainer"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Panel2/MarginContainer"]
+layout_mode = 2
+
+[node name="Label_Data" type="Label" parent="HBoxContainer/Panel2/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Data View"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="HBoxContainer/Panel2/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="RoomInfoDisplay" parent="HBoxContainer/Panel2/MarginContainer/VBoxContainer" instance=ExtResource("2_hd812")]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+theme_override_font_sizes/font_size = 13

@@ -3,14 +3,18 @@
 [ext_resource type="Script" path="res://RouteFinder/Map/HUD/RoomInfoDisplay.gd" id="1_obawg"]
 
 [node name="RoomInfoDisplay" type="Tree"]
-custom_minimum_size = Vector2(320, 250)
+custom_minimum_size = Vector2(320, 732)
 anchors_preset = -1
-anchor_right = 0.582
-anchor_bottom = 1.25
-offset_right = -0.100006
+anchor_right = 0.188
+anchor_bottom = 0.861
+offset_right = 0.399994
+offset_bottom = 0.149963
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_font_sizes/font_size = 15
 columns = 2
 script = ExtResource("1_obawg")
+
+[connection signal="cell_selected" from="." to="." method="_on_cell_selected"]

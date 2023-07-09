@@ -164,7 +164,7 @@ func roomClicked(rooms : Array) -> void:
 	for room in rooms:
 		highlightSelectedRoom(room)
 		if not map_hud.doesPanelExist(room.get_parent().name):
-			var panel : Panel = map_hud.createNewPanel(room.get_parent().name, room)
+			var panel : Panel = map_hud.createNewPanel(getRoomFromName(room.get_parent().name), room)
 			map_hud.addPanel(panel)
 	roomsArranged()
 
@@ -177,6 +177,7 @@ func roomsArranged():
 	var destinations : Array = []
 	for room in map_hud.room_panels.get_children():
 		var room_obj = getRoomFromName(room.get_child(0).get_text())
+		room.add_theme_stylebox_override("panel", map_hud.panel_colors[room_obj.name])
 		destinations.append(room_obj)
 	setRoomColors()
 	if len(destinations) > 1:
