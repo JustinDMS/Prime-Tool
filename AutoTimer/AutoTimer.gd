@@ -39,7 +39,7 @@ func _ready():
 
 
 func _input(_event):
-	if Input.is_action_just_pressed("del_time"):
+	if Input.is_action_just_pressed("del_time") and is_visible_in_tree():
 		if selected_time != null:
 			time_box.remove_item(selected_time)
 			updateTimes()
