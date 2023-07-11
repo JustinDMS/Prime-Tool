@@ -10,6 +10,7 @@ signal room_info_displayed(room_name : String)
 @onready var room_panels = $HBoxContainer/Panel/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer
 @onready var elevator_manager = $HBoxContainer/SubViewportContainer/SubViewport/Map/ElevatorManager
 @onready var room_info_display = $HBoxContainer/Panel2/MarginContainer/VBoxContainer/RoomInfoDisplay
+@onready var connection_container = $HBoxContainer/Panel2/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer
 
 var panel_colors = {
 	"Tallon Overworld" = load("res://RouteFinder/Map/HUD/StyleBox_Tallon.tres"),
@@ -18,10 +19,9 @@ var panel_colors = {
 	"Phendrana Drifts" = load("res://RouteFinder/Map/HUD/StyleBox_Phendrana.tres"),
 	"Phazon Mines" = load("res://RouteFinder/Map/HUD/StyleBox_Mines.tres")
 }
-
-
 var selected_rooms : Array = []
 var kill_callable := Callable(self, "removeRoom")
+
 
 func _input(_event):
 	if is_visible_in_tree():
@@ -100,3 +100,45 @@ func removeRoom(room_mesh : MeshInstance3D) -> void:
 
 func makeRoomInfoDisplay(room : Room) -> void:
 	room_info_display.setInfo(room)
+
+
+func _on_room_info_display_connection_clicked(connection):
+	for child in connection_container.get_children():
+		child.queue_free()
+	for tag in connection.times.keys():
+		var new_editor = load("res://RouteFinder/Map/HUD/ConnectionEditor.tscn").instantiate()
+		connection_container.add_child(new_editor)
+		new_editor.setInfo(tag, connection.times[tag], connection)
+
+
+func _on_button_add_pressed():
+	var new_editor = load("res://RouteFinder/Map/HUD/ConnectionEditor.tscn").instantiate()
+	connection_container.add_child(new_editor)
+
+
+func _on_button_subtract_pressed():
+	for child in connection_container.get_children():
+		if child.checked:
+			child.queue_free()
+
+
+func _on_button_save_pressed():
+	var default = connection_container.get_child(0)
+	var world : World = default.world
+	var room_idx : int = world.rooms.find(default.room)
+	var point_idx : int = world.rooms[room_idx].points.find(default.point)
+	var connection_idx : int = world.rooms[room_idx].points[point_idx].connections.find(default.connection)
+	var new_connection_data = {}
+	for child in connection_container.get_children():
+		if child == default:
+			new_connection_data["Default"] = child.default_time
+			continue
+		if not child.tag_edit.get_text().is_empty() and child.time_edit.get_text().is_valid_float():
+			new_connection_data[child.tag_edit.get_text()] = float(child.time_edit.get_text())
+			continue
+		else:
+			print("Invalid connection, skipping")
+			continue
+	
+	world.rooms[room_idx].points[point_idx].connections[connection_idx].times = new_connection_data
+	var _error = ResourceSaver.save(world, default.save_path)

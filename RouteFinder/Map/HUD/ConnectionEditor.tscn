@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://fuq4cecoef56"]
+
+[ext_resource type="Script" path="res://RouteFinder/Map/HUD/ConnectionEditor.gd" id="1_7atf3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhnve"]
+bg_color = Color(0.164706, 0.164706, 0.164706, 1)
+
+[node name="ConnectionEditor" type="Control"]
+custom_minimum_size = Vector2(320, 40)
+layout_mode = 3
+anchor_right = 0.188
+anchor_bottom = 0.047
+offset_right = 0.399994
+offset_bottom = 0.0499992
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7atf3")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bhnve")
+
+[node name="Hbox" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="CheckBox" type="CheckBox" parent="Hbox"]
+layout_mode = 2
+
+[node name="TagEdit" type="LineEdit" parent="Hbox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Your Tag"
+alignment = 1
+flat = true
+select_all_on_focus = true
+
+[node name="Label" type="Label" parent="Hbox"]
+layout_mode = 2
+text = ":"
+
+[node name="TimeEdit" type="LineEdit" parent="Hbox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "0.000"
+alignment = 1
+flat = true
+select_all_on_focus = true
+
+[connection signal="toggled" from="Hbox/CheckBox" to="." method="_on_check_box_toggled"]
