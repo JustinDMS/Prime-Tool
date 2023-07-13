@@ -3,6 +3,7 @@ signal room_clicked(room_array : Array)
 signal room_removed(room_name : String)
 signal rooms_arranged
 signal room_info_displayed(room_name : String)
+signal cleared
 
 @onready var map = $HBoxContainer/SubViewportContainer/SubViewport/Map
 @onready var camera = $HBoxContainer/SubViewportContainer/SubViewport/Camera3D
@@ -11,6 +12,16 @@ signal room_info_displayed(room_name : String)
 @onready var elevator_manager = $HBoxContainer/SubViewportContainer/SubViewport/Map/ElevatorManager
 @onready var room_info_display = $HBoxContainer/Panel2/MarginContainer/VBoxContainer/RoomInfoDisplay
 @onready var connection_container = $HBoxContainer/Panel2/MarginContainer/VBoxContainer/ScrollContainer/VBoxContainer
+@onready var option_start = $HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/Option_Start
+@onready var option_end = $HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer2/Option_End
+@onready var room_label = $HBoxContainer/Panel2/MarginContainer/VBoxContainer/HBoxContainer2/Label_Room
+@onready var tag_line_edit = $HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer3/LineEdit_Tag
+@onready var room_tree = $HBoxContainer/Panel/MarginContainer/VBoxContainer/Tree_Rooms
+@onready var room_count_label = $HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer/Label_RoomCount
+@onready var route_time_label = $HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer/Label_RouteTime
+@onready var button_copy = $HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer2/Button_Copy
+@onready var button_clear = $HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer2/Button_Clear
+
 
 var panel_colors = {
 	"Tallon Overworld" = load("res://RouteFinder/Map/HUD/StyleBox_Tallon.tres"),
@@ -21,6 +32,8 @@ var panel_colors = {
 }
 var selected_rooms : Array = []
 var kill_callable := Callable(self, "removeRoom")
+var previous_start_room : Room
+var previous_end_room : Room
 
 
 func _input(_event):
@@ -103,6 +116,7 @@ func makeRoomInfoDisplay(room : Room) -> void:
 
 
 func _on_room_info_display_connection_clicked(connection):
+	room_label.set_text(connection.start.point_connection + " to " + connection.end.point_connection)
 	for child in connection_container.get_children():
 		child.queue_free()
 	for tag in connection.times.keys():
@@ -114,12 +128,6 @@ func _on_room_info_display_connection_clicked(connection):
 func _on_button_add_pressed():
 	var new_editor = load("res://RouteFinder/Map/HUD/ConnectionEditor.tscn").instantiate()
 	connection_container.add_child(new_editor)
-
-
-func _on_button_subtract_pressed():
-	for child in connection_container.get_children():
-		if child.checked:
-			child.queue_free()
 
 
 func _on_button_save_pressed():
@@ -142,3 +150,86 @@ func _on_button_save_pressed():
 	
 	world.rooms[room_idx].points[point_idx].connections[connection_idx].times = new_connection_data
 	var _error = ResourceSaver.save(world, default.save_path)
+
+
+func clearStartEndPoints() -> void:
+	option_start.clear()
+	option_end.clear()
+
+
+func showStartEndPoints(start : Room, end : Room) -> void:
+	
+	if not previous_start_room == start:
+		option_start.clear()
+		for point in start.points:
+			option_start.add_item("Door to " + point.point_connection)
+		previous_start_room = start
+	if not previous_end_room == end:
+		option_end.clear()
+		for point in end.points:
+			option_end.add_item("Door to " + point.point_connection)
+		previous_end_room = end
+
+
+func pointOptionSelected(_index):
+	emit_signal("rooms_arranged")
+
+
+func _on_line_edit_tag_text_submitted(_new_text):
+	emit_signal("rooms_arranged")
+
+
+func setRoomsTree(paths : Dictionary) -> void:
+	room_tree.clear()
+	room_tree.set_column_clip_content(0, true)
+	room_tree.set_column_expand(0, true)
+	room_tree.set_column_expand(1, false)
+	room_tree.set_column_custom_minimum_width(1, 75)
+	
+	var total_time := 0.0
+	var room_count := 0
+	
+	var root = room_tree.create_item()
+	for key in paths.keys():
+		for room in key:
+			var child = room_tree.create_item(root)
+			child.set_text(0, room)
+			child.set_text(1, str(paths[key][room]))
+			total_time += paths[key][room]
+			room_count += 1
+	
+	setRoomCount(room_count)
+	setRouteTime(total_time)
+
+
+func setRoomCount(count : int) -> void:
+	room_count_label.set_text(str(count))
+
+
+func setRouteTime(time : float) -> void:
+	route_time_label.set_text(str(time) + "s")
+
+
+func _on_button_copy_pressed():
+	if not button_copy.is_hovered():
+		return
+	if room_tree.get_root():
+		var children = room_tree.get_root().get_children()
+		var text = ""
+		for i in range(0, len(children)):
+			if i == len(children) - 1:
+				text += children[i].get_text(0)
+				DisplayServer.clipboard_set(text)
+				return
+			text += children[i].get_text(0) + "\n"
+
+
+func _on_button_clear_pressed():
+	if not button_clear.is_hovered():
+		return
+	emit_signal("cleared")
+	room_tree.clear()
+	setRoomCount(0)
+	setRouteTime(0)
+	previous_start_room = null
+	previous_end_room = null

@@ -25,6 +25,7 @@ func _get_drag_data(_at_position):
 	data["Kill Callable"] = map_window.rooms_arranged.get_connections()[0]["callable"]
 	data["Label"] = get_child(0)
 	data["Style Box"] = get_theme_stylebox("panel")
+	data["Position"] = _at_position
 	var drag_preview : Control = createCopy(data)
 	set_drag_preview(drag_preview)
 	
@@ -32,11 +33,13 @@ func _get_drag_data(_at_position):
 
 
 func _can_drop_data(_at_position, _data):
-	# Check if we can drop
 	return true
 
 
 func _drop_data(_at_position, data):
+	# If attempting to drop on self
+	if self == data["Dragged From"]:
+		return
 	# This is what runs if you drag one room over another
 	# Swap information with self
 	data["Dragged From"].get_child(0).set_text(get_child(0).get_text())

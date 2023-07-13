@@ -8,7 +8,8 @@ extends Control
 var room_path = []
 var room_queue = []
 var rooms_visited = {}
-var distance = {}
+var room_distance = {}
+var time_distances = {}
 var parent_rooms = {}
 var worlds = {
 	0 : load("res://RouteFinder/Resources/RoomData/Tallon Overworld.tres"),
@@ -41,7 +42,7 @@ func _ready():
 func findPath(start : Point, end : Point) -> void:
 	rooms_visited[start] = true
 	room_queue.append(getRoomFromName(start.room_name))
-	distance[start.room_name] = 0
+	room_distance[start.room_name] = 0
 	parent_rooms[start.room_name] = null
 	
 	while room_queue.size() > 0:
@@ -63,7 +64,7 @@ func searchConnectingPoints(room : Room, end : Point) -> Array:
 	
 	for p in room.points:
 		
-		distance[p.point_connection] = distance[room.room_name] + 1
+		room_distance[p.point_connection] = room_distance[room.room_name] + 1
 		
 		if not parent_rooms.has(p.point_connection):
 			parent_rooms[p.point_connection] = room
@@ -81,7 +82,7 @@ func constructRoomPath(start : Point, end : Point) -> void:
 	room_path = [end]
 	var previous_room = end
 	
-	while room_path.size() < distance[end.room_name]:
+	while room_path.size() < room_distance[end.room_name]:
 		var temp = parent_rooms[previous_room.room_name]
 		if parent_rooms.has(temp.room_name):
 			room_path.insert(0, temp)
@@ -94,7 +95,7 @@ func resetContainers():
 	room_path.clear()
 	room_queue.clear()
 	rooms_visited.clear()
-	distance.clear()
+	room_distance.clear()
 	parent_rooms.clear()
 	room_meshes.clear()
 
@@ -140,6 +141,8 @@ func highlightRoute(destinations : Array, all_rooms : Array) -> void:
 	
 	showElevatorDirection(all_rooms)
 	map_hud.elevator_manager.setIndicators(all_rooms)
+	getTimeDistance(all_rooms, all_rooms[0].points[map_hud.option_start.selected], all_rooms[-1].points[map_hud.option_end.selected])
+	map_hud.setRoomsTree(time_distances)
 
 
 func setRoomColors() -> void:
@@ -181,6 +184,7 @@ func roomsArranged():
 		destinations.append(room_obj)
 	setRoomColors()
 	if len(destinations) > 1:
+		map_hud.showStartEndPoints(destinations[0], destinations[-1])
 		displayRoute(destinations)
 	elif len(destinations) == 1:
 		for world in map.get_children():
@@ -188,9 +192,10 @@ func roomsArranged():
 				if room.name == destinations[0].room_name:
 					highlightSelectedRoom(room.get_child(-1))
 		stopElevatorIndicator()
-		
+		map_hud.clearStartEndPoints()
 	elif len(destinations) == 0:
 		stopElevatorIndicator()
+		map_hud.clearStartEndPoints()
 		return
 
 
@@ -198,12 +203,25 @@ func displayRoute(destinations : Array) -> void:
 	resetContainers()
 	var master_path = []
 	for i in range(0, len(destinations)):
-		if i + 1 == len(destinations):
+		
+		# If route only has two destinations
+		if i == 0 and i + 1 == len(destinations):
+			findPath(destinations[i].points[map_hud.option_start.selected], destinations[i + 1].points[map_hud.option_end.selected])
 			highlightRoute(destinations, master_path)
 			return
-		findPath(destinations[i].points[0], destinations[i + 1].points[0])
+		# If first room in the route and len destinations > 2
+		elif i == 0:
+			findPath(destinations[i].points[map_hud.option_start.selected], destinations[i + 1].points[0])
+		# If done pathfinding
+		elif i + 1 == len(destinations):
+			highlightRoute(destinations, master_path)
+			return
+		else:
+			findPath(destinations[i].points[0], destinations[i + 1].points[0])
+		
 		for room in room_path:
-			master_path.append(room)
+			master_path.append(getRoomFromName(room.room_name))
+		
 		resetContainers()
 
 
@@ -225,3 +243,68 @@ func stopElevatorIndicator() -> void:
 
 func _on_map_window_room_info_displayed(room_name):
 	map_hud.makeRoomInfoDisplay(getRoomFromName(room_name))
+
+
+func getTimeDistance(path : Array, start : Point, end : Point) -> void:
+	time_distances.clear()
+	var rooms = []
+	var times = {}
+	var tag = "Default"
+	# Get tag from line edit if there is one
+	if not map_hud.tag_line_edit.get_text().is_empty():
+		tag = map_hud.tag_line_edit.get_text()
+	
+	for i in range(0, len(path)):
+		
+		# If first room
+		if i == 0:
+			for connection in start.connections:
+				if connection.end.point_connection == path[i + 1].room_name:
+					if connection.times.has(tag):
+						rooms.append(start.room_name)
+						times[start.room_name] = connection.times[tag]
+						break
+					else:
+						rooms.append(start.room_name)
+						times[start.room_name] = connection.times["Default"]
+						break
+		
+		# If last room
+		elif i == len(path) - 1:
+			for point in path[i].points:
+				if point.point_connection == path[i - 1].room_name:
+					for connection in point.connections:
+						if connection.end.point_connection == end.point_connection:
+							if connection.times.has(tag):
+								rooms.append(end.room_name)
+								times[end.room_name] = connection.times[tag]
+								break
+							else:
+								rooms.append(end.room_name)
+								times[end.room_name] = connection.times["Default"]
+								break
+		
+		# In between rooms
+		else:
+			for point in path[i].points:
+				if point.point_connection == path[i - 1].room_name:
+					for connection in point.connections:
+						if connection.end.point_connection == path[i + 1].room_name:
+							if connection.times.has(tag):
+								rooms.append(path[i].room_name)
+								times[path[i].room_name] = connection.times[tag]
+								break
+							else:
+								rooms.append(path[i].room_name)
+								times[path[i].room_name] = connection.times["Default"]
+								break
+	
+	time_distances[rooms] = times
+
+
+func _on_map_window_cleared():
+	stopElevatorIndicator()
+	map_hud.clearStartEndPoints()
+	for child in map_hud.room_panels.get_children():
+		child.queue_free()
+	roomsArranged()

@@ -29,6 +29,7 @@ grow_vertical = 2
 [node name="MapWindow" parent="MarginContainer2" instance=ExtResource("3_y7rk0")]
 layout_mode = 2
 
+[connection signal="cleared" from="MarginContainer2/MapWindow" to="." method="_on_map_window_cleared"]
 [connection signal="room_clicked" from="MarginContainer2/MapWindow" to="." method="roomClicked"]
 [connection signal="room_info_displayed" from="MarginContainer2/MapWindow" to="." method="_on_map_window_room_info_displayed"]
 [connection signal="room_removed" from="MarginContainer2/MapWindow" to="." method="roomRemoved"]

@@ -45,6 +45,7 @@ theme_override_constants/margin_bottom = 15
 layout_mode = 2
 
 [node name="Label_Instructions" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+visible = false
 layout_mode = 2
 text = "Reset Map                   = Space
 Select                           = LMB
@@ -54,6 +55,47 @@ Move Up/Down          = E/Q
 Remove Stop              = LMB Double Click
 View Connections     = Ctrl + LMB"
 vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+text = "Start Point:"
+
+[node name="Option_Start" type="OptionButton" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text_overrun_behavior = 3
+fit_to_longest_item = false
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+text = "End Point:"
+
+[node name="Option_End" type="OptionButton" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text_overrun_behavior = 3
+fit_to_longest_item = false
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+text = "Search Tag:"
+
+[node name="LineEdit_Tag" type="LineEdit" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Default"
 
 [node name="HSeparator" type="HSeparator" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -66,6 +108,62 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+
+[node name="HSeparator2" type="HSeparator" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Label" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer"]
+layout_mode = 2
+text = "Room Count"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_RoomCount" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer"]
+layout_mode = 2
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer"]
+layout_mode = 2
+text = "Route Time"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_RouteTime" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer"]
+layout_mode = 2
+text = "0s"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button_Copy" type="Button" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Copy Rooms"
+
+[node name="Button_Clear" type="Button" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Clear"
+
+[node name="Tree_Rooms" type="Tree" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+hide_root = true
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="HBoxContainer"]
 custom_minimum_size = Vector2(1000, 800)
@@ -130,6 +228,17 @@ theme_override_font_sizes/font_size = 13
 [node name="HSeparator2" type="HSeparator" parent="HBoxContainer/Panel2/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
+[node name="HBoxContainer2" type="HBoxContainer" parent="HBoxContainer/Panel2/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label_Room" type="Label" parent="HBoxContainer/Panel2/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "*"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Panel2/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
@@ -150,11 +259,6 @@ custom_minimum_size = Vector2(31, 0)
 layout_mode = 2
 text = "+"
 
-[node name="Button_Subtract" type="Button" parent="HBoxContainer/Panel2/MarginContainer/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(31, 0)
-layout_mode = 2
-text = "-"
-
 [node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/Panel2/MarginContainer/VBoxContainer"]
 clip_contents = false
 layout_mode = 2
@@ -165,7 +269,11 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
+[connection signal="item_selected" from="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/Option_Start" to="." method="pointOptionSelected"]
+[connection signal="item_selected" from="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer2/Option_End" to="." method="pointOptionSelected"]
+[connection signal="text_submitted" from="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer3/LineEdit_Tag" to="." method="_on_line_edit_tag_text_submitted"]
+[connection signal="pressed" from="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer2/Button_Copy" to="." method="_on_button_copy_pressed"]
+[connection signal="pressed" from="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer2/Button_Clear" to="." method="_on_button_clear_pressed"]
 [connection signal="connection_clicked" from="HBoxContainer/Panel2/MarginContainer/VBoxContainer/RoomInfoDisplay" to="." method="_on_room_info_display_connection_clicked"]
 [connection signal="pressed" from="HBoxContainer/Panel2/MarginContainer/VBoxContainer/HBoxContainer/Button_Save" to="." method="_on_button_save_pressed"]
 [connection signal="pressed" from="HBoxContainer/Panel2/MarginContainer/VBoxContainer/HBoxContainer/Button_Add" to="." method="_on_button_add_pressed"]
-[connection signal="pressed" from="HBoxContainer/Panel2/MarginContainer/VBoxContainer/HBoxContainer/Button_Subtract" to="." method="_on_button_subtract_pressed"]

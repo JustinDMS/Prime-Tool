@@ -1,6 +1,6 @@
-[gd_resource type="Resource" script_class="World" load_steps=725 format=3]
+[gd_resource type="Resource" script_class="World" load_steps=725 format=3 uid="uid://bdyhw5ln3mm6j"]
 
-[ext_resource type="PackedScene" path="res://RouteFinder/Map/Chozo Ruins Map.tscn" id="1_7xyrs"]
+[ext_resource type="PackedScene" uid="uid://cvsvpaqpjdwtl" path="res://RouteFinder/Map/Chozo Ruins Map.tscn" id="1_7xyrs"]
 [ext_resource type="Script" path="res://RouteFinder/Resources/Point.gd" id="1_igy3f"]
 [ext_resource type="Script" path="res://RouteFinder/Resources/World.gd" id="1_o3fyg"]
 [ext_resource type="Script" path="res://RouteFinder/Resources/Room.gd" id="2_n2pju"]
