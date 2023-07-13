@@ -34,13 +34,16 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="CheckBox" type="CheckBox" parent="Hbox"]
+[node name="Button" type="Button" parent="Hbox"]
+custom_minimum_size = Vector2(31, 20)
 layout_mode = 2
+size_flags_vertical = 4
+text = "x"
 
 [node name="TagEdit" type="LineEdit" parent="Hbox"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "Your Tag"
+text = "New Tag"
 alignment = 1
 flat = true
 select_all_on_focus = true
@@ -52,9 +55,9 @@ text = ":"
 [node name="TimeEdit" type="LineEdit" parent="Hbox"]
 layout_mode = 2
 size_flags_horizontal = 3
-text = "0.000"
+text = "10"
 alignment = 1
 flat = true
 select_all_on_focus = true
 
-[connection signal="toggled" from="Hbox/CheckBox" to="." method="_on_check_box_toggled"]
+[connection signal="pressed" from="Hbox/Button" to="." method="_on_button_pressed"]

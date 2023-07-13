@@ -2,11 +2,9 @@ extends Control
 
 @onready var tag_edit = $Hbox/TagEdit
 @onready var time_edit = $Hbox/TimeEdit
-@onready var checkbox = $Hbox/CheckBox
+@onready var button = $Hbox/Button
 
 const default_time : float = 10.0
-
-var checked := false
 
 var world : World
 var room : Room
@@ -21,10 +19,6 @@ func setInfo(tag : String, time : float, _connection : Connection) -> void:
 	# Save the connection that's being edited so we can save it to the world resource
 	connection = _connection
 	getConnectionInfo()
-
-
-func _on_check_box_toggled(button_pressed):
-	checked = button_pressed
 
 
 func getConnectionInfo() -> void:
@@ -56,3 +50,7 @@ func getConnectionInfo() -> void:
 		if p.point_connection == connection.start.point_connection:
 			point = p
 			break
+
+
+func _on_button_pressed():
+	queue_free()
