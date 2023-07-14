@@ -7,31 +7,31 @@ extends Control
 	1 : $MarginContainer/VBoxContainer/ScrollContainer/VBox_Times/LineEdit
 }
 
-var num_times = 1
+var num_times : int = 1
 
 
 func _ready():
 	pass
 
 
-func validateInput(text, node):
+func validateInput(text : String, node : LineEdit) -> void:
 	for i in text:
 		if not i.is_valid_int():
 			node.delete_char_at_caret()
 
 
-func validateInputFloat(text, node):
+func validateInputFloat(text : String, node : LineEdit) -> void:
 	for i in text:
 		if not i.is_valid_float():
 			node.delete_char_at_caret()
 
 
-func updateNumTimes():
+func updateNumTimes() -> void:
 	num_times = clamp(num_times, 1, 99)
 	averages_node.set_text(str(num_times))
 
 
-func addLineEdit():
+func addLineEdit() -> void:
 	var line_edit = LineEdit.new()
 	times_container.add_child(line_edit)
 	var key = times.size() + 1
@@ -39,13 +39,13 @@ func addLineEdit():
 	times[key] = line_edit
 
 
-func removeLineEdit():
+func removeLineEdit() -> void:
 	if times.size() > 1:
 		times[times.size()].queue_free()
 		times.erase(times.size())
 
 
-func updateAverage():
+func updateAverage() -> void:
 	var all_times = times.keys()
 	var total = 0
 	
@@ -59,19 +59,19 @@ func updateAverage():
 
 
 
-func _on_Button_Increment_pressed():
+func _on_Button_Increment_pressed() -> void:
 	num_times += 1
 	updateNumTimes()
 	addLineEdit()
 
 
-func _on_Button_Decrement_pressed():
+func _on_Button_Decrement_pressed() -> void:
 	num_times -= 1
 	updateNumTimes()
 	removeLineEdit()
 
 
-func _on_LineEdit_text_entered(new_text):
+func _on_LineEdit_text_entered(new_text : String) -> void:
 	var is_add = num_times < int(new_text)
 	num_times = int(new_text)
 	updateNumTimes()
@@ -84,19 +84,19 @@ func _on_LineEdit_text_entered(new_text):
 			removeLineEdit()
 
 
-func _on_LineEdit_text_changed(new_text):
+func _on_LineEdit_text_changed(new_text : String) -> void:
 	validateInput(new_text, averages_node)
 
 
-func _on_Button_Calculate_pressed():
+func _on_Button_Calculate_pressed() -> void:
 	updateAverage()
 
 
-func _on_Button_Clear_pressed():
+func _on_Button_Clear_pressed() -> void:
 	for i in times_container.get_children():
 		i.clear()
 	averages_result.clear()
 
 
-func _on_Button_Copy_pressed():
+func _on_Button_Copy_pressed() -> void:
 	DisplayServer.clipboard_set(averages_result.get_text())

@@ -21,7 +21,7 @@ func _ready():
 	pass
 
 
-func validateInput(text, node):
+func validateInput(text : String, node : LineEdit) -> void:
 	for i in text:
 		if not i.is_valid_int():
 			node.delete_char_at_caret()
@@ -39,7 +39,7 @@ func validateInput(text, node):
 			focusNextNode(node.find_next_valid_focus())
 
 
-func makeSeconds(hour_node, minute_node, second_node, millisecond_node):
+func makeSeconds(hour_node : LineEdit, minute_node : LineEdit, second_node : LineEdit, millisecond_node : LineEdit) -> float:
 	var hour = int(hour_node.get_text())
 	var minute = int(minute_node.get_text())
 	var second = float(second_node.get_text()) + float("." + millisecond_node.get_text())
@@ -54,7 +54,7 @@ func makeSeconds(hour_node, minute_node, second_node, millisecond_node):
 	return snappedf(hour + minute + second, snap)
 
 
-func formatSeconds(seconds_format):
+func formatSeconds(seconds_format : float) -> String:
 	
 	var hour = 0
 	var minute = 0
@@ -97,68 +97,68 @@ func formatSeconds(seconds_format):
 		return str(snappedf(seconds_format, snap))
 
 
-func clearTime1():
+func clearTime1() -> void:
 	t1_hh.clear()
 	t1_mm.clear()
 	t1_ss.clear()
 	t1_mil.clear()
 
 
-func clearTime2():
+func clearTime2() -> void:
 	t2_hh.clear()
 	t2_mm.clear()
 	t2_ss.clear()
 	t2_mil.clear()
 
 
-func clearResults():
+func clearResults() -> void:
 	result.clear()
 	result_formatted.clear()
 
 
-func focusNextNode(node):
+func focusNextNode(node) -> void:
 	node.grab_focus()
 
 
-func _on_T1_HH_text_changed(new_text):
+func _on_T1_HH_text_changed(new_text) -> void:
 	validateInput(new_text, t1_hh)
 
 
-func _on_T1_MM_text_changed(new_text):
+func _on_T1_MM_text_changed(new_text) -> void:
 	validateInput(new_text, t1_mm)
 
 
-func _on_T1_SS_text_changed(new_text):
+func _on_T1_SS_text_changed(new_text) -> void:
 	validateInput(new_text, t1_ss)
 
 
-func _on_T1_MIL_text_changed(new_text):
+func _on_T1_MIL_text_changed(new_text) -> void:
 	validateInput(new_text, t1_mil)
 
 
-func _on_T2_HH_text_changed(new_text):
+func _on_T2_HH_text_changed(new_text) -> void:
 	validateInput(new_text, t2_hh)
 
 
-func _on_T2_MM_text_changed(new_text):
+func _on_T2_MM_text_changed(new_text) -> void:
 	validateInput(new_text, t2_mm)
 
 
-func _on_T2_SS_text_changed(new_text):
+func _on_T2_SS_text_changed(new_text) -> void:
 	validateInput(new_text, t2_ss)
 
 
-func _on_T2_MIL_text_changed(new_text):
+func _on_T2_MIL_text_changed(new_text) -> void:
 	validateInput(new_text, t2_mil)
 
 
-func _on_Option_Operation_item_selected(index):
+func _on_Option_Operation_item_selected(index) -> void:
 	current_operation = index
 
 
-func _on_Button_Calculate_pressed():
-	var time_1 = makeSeconds(t1_hh, t1_mm, t1_ss, t1_mil)
-	var time_2 = makeSeconds(t2_hh, t2_mm, t2_ss, t2_mil)
+func _on_Button_Calculate_pressed() -> void:
+	var time_1 : float = makeSeconds(t1_hh, t1_mm, t1_ss, t1_mil)
+	var time_2 : float = makeSeconds(t2_hh, t2_mm, t2_ss, t2_mil)
 	
 	match current_operation:
 		0: # Add
@@ -169,60 +169,60 @@ func _on_Button_Calculate_pressed():
 			result_formatted.set_text(formatSeconds(time_1 - time_2))
 
 
-func _on_Button_Clear_pressed():
+func _on_Button_Clear_pressed() -> void:
 	clearTime1()
 	clearTime2()
 
 
-func _on_Button_Clear1_pressed():
+func _on_Button_Clear1_pressed() -> void:
 	clearTime1()
 
 
-func _on_Button_Clear2_pressed():
+func _on_Button_Clear2_pressed() -> void:
 	clearTime2()
 
 
-func _on_T1_HH_text_entered(_new_text):
+func _on_T1_HH_text_entered(_new_text) -> void:
 	focusNextNode(t1_hh.find_next_valid_focus())
 
 
-func _on_T1_MM_text_entered(_new_text):
+func _on_T1_MM_text_entered(_new_text) -> void:
 	focusNextNode(t1_mm.find_next_valid_focus())
 
 
-func _on_T1_SS_text_entered(_new_text):
+func _on_T1_SS_text_entered(_new_text) -> void:
 	focusNextNode(t1_ss.find_next_valid_focus())
 
 
-func _on_T1_MIL_text_entered(_new_text):
+func _on_T1_MIL_text_entered(_new_text) -> void:
 	focusNextNode(t1_mil.find_next_valid_focus())
 
 
-func _on_T2_HH_text_entered(_new_text):
+func _on_T2_HH_text_entered(_new_text) -> void:
 	focusNextNode(t2_hh.find_next_valid_focus())
 
 
-func _on_T2_MM_text_entered(_new_text):
+func _on_T2_MM_text_entered(_new_text) -> void:
 	focusNextNode(t2_mm.find_next_valid_focus())
 
 
-func _on_T2_SS_text_entered(_new_text):
+func _on_T2_SS_text_entered(_new_text) -> void:
 	focusNextNode(t2_ss.find_next_valid_focus())
 
 
-func _on_T2_MIL_text_entered(_new_text):
+func _on_T2_MIL_text_entered(_new_text) -> void:
 	focusNextNode(t2_mil.find_next_valid_focus())
 
 
-func _on_Button_CopySeconds_pressed():
+func _on_Button_CopySeconds_pressed() -> void:
 	DisplayServer.clipboard_set(result.get_text())
 
 
-func _on_Button_CopyFormatted_pressed():
+func _on_Button_CopyFormatted_pressed() -> void:
 	DisplayServer.clipboard_set(result_formatted.get_text())
 
 
-func _on_button_swap_times_pressed():
+func _on_button_swap_times_pressed() -> void:
 	var temp_t1_hh = t1_hh.get_text()
 	var temp_t1_mm = t1_mm.get_text()
 	var temp_t1_ss = t1_ss.get_text()
