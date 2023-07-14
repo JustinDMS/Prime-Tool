@@ -1,9 +1,5 @@
 extends Control
 
-############################ TO DO #####################################
-# Add ability to convert from seconds to HH:MM:SS.sss
-########################################################################
-
 @onready var t1_hh = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_HH
 @onready var t1_mm = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_MM
 @onready var t1_ss = $MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBox_Time1/T1_SS
@@ -17,6 +13,7 @@ extends Control
 @onready var result = $MarginContainer/VBoxContainer/HBoxContainer3/LineEdit_Result
 @onready var result_formatted = $MarginContainer/VBoxContainer/HBoxContainer3/LineEdit_ResultFormatted
 
+const snap : float = 0.001
 var current_operation := 0
 
 
@@ -45,8 +42,7 @@ func validateInput(text, node):
 func makeSeconds(hour_node, minute_node, second_node, millisecond_node):
 	var hour = int(hour_node.get_text())
 	var minute = int(minute_node.get_text())
-	var second = int(second_node.get_text())
-	var millisecond = int(millisecond_node.get_text())
+	var second = float(second_node.get_text()) + float("." + millisecond_node.get_text())
 	
 	if hour > 0:
 		hour = hour * 60 # Minutes
@@ -55,20 +51,7 @@ func makeSeconds(hour_node, minute_node, second_node, millisecond_node):
 	if minute > 0:
 		minute = minute * 60
 	
-	if millisecond > 0:
-		match len(str(millisecond)):
-			1:
-				millisecond = int(str(millisecond) + "00")
-				millisecond = millisecond * 0.001
-			2:
-				millisecond = int(str(millisecond) + "0")
-				millisecond = millisecond * 0.001
-			3:
-				if not str(millisecond).begins_with("0"):
-					millisecond = millisecond * 0.001
-				
-	
-	return hour + minute + second + millisecond
+	return snappedf(hour + minute + second, snap)
 
 
 func formatSeconds(seconds_format):
@@ -90,7 +73,7 @@ func formatSeconds(seconds_format):
 		
 		temp = minute * 60 # Get seconds to subtract from total
 		temp_2 = hour * 60 * 60
-		second = seconds_format - temp - temp_2
+		second = snappedf(seconds_format - temp - temp_2, snap)
 		
 		if minute < 10:
 			minute = "0" + str(minute)
@@ -103,14 +86,15 @@ func formatSeconds(seconds_format):
 	elif seconds_format >= 60:
 		minute = floor(seconds_format / 60) # Get total minutes
 		temp = minute * 60
-		second = seconds_format - temp
+		second = snappedf(seconds_format - temp, snap)
 		
 		if second < 10:
 			second = "0" + str(second)
 		
 		return str(minute) + ":" + str(second)
 	
-	else: return str(seconds_format)
+	else: 
+		return str(snappedf(seconds_format, snap))
 
 
 func clearTime1():
@@ -181,7 +165,7 @@ func _on_Button_Calculate_pressed():
 			result.set_text(str(time_1 + time_2))
 			result_formatted.set_text(formatSeconds(time_1 + time_2))
 		1: # Subtract
-			result.set_text(str(time_1 - time_2))
+			result.set_text(str(snapped(time_1 - time_2, snap)))
 			result_formatted.set_text(formatSeconds(time_1 - time_2))
 
 

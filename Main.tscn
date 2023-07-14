@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cjy7lqqfry465"]
+[gd_scene load_steps=5 format=3 uid="uid://cjy7lqqfry465"]
 
-[ext_resource type="PackedScene" uid="uid://dy3sajy8uswki" path="res://SegmentTimer/SegmentTimer.tscn" id="1"]
-[ext_resource type="PackedScene" uid="uid://hsoxa02u8yqc" path="res://AverageTime/AverageTime.tscn" id="2"]
 [ext_resource type="Script" path="res://Main.gd" id="3"]
+[ext_resource type="PackedScene" uid="uid://bp36oje0410kw" path="res://Timing/Timing.tscn" id="3_0cict"]
 [ext_resource type="PackedScene" uid="uid://clrx38dg0oi78" path="res://RouteFinder/RouteFinder.tscn" id="4"]
 [ext_resource type="PackedScene" uid="uid://ckj6wxk22nfc1" path="res://AutoTimer/AutoTimer.tscn" id="5_8na4k"]
 
@@ -28,11 +27,7 @@ size_flags_vertical = 3
 [node name="Route Finder" parent="TabContainer" instance=ExtResource("4")]
 layout_mode = 2
 
-[node name="Segment Timer" parent="TabContainer" instance=ExtResource("1")]
-visible = false
-layout_mode = 2
-
-[node name="Average Time" parent="TabContainer" instance=ExtResource("2")]
+[node name="Timing" parent="TabContainer" instance=ExtResource("3_0cict")]
 visible = false
 layout_mode = 2
 

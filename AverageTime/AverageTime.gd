@@ -1,18 +1,13 @@
 extends Control
 
-############################ TO DO #####################################
-# 
-########################################################################
-
 @onready var averages_node = $MarginContainer/VBoxContainer/HBoxContainer/LineEdit
-@onready var times_container = $MarginContainer/VBoxContainer/VBox_Times
+@onready var times_container = $MarginContainer/VBoxContainer/ScrollContainer/VBox_Times
 @onready var averages_result = $MarginContainer/VBoxContainer/HBoxContainer/LineEdit_Average
 @onready var times = {
-	1 : $MarginContainer/VBoxContainer/VBox_Times/LineEdit
+	1 : $MarginContainer/VBoxContainer/ScrollContainer/VBox_Times/LineEdit
 }
 
 var num_times = 1
-var window_size := Vector2(550, 200) 
 
 
 func _ready():
@@ -34,13 +29,6 @@ func validateInputFloat(text, node):
 func updateNumTimes():
 	num_times = clamp(num_times, 1, 99)
 	averages_node.set_text(str(num_times))
-
-
-func updateWindowSize():
-	if DisplayServer.window_get_mode() != DisplayServer.WINDOW_MODE_MAXIMIZED:
-		var temp : Vector2 = window_size
-		temp.y = window_size.y + 34 * num_times
-		get_window().set_size(temp)
 
 
 func addLineEdit():
@@ -74,14 +62,12 @@ func updateAverage():
 func _on_Button_Increment_pressed():
 	num_times += 1
 	updateNumTimes()
-	updateWindowSize()
 	addLineEdit()
 
 
 func _on_Button_Decrement_pressed():
 	num_times -= 1
 	updateNumTimes()
-	updateWindowSize()
 	removeLineEdit()
 
 
@@ -89,7 +75,6 @@ func _on_LineEdit_text_entered(new_text):
 	var is_add = num_times < int(new_text)
 	num_times = int(new_text)
 	updateNumTimes()
-	updateWindowSize()
 
 	if is_add:
 		while times.size() < num_times:

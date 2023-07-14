@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://bp36oje0410kw"]
+
+[ext_resource type="PackedScene" uid="uid://dy3sajy8uswki" path="res://SegmentTimer/SegmentTimer.tscn" id="1_k3i4q"]
+[ext_resource type="PackedScene" uid="uid://hsoxa02u8yqc" path="res://AverageTime/AverageTime.tscn" id="2_ybr2d"]
+
+[node name="Timing" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Segment Timer"
+horizontal_alignment = 1
+
+[node name="SegmentTimer" parent="MarginContainer/HBoxContainer/VBoxContainer" instance=ExtResource("1_k3i4q")]
+custom_minimum_size = Vector2(550, 150)
+layout_mode = 2
+
+[node name="VSeparator" type="VSeparator" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Average Finder"
+horizontal_alignment = 1
+
+[node name="AverageTime" parent="MarginContainer/HBoxContainer/VBoxContainer2" instance=ExtResource("2_ybr2d")]
+custom_minimum_size = Vector2(540, 140)
+layout_mode = 2
