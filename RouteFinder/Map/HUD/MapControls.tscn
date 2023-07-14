@@ -1,0 +1,185 @@
+[gd_scene load_steps=8 format=3 uid="uid://dkld5tk44piq5"]
+
+[ext_resource type="Texture2D" uid="uid://blf51fhg7jc4c" path="res://RouteFinder/Map/HUD/Images/Space_Key_Dark.png" id="1_cncvm"]
+[ext_resource type="Texture2D" uid="uid://dd7mt70cum3io" path="res://RouteFinder/Map/HUD/Images/Mouse_Left_Key_Dark.png" id="2_0rar3"]
+[ext_resource type="Texture2D" uid="uid://brh4v2wg2so2f" path="res://RouteFinder/Map/HUD/Images/Mouse_Right_Key_Dark.png" id="3_kfd56"]
+[ext_resource type="Texture2D" uid="uid://bl3l0ln622oba" path="res://RouteFinder/Map/HUD/Images/Shift_Key_Dark.png" id="4_ih77r"]
+[ext_resource type="Texture2D" uid="uid://c3aw43rgifa3r" path="res://RouteFinder/Map/HUD/Images/E_Key_Dark.png" id="5_gmn4j"]
+[ext_resource type="Texture2D" uid="uid://cfde26aq3g5id" path="res://RouteFinder/Map/HUD/Images/Q_Key_Dark.png" id="6_mp16d"]
+[ext_resource type="Texture2D" uid="uid://blwyovht6kwa1" path="res://RouteFinder/Map/HUD/Images/Ctrl_Key_Dark.png" id="7_nc3j4"]
+
+[node name="MapControls" type="Window"]
+title = "Map Controls"
+position = Vector2i(355, 38)
+size = Vector2i(300, 450)
+unresizable = true
+popup_window = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("1_cncvm")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("2_0rar3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("3_kfd56")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("4_ih77r")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer4"]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("3_kfd56")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer5"]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("5_gmn4j")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer5"]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("6_mp16d")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer6"]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("2_0rar3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer6"]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("2_0rar3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer7"]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("7_nc3j4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer7"]
+custom_minimum_size = Vector2(56, 56)
+layout_mode = 2
+texture = ExtResource("2_0rar3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Reset Camera"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Select Room"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Rotate"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Pan"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Move Up/Down"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "Remove Room From Path"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Label7" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+text = "View Connections"
+horizontal_alignment = 1
+vertical_alignment = 1

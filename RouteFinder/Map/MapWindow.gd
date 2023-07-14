@@ -233,3 +233,10 @@ func _on_button_clear_pressed():
 	setRouteTime(0)
 	previous_start_room = null
 	previous_end_room = null
+
+
+func _on_button_show_controls_pressed():
+	var new_window = load("res://RouteFinder/Map/HUD/MapControls.tscn").instantiate()
+	add_child(new_window)
+	new_window.close_requested.connect(Callable(new_window, "queue_free"))
+	new_window.popup()

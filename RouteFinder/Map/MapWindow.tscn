@@ -44,18 +44,6 @@ theme_override_constants/margin_bottom = 15
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Panel/MarginContainer"]
 layout_mode = 2
 
-[node name="Label_Instructions" type="Label" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
-visible = false
-layout_mode = 2
-text = "Reset Map                   = Space
-Select                           = LMB
-Rotate                          = RMB + Drag
-Pan                               = Shift + RMB + Drag
-Move Up/Down          = E/Q
-Remove Stop              = LMB Double Click
-View Connections     = Ctrl + LMB"
-vertical_alignment = 1
-
 [node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
@@ -156,6 +144,7 @@ text = "Copy Rooms"
 [node name="Button_Clear" type="Button" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer4/VBoxContainer2"]
 layout_mode = 2
 size_flags_vertical = 6
+focus_mode = 0
 text = "Clear"
 
 [node name="Tree_Rooms" type="Tree" parent="HBoxContainer/Panel/MarginContainer/VBoxContainer"]
@@ -269,6 +258,19 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
+[node name="Button_ShowControls" type="Button" parent="."]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.206
+anchor_right = 0.224
+anchor_bottom = 0.039
+offset_left = -0.200012
+offset_right = -0.800018
+offset_bottom = -0.200001
+text = "?"
+flat = true
+
 [connection signal="item_selected" from="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer/Option_Start" to="." method="pointOptionSelected"]
 [connection signal="item_selected" from="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer2/Option_End" to="." method="pointOptionSelected"]
 [connection signal="text_submitted" from="HBoxContainer/Panel/MarginContainer/VBoxContainer/HBoxContainer3/LineEdit_Tag" to="." method="_on_line_edit_tag_text_submitted"]
@@ -277,3 +279,4 @@ size_flags_vertical = 3
 [connection signal="connection_clicked" from="HBoxContainer/Panel2/MarginContainer/VBoxContainer/RoomInfoDisplay" to="." method="_on_room_info_display_connection_clicked"]
 [connection signal="pressed" from="HBoxContainer/Panel2/MarginContainer/VBoxContainer/HBoxContainer/Button_Save" to="." method="_on_button_save_pressed"]
 [connection signal="pressed" from="HBoxContainer/Panel2/MarginContainer/VBoxContainer/HBoxContainer/Button_Add" to="." method="_on_button_add_pressed"]
+[connection signal="pressed" from="Button_ShowControls" to="." method="_on_button_show_controls_pressed"]

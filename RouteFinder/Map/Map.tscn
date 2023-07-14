@@ -1,10 +1,10 @@
 [gd_scene load_steps=16 format=3 uid="uid://do6ub1hash3e3"]
 
-[ext_resource type="PackedScene" uid="uid://cvsvpaqpjdwtl" path="res://RouteFinder/Map/Chozo Ruins Map.tscn" id="1_48uvl"]
-[ext_resource type="PackedScene" uid="uid://ceriumwvjf8jg" path="res://RouteFinder/Map/Tallon Overworld Map.tscn" id="1_w6pt0"]
-[ext_resource type="PackedScene" uid="uid://cbhx0u4r1hptk" path="res://RouteFinder/Map/Magmoor Caverns Map.tscn" id="3_8nugp"]
-[ext_resource type="PackedScene" uid="uid://dv5vwefvdf2kh" path="res://RouteFinder/Map/Phendrana Drifts Map.tscn" id="4_2be60"]
-[ext_resource type="PackedScene" uid="uid://cemu6cclnm156" path="res://RouteFinder/Map/Phazon Mines Map.tscn" id="5_3tpvh"]
+[ext_resource type="PackedScene" path="res://RouteFinder/Map/Chozo Ruins Map.tscn" id="1_48uvl"]
+[ext_resource type="PackedScene" path="res://RouteFinder/Map/Tallon Overworld Map.tscn" id="1_w6pt0"]
+[ext_resource type="PackedScene" path="res://RouteFinder/Map/Magmoor Caverns Map.tscn" id="3_8nugp"]
+[ext_resource type="PackedScene" path="res://RouteFinder/Map/Phendrana Drifts Map.tscn" id="4_2be60"]
+[ext_resource type="PackedScene" path="res://RouteFinder/Map/Phazon Mines Map.tscn" id="5_3tpvh"]
 [ext_resource type="Curve3D" uid="uid://chb1yh5kvjaq0" path="res://RouteFinder/Map/Elevators/Curve_ChozoWest_TallonNorth.tres" id="6_1rdsl"]
 [ext_resource type="Script" path="res://RouteFinder/Map/Elevators/ElevatorManager.gd" id="6_tdktb"]
 [ext_resource type="Curve3D" uid="uid://v6k3cf1nrymd" path="res://RouteFinder/Map/Elevators/Curve_ChozoEast_TallonEast.tres" id="7_uyj2d"]
@@ -96,7 +96,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -239.863, 93.6466, 1166.25)
 curve = ExtResource("15_v0ufk")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="ElevatorManager/MagmoorSouth_PhendranaSouth"]
-transform = Transform3D(-0.53216, -0.0544818, -0.844881, 1.86265e-09, 0.99792, -0.0643502, 0.846644, -0.0342447, -0.531052, 0, 0, 0)
+transform = Transform3D(-0.53216, -0.0544819, -0.844881, 1.86265e-09, 0.99792, -0.0643502, 0.846644, -0.0342447, -0.531052, 0, 0, 0)
 
 [node name="Timer" type="Timer" parent="ElevatorManager"]
 one_shot = true
