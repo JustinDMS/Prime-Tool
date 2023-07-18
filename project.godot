@@ -13,7 +13,7 @@ config_version=5
 config/name="Prime Tool"
 run/main_scene="res://Main.tscn"
 config/features=PackedStringArray("4.0")
-run/low_processor_mode=true
+run/max_fps=60
 config/icon="res://icon.png"
 
 [display]
