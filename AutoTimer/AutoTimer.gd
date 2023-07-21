@@ -23,6 +23,7 @@ var can_retrieve := false
 var retrieve_thread : Thread
 
 # Data Display
+var previous_unique_igt : float
 var previous_unique_time : float
 var speed_values : Array
 
@@ -157,20 +158,23 @@ func formatRetrieve(data : Array) -> Array:
 	var output : Array = data[0].split(",")
 	var last_room_time = snappedf(float(output[0]) - 0.0005, 0.001) # Subtracting 0.0005 adjusts the rounding to match the Practice Mod
 	var speed = float(output[1])
-	return [last_room_time, speed]
+	var igt = float(output[2])
+	return [last_room_time, speed, igt]
 
 
 func updateDisplay(data : Array) -> void:
 	var last_room_time = data[0]
 	var speed = data[1]
+	var igt = data[2]
 	if addTimeToList(last_room_time):
-		print("Total speed values: ", len(speed_values))
-		print("Room time: ", last_room_time)
-		print("")
 		average_speed_label.set_text(str(calculateAverageSpeed(speed_values)))
 		updateGraph(last_room_time)
 		speed_values.clear()
-	addSpeedValue(speed)
+	
+	if isUniqueIGT(igt):
+		print("Unique IGT, adding speed value")
+		addSpeedValue(speed)
+		previous_unique_igt = igt
 
 
 func addTimeToList(time : float) -> bool:
@@ -217,3 +221,9 @@ func updateGraph(time : float) -> void:
 	var step : float = time/len(speed_values)
 	for i in range(0, len(speed_values)):
 		graph.add_point(Vector2((i+1)*step, speed_values[i])) # Vector2(Time(seconds),Speed)
+
+
+func isUniqueIGT(new_igt : float) -> bool:
+	if new_igt == previous_unique_igt:
+		return false
+	return true
