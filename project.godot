@@ -26,6 +26,10 @@ window/size/viewport_height=850
 version_control_autoload_on_startup=true
 version_control_plugin_name="GitAPI"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/graph_2d/plugin.cfg")
+
 [filesystem]
 
 import/blender/enabled=false

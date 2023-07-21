@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Main.gd" id="3"]
 [ext_resource type="PackedScene" uid="uid://bp36oje0410kw" path="res://Timing/Timing.tscn" id="3_0cict"]
 [ext_resource type="PackedScene" uid="uid://clrx38dg0oi78" path="res://RouteFinder/RouteFinder.tscn" id="4"]
-[ext_resource type="PackedScene" uid="uid://ckj6wxk22nfc1" path="res://AutoTimer/AutoTimer.tscn" id="5_8na4k"]
+[ext_resource type="PackedScene" uid="uid://b04vfqwr0jm0l" path="res://AutoTimer/AutoTimer.tscn" id="4_mvcav"]
 
 [node name="Main" type="Node"]
 script = ExtResource("3")
@@ -31,6 +31,6 @@ layout_mode = 2
 visible = false
 layout_mode = 2
 
-[node name="Auto Timer" parent="TabContainer" instance=ExtResource("5_8na4k")]
+[node name="Auto Timer" parent="TabContainer" instance=ExtResource("4_mvcav")]
 visible = false
 layout_mode = 2
