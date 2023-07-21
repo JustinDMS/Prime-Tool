@@ -29,6 +29,7 @@ var speed_values : Array
 
 func _ready():
 	updateDirectories()
+	graph.add_plot_item("Speed", Color.GREEN, 1.0)
 
 
 func _process(_delta):
@@ -51,7 +52,7 @@ func updateDirectories() -> void:
 
 func newThread() -> Thread:
 	var thread = Thread.new()
-	print("New Thread ID: ", thread.get_id())
+	#print("New Thread ID: ", thread.get_id())
 	return thread
 
 
@@ -63,7 +64,6 @@ func checkHooked() -> bool:
 	
 	# Start Thread
 	var error = thread.start(callable)
-	print(error)
 	if error != OK:
 		print("Couldn't create thread")
 		return false
@@ -123,22 +123,21 @@ func retrieveData() -> void:
 	var output : Array = []
 	var callable := Callable(self, "executeScript").bind(retrieve_script_path, output)
 	
-	if not retrieve_thread:
-		retrieve_thread = newThread()
-		var error = retrieve_thread.start(callable)
-		if error != OK:
-			print("Couldn't create thread")
-			can_retrieve = false 
-			return
+	retrieve_thread = newThread()
+	var error = retrieve_thread.start(callable)
+	if error != OK:
+		print("Couldn't create thread")
+		can_retrieve = false 
+		return
+	
+	var data = retrieve_thread.wait_to_finish()
+	if data[0].match("Not Hooked"):
+		can_retrieve = false
+		_on_button_hook_pressed()
+	elif data:
+		updateDisplay(formatRetrieve(data))
 	else:
-		var data = callable.call()
-		if data[0].match("Not Hooked"):
-			can_retrieve = false
-			_on_button_hook_pressed()
-		elif data:
-			updateDisplay(formatRetrieve(data))
-		else:
-			print("Error: empty data")
+		print("Error: empty data")
 
 
 func executeScript(script_path : String, output : Array) -> Array:
@@ -165,7 +164,11 @@ func updateDisplay(data : Array) -> void:
 	var last_room_time = data[0]
 	var speed = data[1]
 	if addTimeToList(last_room_time):
+		print("Total speed values: ", len(speed_values))
+		print("Room time: ", last_room_time)
+		print("")
 		average_speed_label.set_text(str(calculateAverageSpeed(speed_values)))
+		updateGraph(last_room_time)
 		speed_values.clear()
 	addSpeedValue(speed)
 
@@ -203,14 +206,14 @@ func _on_line_edit_text_changed(new_text):
 func setAverageTime() -> void:
 	var average_time : float = 0.0
 	for i in range(0, time_list.item_count):
-		print(i)
 		average_time += float(time_list.get_item_text(i))
 	average_time = average_time/time_list.item_count
 	average_time_label.set_text(str(snappedf(average_time - 0.0005, 0.001)))
 
 
-func updateGraph() -> void:
+func updateGraph(time : float) -> void:
 	graph.clear()
-	graph.setFrames(len(speed_values))
+	graph.setMax(ceilf(time))
+	var step : float = time/len(speed_values)
 	for i in range(0, len(speed_values)):
-		graph.add_point(i + 1, speed_values[i]) # Vector2(Frame,Speed)
+		graph.add_point(Vector2((i+1)*step, speed_values[i])) # Vector2(Time(seconds),Speed)
