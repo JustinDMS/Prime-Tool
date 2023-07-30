@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Prime Tool"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://Main/Main.tscn"
 config/features=PackedStringArray("4.0")
 run/max_fps=60
 config/icon="res://icon.png"
@@ -25,10 +25,6 @@ window/size/viewport_height=850
 
 version_control_autoload_on_startup=true
 version_control_plugin_name="GitAPI"
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/graph_2d/plugin.cfg")
 
 [filesystem]
 

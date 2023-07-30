@@ -1,9 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://b0epbgaunvj2b"]
+[gd_scene load_steps=6 format=3]
 
 [ext_resource type="PackedScene" uid="uid://do6ub1hash3e3" path="res://RouteFinder/Map/Map.tscn" id="1_euobf"]
 [ext_resource type="Script" path="res://RouteFinder/Map/MapWindow.gd" id="1_lrpwp"]
 [ext_resource type="PackedScene" uid="uid://ho2v16b6byu8" path="res://RouteFinder/Map/HUD/RoomInfoDisplay.tscn" id="2_hd812"]
-[ext_resource type="Script" path="res://RouteFinder/Map/MapCamera.gd" id="3_0d6gl"]
+[ext_resource type="Script" path="res://RouteFinder/Map/Camera/MapCamera.gd" id="3_0d6gl"]
 
 [sub_resource type="Environment" id="Environment_yxytf"]
 

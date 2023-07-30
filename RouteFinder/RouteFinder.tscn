@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://clrx38dg0oi78"]
+[gd_scene load_steps=3 format=3 uid="uid://clrx38dg0oi78"]
 
-[ext_resource type="Script" path="res://RouteFinder/ResourceMaker.gd" id="2_06d1n"]
 [ext_resource type="Script" path="res://RouteFinder/Resource_RouteFinder.gd" id="3_wsjll"]
-[ext_resource type="PackedScene" uid="uid://b0epbgaunvj2b" path="res://RouteFinder/Map/MapWindow.tscn" id="3_y7rk0"]
+[ext_resource type="PackedScene" path="res://RouteFinder/Map/MapWindow.tscn" id="3_y7rk0"]
 
 [node name="RouteFinder" type="Control"]
 custom_minimum_size = Vector2(1350, 800)
@@ -13,9 +12,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_wsjll")
-
-[node name="ResourceMaker" type="Node" parent="."]
-script = ExtResource("2_06d1n")
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]
 custom_minimum_size = Vector2(1300, 800)
